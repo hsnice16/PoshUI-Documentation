@@ -1,0 +1,27 @@
+@import url("css/main.css");
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--COLOR-SLATE-50);
+  font-size: 1.6rem;
+}
+
+/** Container **/
+
+.container {
+  min-height: 100vh;
+  max-width: 140rem;
+  padding: 2rem;
+}
+
+/** Media Query **/
+
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 55%;
+  }
+}
