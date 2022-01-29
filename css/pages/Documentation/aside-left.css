@@ -3,41 +3,15 @@
 }
 
 .aside-left-container {
+  background: var(--COLOR-SLATE-50);
   margin: 3rem 1rem 1rem 6rem;
   position: fixed;
 }
 
 .aside-left-link {
-  font-size: 2.1rem;
   margin: 1.2rem 0 1.2rem 4rem;
 }
 
-.aside-left-link a {
-  color: var(--COLOR-SLATE-700);
-  position: relative;
-}
-
-.aside-left-link a::after {
-  background: var(--COLOR-SLATE-700);
-  content: "";
-  display: block;
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  transition: width 0.3s, left 0.3s;
-  width: 0;
-}
-
-.aside-left-link a:hover::after {
-  left: 0;
-  width: 100%;
-}
-
-.aside-left-list {
-  margin-bottom: 2rem;
-}
-
 .aside-left-list h3 {
-  font-size: 2.2rem;
-  margin: 1.5rem 0;
+  font-size: 2.1rem;
 }

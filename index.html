@@ -25,13 +25,6 @@
       href="assets/brand-logos/favicon-16x16.png"
     />
 
-    <!-- highlight.js cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-
     <!-- poshui-components cdn -->
     <link
       rel="stylesheet"
@@ -42,27 +35,25 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="container documentation margin-auto">
-      <!-- Header Documentation Starts -->
-
-      <header class="header header-documentation">
+    <div class="container margin-auto padding-2">
+      <header class="header">
         <img
           class="img-brand-logo"
           src="assets/brand-logos/brand-logo.png"
           alt="brand logo png"
         />
-        <a class="link-brand margin-lr-1" href="./index.html">Posh UI</a>
+        <a class="link-brand margin-lr-1" href="index.html">Posh UI</a>
 
-        <nav class="margin-l-auto navbar">
-          <ul class="list-no-bullets">
-            <li class="nav-link margin-lr-1">
-              <a href="./index.html">Home</a>
+        <nav class="margin-l-auto">
+          <ul>
+            <li class="d-i-block margin-lr-1">
+              <a class="link" href="index.html">Home</a>
             </li>
-            <li class="nav-link margin-lr-1">
-              <a href="#">Documentation</a>
+            <li class="d-i-block margin-lr-1">
+              <a class="link" href="./pages/introduction.html">Documentation</a>
             </li>
-            <li class="nav-link margin-lr-1">
-              <a
+            <li class="d-i-block margin-lr-1">
+              <a class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
                 >GitHub</a
@@ -72,15 +63,13 @@
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
-      
       <main class="main">
         <h1>
           Now design your project faster and better with
           <span class="d-block">Posh UI</span>
         </h1>
 
-        <a href="#">
+        <a href="./pages/introduction.html">
           <button class="btn btn-primary-solid btn-squared btn-home">
             Get Started
           </button>
@@ -95,261 +84,6 @@
           </button>
         </a>
       </main>
-
-      <!-- Aside Left Starts -->
-
-      <aside class="aside-left">
-        <div class="aside-left-container">
-          <ul class="list-no-bullets aside-left-list">
-            <h3>Getting Started</h3>
-            <li class="aside-left-link">
-              <a href="#">Introduction</a>
-            </li>
-          </ul>
-
-          <ul class="list-no-bullets aside-left-list">
-            <h3>Components</h3>
-            <li class="aside-left-link">
-              <a href="#">Alert</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Avatar</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Badge</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Button</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Card</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Image</a>
-            </li>
-            <li class="aside-left-link">
-              <a href="#">Input</a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- Aside Left Ends -->
-
-      <!-- Main Documentation Starts -->
-
-      <main class="main-documentation">
-        <h1 class="main-head">Alerts</h1>
-        <p class="main-text">
-          Alerts can be used to show a message to the user.
-        </p>
-
-        <!-- Alert Danger Starts -->
-
-        <section class="section-component" id="alert-danger">
-          <h2 class="section-head">Danger Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-danger-solid">
-              Hey!👋 I'm a Danger Alert
-            </div>
-            <div class="alert alert-danger-outline">
-              Hey!👋 I'm a Danger Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-danger-solid">
-                    Hey!👋 I'm a Danger Alert
-                &lt;/div>
-                &lt;div class="alert alert-danger-outline">
-                    Hey!👋 I'm a Danger Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Danger Ends -->
-
-        <!-- Alert Info Starts -->
-
-        <section class="section-component" id="alert-info">
-          <h2 class="section-head">Info Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-info-solid">Hey!👋 I'm a Info Alert</div>
-            <div class="alert alert-info-outline">Hey!👋 I'm a Info Alert</div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-info-solid">
-                  Hey!👋 I'm a Info Alert
-                &lt;/div>
-                &lt;div class="alert alert-info-outline">
-                  Hey!👋 I'm a Info Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Info Ends -->
-
-        <!-- Alert Primary Starts -->
-
-        <section class="section-component" id="alert-primary">
-          <h2 class="section-head">Primary Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-primary-solid">
-              Hey!👋 I'm a Primary Alert
-            </div>
-            <div class="alert alert-primary-outline">
-              Hey!👋 I'm a Primary Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-primary-solid">
-                  Hey!👋 I'm a Primary Alert
-                &lt;/div>
-                &lt;div class="alert alert-primary-outline">
-                  Hey!👋 I'm a Primary Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Primary Ends -->
-
-        <!-- Alert Secondary Starts -->
-
-        <section class="section-component" id="alert-secondary">
-          <h2 class="section-head">Secondary Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-secondary-solid">
-              Hey!👋 I'm a Secondary Alert
-            </div>
-            <div class="alert alert-secondary-outline">
-              Hey!👋 I'm a Secondary Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-secondary-solid">
-                  Hey!👋 I'm a Secondary Alert
-                &lt;/div>
-                &lt;div class="alert alert-secondary-outline">
-                  Hey!👋 I'm a Secondary Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Secondary Ends -->
-
-        <!-- Alert Success Starts -->
-
-        <section class="section-component" id="alert-success">
-          <h2 class="section-head">Success Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-success-solid">
-              Hey!👋 I'm a Success Alert
-            </div>
-            <div class="alert alert-success-outline">
-              Hey!👋 I'm a Success Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-success-solid">
-                  Hey!👋 I'm a Success Alert
-                &lt;/div>
-                &lt;div class="alert alert-success-outline">
-                  Hey!👋 I'm a Success Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Success Ends -->
-
-        <!-- Alert Warning Starts -->
-
-        <section class="section-component" id="alert-warning">
-          <h2 class="section-head">Warning Alert</h2>
-
-          <div class="component-container">
-            <div class="alert alert-warning-solid">
-              Hey!👋 I'm a Warning Alert
-            </div>
-            <div class="alert alert-warning-outline">
-              Hey!👋 I'm a Warning Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-                &lt;div class="alert alert-warning-solid">
-                  Hey!👋 I'm a Warning Alert
-                &lt;/div>
-                &lt;div class="alert alert-warning-outline">
-                  Hey!👋 I'm a Warning Alert
-                &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Warning Ends -->
-      </main>
-
-      <!-- Main Documentation Ends -->
-
-      <!-- Aside Rigit Starts -->
-
-      <aside class="aside-right">
-        <div class="aside-right-container">
-          <ul class="list-no-bullets aside-right-list">
-            <h3>On this Page</h3>
-            <li class="aside-right-link">
-              <a href="#alert-danger">Danger Alert</a>
-            </li>
-
-            <li class="aside-right-link">
-              <a href="#alert-info">Info Alert</a>
-            </li>
-
-            <li class="aside-right-link">
-              <a href="#alert-primary">Primary Alert</a>
-            </li>
-
-            <li class="aside-right-link">
-              <a href="#alert-secondary">Secondary Alert</a>
-            </li>
-
-            <li class="aside-right-link">
-              <a href="#alert-success">Success Alert</a>
-            </li>
-
-            <li class="aside-right-link">
-              <a href="#alert-warning">Warning Alert</a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- Aside Right Ends -->
-    </div>
-
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
     </div>
   </body>
 </html>

@@ -17,7 +17,7 @@
   z-index: 9;
 }
 
-/* Component Container */
+/** Component Container **/
 
 .component-container {
   align-items: center;
@@ -27,18 +27,13 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding-top: 2rem;
 }
 
-/* Main  */
+/** Main  **/
 
 .main-documentation {
   grid-area: main;
   padding: 5rem 2rem 3rem 4rem;
-}
-
-.main-head {
-  margin-bottom: 3rem;
 }
 
 .main-text {
@@ -63,9 +58,5 @@
 
 .section-component {
   border-top: thin solid var(--COLOR-BRAND-LIGHT);
-  margin: 2rem 0;
 }
 
-.section-head {
-  margin: 2rem 0;
-}

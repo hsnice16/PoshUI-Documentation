@@ -16,13 +16,97 @@ body {
   color: var(--COLOR-SLATE-700);
   min-height: 100vh;
   max-width: 140rem;
-  padding: 2rem;
 }
+
+/** Link **/
+
+.link {
+  color: inherit;
+  font-size: 2rem;
+  position: relative;
+}
+
+.link::after {
+  background: var(--COLOR-SLATE-700);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s, left 0.3s;
+  width: 0;
+}
+
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.link-active {
+  color: var(--COLOR-BRAND);
+  font-weight: 600;
+}
+
+.link-active::after {
+  background: var(--COLOR-BRAND);
+}
+
+/** Home **/
+
+.btn-home {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-SLATE-300);
+  font-size: 2rem;
+  margin: 3rem 1rem 1rem 0;
+  width: 20rem;
+}
+
+.btn-primary-outline:hover {
+  background: var(--COLOR-SLATE-50);
+  color: var(--COLOR-BRAND);
+}
+
+.header {
+  align-items: center;
+  border-bottom: thin solid var(--COLOR-SLATE-300);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 4rem;
+}
+
+.img-brand-logo {
+  max-height: 7rem;
+  max-width: 7rem;
+}
+
+.link-brand {
+  color: var(--COLOR-BRAND);
+  font-size: 3.5rem;
+}
+
+.main {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10rem auto 0;
+  max-width: 55rem;
+}
+
 
 /** Media Query **/
 
 @media only screen and (max-width: 40em) {
+  .header {
+    padding: 1rem;
+  }
+
   html {
     font-size: 55%;
+  }
+
+  .main {
+    margin-top: 15rem;
+  }
+
+  .navbar {
+    margin-top: 2rem;
   }
 }
