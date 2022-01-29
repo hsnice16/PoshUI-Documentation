@@ -5,4 +5,8 @@
 
 /** Pages **/
 
+@import url("pages/Documentation/aside-left.css");
+@import url("pages/Documentation/aside-right.css");
+@import url("pages/Documentation/documentation.css");
+
 @import url("pages/Home/home.css");

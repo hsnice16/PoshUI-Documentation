@@ -13,6 +13,7 @@ body {
 /** Container **/
 
 .container {
+  color: var(--COLOR-SLATE-700);
   min-height: 100vh;
   max-width: 140rem;
   padding: 2rem;
