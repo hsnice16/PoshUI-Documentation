@@ -7,6 +7,45 @@
   grid-template-rows: 8rem 1fr;
 }
 
+/** Asides **/
+
+.aside-container {
+  background: var(--COLOR-SLATE-50);
+  position: fixed;
+}
+
+.aside-left {
+  grid-area: aside-left;
+}
+
+.aside-left-container {
+  margin: 3rem 1rem 1rem 6rem;
+}
+
+.aside-left-list h3 {
+  font-size: 2.1rem;
+}
+
+.aside-link {
+  margin: 1.2rem 0.2rem;
+}
+
+.aside-right {
+  grid-area: aside-right;
+}
+
+.aside-right-container {
+  margin: 3rem 2rem 1rem 1rem;
+}
+
+.aside-right-list a {
+  color: var(--COLOR-SLATE-700);
+}
+
+.aside-right-list a:hover {
+  color: var(--COLOR-BRAND);
+}
+
 /** Header Documentation **/
 
 .header-documentation {
@@ -29,7 +68,7 @@
   overflow: hidden;
 }
 
-/** Main  **/
+/** Main **/
 
 .main-documentation {
   grid-area: main;
@@ -41,7 +80,7 @@
   line-height: 1.5em;
 }
 
-/* Pre Code */
+/** Pre Code **/
 
 .pre-code {
   margin-bottom: -5rem;

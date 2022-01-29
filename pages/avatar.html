@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posh UI</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/brand-logos/favicon-16x16.png"
+    />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <!-- poshui-components cdn -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- poshui-documentation css -->
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body>
+    <div class="container documentation margin-auto padding-2">
+
+      <!-- Header Documentation Starts -->
+
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <a class="link-brand margin-lr-1" href="../index.html">Posh UI</a>
+
+        <nav class="margin-l-auto">
+          <ul>
+            <li class="d-i-block margin-lr-1">
+              <a class="link" href="../index.html">Home</a>
+            </li>
+            <li class="d-i-block margin-lr-1">
+              <a class="link" href="introduction.html">Documentation</a>
+            </li>
+            <li class="d-i-block margin-lr-1">
+              <a class="link"
+                href="https://github.com/hsnice16/PoshUI-Documentation"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Header Documentation Ends -->
+      
+      <!-- Aside Left Starts -->
+
+      <aside class="aside-left">
+        <div class="aside-container aside-left-container">
+          <ul class="aside-left-list margin-b-2">
+            <h3 class="margin-tb-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="introduction.html">Introduction</a>
+            </li>
+          </ul>
+
+          <ul class="aside-left-list margin-b-2">
+            <h3 class="margin-tb-1p5">Components</h3>
+            <li class="aside-link">
+              <a class=" link" href="alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="#">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="#">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="#">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="#">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="#">Input</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="margin-b-3">Avatar</h1>
+        <p class="main-text">
+          Avatars can be used for user profile picture.
+        </p>
+
+        <!-- Same Sized Avatars Starts -->
+
+        <section class="margin-tb-2 section-component" id="same-sized">
+          <h2 class="margin-tb-2">Same Sized Avatars</h2>
+
+          <div class="component-container padding-t-2">
+              <div>
+                <img
+                class="avatar"
+                src="../assets/svgs/female-avatar.svg"
+                alt="undraw female avatar svg"
+              />
+      
+              <img
+                class="avatar margin-lr-1"
+                src="../assets/jpegs/spider-man.jpg"
+                alt="spider man jpg"
+              />
+      
+              <img
+                class="avatar"
+                src="../assets/jpegs/black-panther.jpg"
+                alt="black panther jpg"
+              />
+      
+              <img
+                class="avatar margin-lr-1"
+                src="../assets/jpegs/iron-man.jpg"
+                alt="iron man jpg"
+              />
+      
+              <img
+                class="avatar"
+                src="../assets/svgs/male-avatar.svg"
+                alt="undraw male avatar svg"
+              />    
+            </div>
+          
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;img class="avatar" src="..." alt="..." />
+                &lt;img class="avatar margin-lr-1" src="..." alt="..." />        
+                &lt;img class="avatar" src="..." alt="..." />
+                &lt;img class="avatar margin-lr-1" src="..." alt="..." />
+                &lt;img class="avatar" src="..." alt="..." />
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Same Sized Avatars Ends -->
+
+        <!-- Different Sized Avatars Starts -->
+
+        <section class="margin-tb-2 section-component" id="different-sized">
+          <h2 class="margin-tb-2">Different Sized Avatars</h2>
+
+          <div class="component-container padding-t-2">
+            <div>
+               <img
+                class="avatar avatar-xs"
+                src="../assets/svgs/female-avatar.svg"
+                alt="undraw female avatar svg"
+              />
+      
+              <img
+                class="avatar avatar-sm margin-lr-1"
+                src="../assets/jpegs/spider-man.jpg"
+                alt="spider man jpg"
+              />
+      
+              <img
+                class="avatar"
+                src="../assets/jpegs/black-panther.jpg"
+                alt="black panther jpg"
+              />
+      
+              <img
+                class="avatar avatar-md margin-lr-1"
+                src="../assets/jpegs/iron-man.jpg"
+                alt="iron man jpg"
+              />
+      
+              <img
+                class="avatar avatar-lg"
+                src="../assets/svgs/male-avatar.svg"
+                alt="undraw male avatar svg"
+              />
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;img class="avatar avatar-xs" src="..." alt="..." />
+                &lt;img class="avatar avatar-sm margin-lr-1" src="..." alt="..." />
+                &lt;img class="avatar" src="..." alt="..." />
+                &lt;img class="avatar avatar-md margin-lr-1" src="..." alt="..." />
+                &lt;img class="avatar avatar-lg" src="..." alt="..." />
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Different Sized Avatars Ends -->
+
+      </main>
+
+      <!-- Main Documentation Ends -->
+
+      <!-- Aside Rigit Starts -->
+
+      <aside class="aside-right">
+        <div class="aside-container aside-right-container">
+          <ul class="aside-right-list margin-b-2">
+            <h3 class="margin-tb-1p5">On this Page</h3>
+            <li class="aside-link">
+              <a href="#same-sized">Same Sized Avatars</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#different-sized">Different Sized Avatars</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Aside Right Ends -->
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    </div>
+  </body>
+</html>
