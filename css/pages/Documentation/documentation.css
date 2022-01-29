@@ -1,0 +1,71 @@
+.documentation {
+  display: grid;
+  grid-template-areas:
+    "header header  header"
+    "aside-left main aside-right";
+  grid-template-columns: 25rem 1fr 20rem;
+  grid-template-rows: 8rem 1fr;
+}
+
+/** Header Documentation **/
+
+.header-documentation {
+  background: var(--COLOR-SLATE-50);
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* Component Container */
+
+.component-container {
+  align-items: center;
+  background: var(--COLOR-WHITE);
+  border: thin solid var(--COLOR-BRAND-LIGHT);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+/* Main  */
+
+.main-documentation {
+  grid-area: main;
+  padding: 5rem 2rem 3rem 4rem;
+}
+
+.main-head {
+  margin-bottom: 3rem;
+}
+
+.main-text {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+}
+
+/* Pre Code */
+
+.pre-code {
+  margin-bottom: -5rem;
+  width: 100%;
+}
+
+.pre-code > code.hljs {
+  background: var(--COLOR-BRAND-LIGHT);
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+/** Section **/
+
+.section-component {
+  border-top: thin solid var(--COLOR-BRAND-LIGHT);
+  margin: 2rem 0;
+}
+
+.section-head {
+  margin: 2rem 0;
+}
