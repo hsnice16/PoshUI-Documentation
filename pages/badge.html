@@ -25,6 +25,15 @@
       href="assets/brand-logos/favicon-16x16.png"
     />
 
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- highlight.js cdn -->
     <link
       rel="stylesheet"
@@ -92,13 +101,13 @@
               <a class=" link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
-              <a class="link link-active" href="avatar.html">Avatar</a>
+              <a class="link" href="avatar.html">Avatar</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
+              <a class="link link-active" href="badge.html">Badge</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
+              <a class="link" href="#">Button</a>
             </li>
             <li class="aside-link">
               <a class="link" href="#">Card</a>
@@ -118,114 +127,115 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="margin-b-3">Avatar</h1>
+        <h1 class="margin-b-3">Badge</h1>
         <p class="main-text">
-          Avatars can be used for user profile picture.
+          Badge can be used to show either status of the user (online, or offline) or you can use it show notification count.
         </p>
 
-        <!-- Same Sized Avatars Starts -->
+        <!-- Badge on Icons Starts -->
 
-        <section class="margin-tb-2 section-component" id="same-sized">
-          <h2 class="margin-tb-2">Same Sized Avatars</h2>
+        <section class="margin-tb-2 section-component" id="badge-icon">
+          <h2 class="margin-tb-2">Badge on Icons</h2>
 
           <div class="component-container padding-t-2">
-              <div>
-                <img
-                class="avatar"
-                src="../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
-              />
+            <div>
+              <button class="badge-btn margin-lr-1">
+                <i class="fas fa-home"></i>
+                <span class="badge-count bg-amber">9</span>
+              </button>
       
-              <img
-                class="avatar margin-lr-1"
-                src="../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
+              <button class="badge-btn margin-lr-1">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-online">9+</span>
+              </button>
       
-              <img
-                class="avatar"
-                src="../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
-      
-              <img
-                class="avatar margin-lr-1"
-                src="../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-      
-              <img
-                class="avatar"
-                src="../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
-              />    
+              <button class="badge-btn margin-lr-1">
+                <i class="fas fa-bell"></i>
+                <span class="badge-count bg-dnd"> 99+ </span>
+              </button>            
             </div>
           
             <pre class="pre-code">
               <code class="language-html">      
-                &lt;img class="avatar" src="..." alt="..." />
-                &lt;img class="avatar margin-lr-1" src="..." alt="..." />        
-                &lt;img class="avatar" src="..." alt="..." />
-                &lt;img class="avatar margin-lr-1" src="..." alt="..." />
-                &lt;img class="avatar" src="..." alt="..." />
+                &lt;button class="badge-btn margin-lr-1">
+                  &lt;i class="fas fa-home">&lt;/i>
+                  &lt;span class="badge-count bg-amber">9&lt;/span>
+                &lt;/button>
+        
+                &lt;button class="badge-btn margin-lr-1">
+                  &lt;i class="fas fa-shopping-cart">&lt;/i>
+                  &lt;span class="badge-count bg-online">9+&lt;/span>
+                &lt;/button>
+        
+                &lt;button class="badge-btn margin-lr-1">
+                  &lt;i class="fas fa-bell">&lt;/i>
+                  &lt;span class="badge-count bg-dnd"> 99+ &lt;/span>
+                &lt;/button>            
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Same Sized Avatars Ends -->
+        <!-- Badge on Icons Ends -->
 
-        <!-- Different Sized Avatars Starts -->
+        <!-- Badge on Avatars Starts -->
 
-        <section class="margin-tb-2 section-component" id="different-sized">
-          <h2 class="margin-tb-2">Different Sized Avatars</h2>
+        <section class="margin-tb-2 section-component" id="badge-avatar">
+          <h2 class="margin-tb-2">Badge on Avatars</h2>
 
           <div class="component-container padding-t-2">
-            <div>
-               <img
-                class="avatar avatar-xs"
+            <div class="badge">
+              <img
+                class="avatar"
                 src="../assets/svgs/female-avatar.svg"
                 alt="undraw female avatar svg"
               />
+    
+              <span class="badge-status bg-online"></span>
+            </div>
       
+            <div class="badge">
               <img
-                class="avatar avatar-sm margin-lr-1"
+                class="avatar"
                 src="../assets/jpegs/spider-man.jpg"
                 alt="spider man jpg"
               />
-      
+    
+              <span class="badge-status bg-dnd"></span>
+            </div>
+    
+            <div class="badge">
               <img
                 class="avatar"
-                src="../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
-      
-              <img
-                class="avatar avatar-md margin-lr-1"
-                src="../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-      
-              <img
-                class="avatar avatar-lg"
                 src="../assets/svgs/male-avatar.svg"
                 alt="undraw male avatar svg"
               />
+    
+              <span class="badge-status bg-offline"></span>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-                &lt;img class="avatar avatar-xs" src="..." alt="..." />
-                &lt;img class="avatar avatar-sm margin-lr-1" src="..." alt="..." />
-                &lt;img class="avatar" src="..." alt="..." />
-                &lt;img class="avatar avatar-md margin-lr-1" src="..." alt="..." />
-                &lt;img class="avatar avatar-lg" src="..." alt="..." />
+                &lt;div class="badge">
+                  &lt;img class="avatar" src="..." alt="..." />        
+                  &lt;span class="badge-status bg-online">&lt;/span>
+                &lt;/div>
+      
+                &lt;div class="badge">
+                  &lt;img class="avatar" src="..." alt="..." />        
+                  &lt;span class="badge-status bg-dnd">&lt;/span>
+                &lt;/div>
+        
+                &lt;div class="badge">
+                  &lt;img class="avatar" src="..." alt="..." />
+                  &lt;span class="badge-status bg-offline">&lt;/span>
+                &lt;/div>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Different Sized Avatars Ends -->
+        <!-- Badge on Avatars Ends -->
 
       </main>
 
@@ -238,11 +248,11 @@
           <ul class="aside-right-list margin-b-2">
             <h3 class="margin-tb-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#same-sized">Same Sized Avatars</a>
+              <a href="#badge-icon">Badge on Icons</a>
             </li>
 
             <li class="aside-link">
-              <a href="#different-sized">Different Sized Avatars</a>
+              <a href="#badge-avatar">Badge on Avatars</a>
             </li>
           </ul>
         </div>
@@ -254,6 +264,5 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    </div>
   </body>
 </html>
