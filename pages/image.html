@@ -82,14 +82,14 @@
           <ul class="aside-left-list margin-b-2">
             <h3 class="margin-tb-1p5">Getting Started</h3>
             <li class="aside-link">
-              <a class="link link-active" href="introduction.html">Introduction</a>
+              <a class="link" href="introduction.html">Introduction</a>
             </li>
           </ul>
 
           <ul class="aside-left-list margin-b-2">
             <h3 class="margin-tb-1p5">Components</h3>
             <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+              <a class=" link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
               <a class="link" href="avatar.html">Avatar</a>
@@ -104,7 +104,7 @@
               <a class="link" href="#">Card</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
+              <a class="link link-active" href="image.html">Image</a>
             </li>
             <li class="aside-link">
               <a class="link" href="input.html">Input</a>
@@ -118,27 +118,103 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="margin-b-3">Introduction</h1>
+        <h1 class="margin-b-3">Image</h1>
         <p class="main-text">
-          Posh UI is a continuously developing open source project. You can use it to build awesome UI layouts. To know more about it, look its
-         <a href="https://github.com/hsnice16/PoshUI-Documentation" target="_blank"> <span class="link intro-github">GitHub</span> </a> repo.
+          Image can be used to display large picture on the website.
         </p>
 
-        <section class="margin-tb-2 section-component" id="quick-start">
-          <h2 class="margin-tb-2">Quick Start</h2>
-          <p class="margin-tb-2 section-text">To start using the components in your project, Copy-paste the stylesheet <code  class="language-html hljs language-xml">&lt;link></code> into your <code  class="language-html hljs language-xml">&lt;head></code> before all other stylesheets to load our CSS.</p>
+        <!-- Round Image Starts -->
 
-          <div class="component-container">
-            <pre class="pre-code intro-pre">
-              <code class="language-html">
-                &lt;link
-                  rel="stylesheet"
-                  href="https://poshui-components.netlify.app/css/main.css"
-                />          
+        <section class="margin-tb-2 section-component" id="img-round">
+          <h2 class="margin-tb-2">Round Image</h2>
+
+          <div class="component-container padding-t-2">
+            <div>
+                <img
+                    class="img img-round margin-lr-1"
+                    src="../assets/jpegs/do-something-great.jpg"
+                    alt="unsplash do something great jpg"
+                    />
+                <img
+                    class="img img-round margin-lr-1"
+                    src="../assets/jpegs/stanlee.jpg"
+                    alt="unsplash stanlee jpg"/>
+            </div>
+          
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;img class="img img-round margin-lr-1" src="..." alt="..."/>
+                &lt;img class="img img-round margin-lr-1" src="..." alt="..."/>
               </code>
             </pre>
           </div>
         </section>
+
+        <!-- Round Image Ends -->
+
+        <!-- Square Image Starts -->
+
+        <section class="margin-tb-2 section-component" id="img-square">
+          <h2 class="margin-tb-2">Square Image</h2>
+
+          <div class="component-container padding-t-2">
+            <div>
+              <img
+                class="img img-square margin-lr-1"
+                src="../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
+              />
+              <img
+                class="img img-square margin-lr-1"
+                src="../assets/jpegs/do-something-great.jpg"
+                alt="unsplash do something great jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;img class="img img-square margin-lr-1" src="..." alt="..."/>
+                &lt;img class="img img-square margin-lr-1" src="..." alt="..."/>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Square Image Ends -->
+
+        <!-- Responsive Image Starts -->
+
+        <section class="margin-tb-2 section-component" id="img-responsive">
+            <h2 class="margin-tb-2">Responsive Image</h2>
+            <p class="margin-tb-2 section-text">
+              Resize your browser window, to see its responsiveness.
+            </p>
+    
+            <div class="component-container padding-t-2">
+              <div class="img-container">
+                <!-- .img-container {max-width: 52vw;} -->
+
+                <img
+                    class="img-responsive"
+                    src="../assets/jpegs/stanlee.jpg"
+                    alt="unsplash stanlee jpg"
+                  />
+              </div>
+    
+              <pre class="pre-code">
+                <code class="language-html">  
+                  &lt;div class="img-container">
+                    &lt;!-- .img-container {max-width: 52vw;} -->
+
+                    &lt;img class="img-responsive" src="..." alt="..."/>
+                  &lt;div>
+                </code>
+              </pre>
+            </div>
+        </section>
+
+        <!-- Square Image Ends -->          
+
       </main>
 
       <!-- Main Documentation Ends -->
@@ -149,8 +225,16 @@
         <div class="aside-container aside-right-container">
           <ul class="aside-right-list margin-b-2">
             <h3 class="margin-tb-1p5">On this Page</h3>
-            <li class="aside-right-link">
-              <a href="#quick-start">Quick Start</a>
+            <li class="aside-link">
+              <a href="#img-round">Round Image</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#img-square">Square Image</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#img-responsive">Responsive Image</a>
             </li>
           </ul>
         </div>
