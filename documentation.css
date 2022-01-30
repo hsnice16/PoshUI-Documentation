@@ -87,7 +87,7 @@
   width: 100%;
 }
 
-.pre-code > code.hljs {
+code.hljs {
   background: var(--COLOR-BRAND-LIGHT);
   font-size: 1.6rem;
   line-height: 1.5em;
@@ -99,3 +99,17 @@
   border-top: thin solid var(--COLOR-BRAND-LIGHT);
 }
 
+.section-text {
+  font-size: 1.65rem;
+  line-height: 1.5em;
+}
+
+/** Introduction Page **/
+
+.intro-pre {
+  margin-top: -2rem;
+}
+
+.intro-github {
+  color: var(--COLOR-BRAND-DARK);
+}
