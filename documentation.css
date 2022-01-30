@@ -46,6 +46,16 @@
   color: var(--COLOR-BRAND);
 }
 
+/** Introduction Page **/
+
+.intro-pre {
+  margin-top: -2rem;
+}
+
+.intro-github {
+  color: var(--COLOR-BRAND-DARK);
+}
+
 /** Header Documentation **/
 
 .header-documentation {
@@ -80,6 +90,17 @@
   line-height: 1.5em;
 }
 
+/** Overidding **/
+
+.form {
+  border: thin solid var(--COLOR-SLATE-300);
+  width: 30rem;
+}
+
+.textarea-container {
+  width: 40rem;
+}
+
 /** Pre Code **/
 
 .pre-code {
@@ -102,14 +123,4 @@ code.hljs {
 .section-text {
   font-size: 1.65rem;
   line-height: 1.5em;
-}
-
-/** Introduction Page **/
-
-.intro-pre {
-  margin-top: -2rem;
-}
-
-.intro-github {
-  color: var(--COLOR-BRAND-DARK);
 }
