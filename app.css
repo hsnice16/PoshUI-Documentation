@@ -60,7 +60,7 @@ body {
   width: 20rem;
 }
 
-.btn-primary-outline:hover {
+.btn-home-outline:hover {
   background: var(--COLOR-SLATE-50);
   color: var(--COLOR-BRAND);
 }
