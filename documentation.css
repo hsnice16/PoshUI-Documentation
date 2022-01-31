@@ -46,26 +46,6 @@
   color: var(--COLOR-BRAND);
 }
 
-/** Introduction Page **/
-
-.intro-pre {
-  margin-top: -2rem;
-}
-
-.intro-github {
-  color: var(--COLOR-BRAND-DARK) !important;
-}
-
-/** Header Documentation **/
-
-.header-documentation {
-  background: var(--COLOR-SLATE-50);
-  grid-area: header;
-  position: sticky;
-  top: 0;
-  z-index: 9;
-}
-
 /** Component Container **/
 
 .component-container {
@@ -78,11 +58,63 @@
   overflow: hidden;
 }
 
+.primary-btn-container {
+  text-align: center;
+}
+
+/** Footer **/
+
+footer {
+  align-items: center;
+  background: var(--COLOR-SLATE-50);
+  border-top: thin solid var(--COLOR-BRAND-LIGHT);
+  bottom: 0;
+  display: none;
+  height: 5rem;
+  left: 0;
+  margin: 0 0.5rem;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  right: 0;
+  z-index: 9;
+}
+
+/** Header Documentation **/
+
+.header-documentation {
+  background: var(--COLOR-SLATE-50);
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/** Introduction Page **/
+
+.intro-pre {
+  margin-top: -2rem;
+}
+
+.intro-github {
+  color: var(--COLOR-BRAND-DARK) !important;
+}
+
+/** Link to Top **/
+
+.link-to-top {
+  bottom: 0;
+  display: none;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  position: fixed;
+  right: 0;
+}
+
 /** Main **/
 
 .main-documentation {
   grid-area: main;
-  padding: 5rem 2rem 3rem 4rem;
+  padding: 4rem 2rem 3rem 4rem;
 }
 
 .main-text {

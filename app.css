@@ -85,28 +85,97 @@ body {
 
 .main {
   font-size: 2.5rem;
-  text-align: center;
   margin: 10rem auto 0;
   max-width: 55rem;
+  text-align: center;
 }
-
 
 /** Media Query **/
 
-@media only screen and (max-width: 40em) {
-  .header {
-    padding: 1rem;
+@media only screen and (max-width: 63em) {
+  .documentation {
+    grid-template-areas:
+      "header header"
+      "aside-left main";
+    grid-template-columns: 25rem minmax(0, 1fr);
   }
 
+  .aside-right, .aside-right-container {
+    display: none;
+  }
+
+  .link-to-top {
+    display: unset;
+  }
+}
+
+@media  only screen and (max-width: 59em) {
+  .documentation {
+    grid-template-columns: 20rem minmax(0, 1fr);
+  }
+
+  .aside-left-container {
+    margin-left: 3rem;
+  }
+
+  .card-horizontal {
+    margin: 0 1rem;
+  }
+
+  .textarea-container {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 44em) {
+  .documentation {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .aside-left, .aside-left-container {
+    display: none;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .header {
+    padding: 1rem 0.5rem;
+  }
+
+  .link-to-top {
+    display: none;
+  }
+  
+  .main-documentation {
+    padding: 3.5rem 0.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 40em) {
   html {
-    font-size: 55%;
+    font-size: 60%;
+  }
+
+  .documentation {
+    grid-template-rows: 12rem 1fr;
+  }
+
+  .header {
+    height: 12rem;
   }
 
   .main {
-    margin-top: 15rem;
-  }
-
-  .navbar {
-    margin-top: 2rem;
+    font-size: 2rem;
+    margin-top: 10rem;
   }
 }
