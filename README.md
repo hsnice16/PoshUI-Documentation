@@ -133,3 +133,11 @@ You will find the following types of *Input* on https://poshui.netlify.app/pages
 ---
 
 ![posh ui gif](assets/gifs/posh-ui.gif)
+
+---
+
+<div align="center">
+
+Have a look at the implementation of [Posh UI Components](https://github.com/hsnice16/PoshUI-Components).
+
+</div>
