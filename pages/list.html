@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posh UI | List Component</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/brand-logos/favicon-16x16.png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- poshui-components cdn -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- poshui-documentation css -->
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
+
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <a class="link-brand mx-1" href="../index.html">Posh UI</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/hsnice16/PoshUI-Documentation"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Header Documentation Ends -->
+
+      <!-- Aside Left Starts -->
+
+      <aside class="aside-left">
+        <div class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-2">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="introduction.html">Introduction</a>
+            </li>
+          </ul>
+
+          <ul class="aside-left-list mb-2">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="list.html">List</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="mb-3">List</h1>
+        <p class="main-text">List can be used to show a list of items</p>
+
+        <!-- Numbered List Starts -->
+
+        <section class="my-2 section-component" id="numbered">
+          <h2 class="my-2">Numbered List</h2>
+
+          <div class="component-container pt-2">
+            <ol>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol>
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Numbered List Ends -->
+
+        <!-- Reversed List Starts -->
+
+        <section class="my-2 section-component" id="reversed">
+          <h2 class="my-2">Reversed List</h2>
+
+          <div class="component-container pt-2">
+            <ol reversed>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol reversed>
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Reversed List Ends -->
+
+        <!-- Lower Roman List Starts -->
+
+        <section class="my-2 section-component" id="lower-roman">
+          <h2 class="my-2">Lower Roman List</h2>
+
+          <div class="component-container pt-2">
+            <ol class="list-lower-roman">
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol class="list-lower-roman">
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Lower Roman List Ends -->
+
+        <!-- Lower Alpha List Starts -->
+
+        <section class="my-2 section-component" id="lower-alpha">
+          <h2 class="my-2">Lower Alpha List</h2>
+
+          <div class="component-container pt-2">
+            <ol class="list-lower-alpha">
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol class="list-lower-alpha">
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ol>
+               </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Lower Alpha List Ends -->
+
+        <!-- Disc List Starts -->
+
+        <section class="my-2 section-component" id="disc">
+          <h2 class="my-2">Disc List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-disc">
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-disc">
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Disc List Ends -->
+
+        <!-- Circle List Starts -->
+
+        <section class="my-2 section-component" id="circle">
+          <h2 class="my-2">Circle List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-circle">
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-circle">
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Circle List Ends -->
+
+        <!-- Square List Starts -->
+
+        <section class="my-2 section-component" id="square">
+          <h2 class="my-2">Square List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-square">
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-square">
+              &lt;li>List Item One&lt;/li>
+              &lt;li>List Item Two&lt;/li>
+              &lt;li>List Item Three&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Square List Ends -->
+
+        <!-- Category Checkbox List Starts -->
+
+        <section class="my-2 section-component" id="category-checkbox">
+          <h2 class="my-2">Category Checkbox List</h2>
+
+          <div class="component-container pt-2">
+            <ul>
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="bobbleheads">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="bobbleheads"
+                  />
+                  Bobblehead's</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="mens-clothing">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="mens-clothing"
+                  />
+                  Men's Clothing</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="kids-clothing">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="kids-clothing"
+                  />
+                  Kid's Clothing</label
+                >
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">
+          &lt;ul>
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="bobbleheads">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="bobbleheads"
+                  />
+                  Bobblehead's
+                &lt;/label>
+              &lt;/li>
+
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="mens-clothing">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="mens-clothing"
+                  />
+                  Men's Clothing
+                &lt;/label>
+              &lt;/li>
+
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="kids-clothing">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="kids-clothing"
+                  />
+                  Kid's Clothing
+                &lt;/label>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Category Checkbox List Ends -->
+
+        <!-- Price Radio List Starts -->
+
+        <section class="my-2 section-component" id="price-radio">
+          <h2 class="my-2">Price Radio List</h2>
+
+          <div class="component-container pt-2">
+            <ul>
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="low-to-high">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="radio"
+                    name="price"
+                    id="low-to-high"
+                  />
+                  Price - Low to High</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="high-to-low">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="radio"
+                    name="price"
+                    id="high-to-low"
+                  />
+                  Price - High to Low</label
+                >
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">
+          &lt;ul>
+              &lt;li class="my-0p5 ml-1">
+                  &lt;label class="cursor-ptr" for="low-to-high">
+                    &lt;input
+                        class="cursor-ptr mr-1"
+                        type="radio"
+                        name="price"
+                        id="low-to-high"
+                    />
+                    Price - Low to High
+                  &lt;/label>
+              &lt;/li>
+    
+              &lt;li class="my-0p5 ml-1">
+                  &lt;label class="cursor-ptr" for="high-to-low">
+                    &lt;input
+                        class="cursor-ptr mr-1"
+                        type="radio"
+                        name="price"
+                        id="high-to-low"
+                    />
+                    Price - High to Low
+                  &lt;/label>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Price Radio List Ends -->
+
+        <!-- Notification Stacked List Starts -->
+
+        <section class="my-2 section-component" id="notification-stacked">
+          <h2 class="my-2">Notification Stacked List</h2>
+
+          <div class="component-container pt-2">
+            <ul
+              class="border-thin border-solid border-slate-500 border-r-0p2 w-24"
+            >
+              <li
+                class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >New Notification 1
+                  <span class="ml-auto text-slate-600 translate-y"
+                    ><i class="fas fa-times"></i></span
+                ></a>
+              </li>
+
+              <li
+                class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >New Notification 2
+                  <span class="ml-auto text-slate-600 translate-y"
+                    ><i class="fas fa-times"></i></span
+                ></a>
+              </li>
+
+              <li
+                class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                <a class="flex text-lime-600 fw-bold" href="#"
+                  >Viewed Notification
+                  <span class="ml-auto text-lime-500 translate-y"
+                    ><i class="fas fa-check"></i></span
+                ></a>
+              </li>
+
+              <li
+                class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                <a class="flex text-lime-600 fw-bold" href="#"
+                  >Viewed Notification
+                  <span class="ml-auto text-lime-500 translate-y"
+                    ><i class="fas fa-check"></i></span
+                ></a>
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul
+              class="border-thin border-solid border-slate-500 border-r-0p2 w-24"
+            >
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+                >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      New Notification 1
+                      &lt;span class="ml-auto text-slate-600 translate-y">
+                      &lt;i class="fas fa-times">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
+
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      New Notification 2
+                      &lt;span class="ml-auto text-slate-600 translate-y">
+                      &lt;i class="fas fa-times">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
+
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-lime-600 fw-bold" href="#">
+                      Viewed Notification
+                      &lt;span class="ml-auto text-lime-500 translate-y">
+                      &lt;i class="fas fa-check">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
+
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-lime-600 fw-bold" href="#">
+                      Viewed Notification
+                      &lt;span class="ml-auto text-lime-500 translate-y">
+                      &lt;i class="fas fa-check">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Notification Stacked List Ends -->
+      </main>
+
+      <!-- Main Documentation Ends -->
+
+      <!-- Aside Rigit Starts -->
+
+      <aside class="aside-right">
+        <div class="aside-container aside-right-container">
+          <ul class="aside-right-list mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li class="aside-link">
+              <a href="#numbered">Numbered List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#reversed">Reversed List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#lower-roman">Lower Roman List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#lower-alpha">Lower Alpha List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#disc">Disc List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#circle">Circle List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#square">Square List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#category-checkbox">Category Checkbox List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#price-radio">Price Radio List</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#notification-stacked">Notification Stacked List</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Aside Right Ends -->
+
+      <!-- Footer Starts -->
+
+      <footer>
+        <div>
+          <a class="link" href="input.html">
+            <i class="fas fa-hand-point-left"></i> Input
+          </a>
+        </div>
+      </footer>
+
+      <!-- Footer Ends -->
+
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
