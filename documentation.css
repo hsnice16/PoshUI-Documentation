@@ -19,7 +19,10 @@
 }
 
 .aside-left-container {
-  margin: 3rem 1rem 1rem 6rem;
+  height: 80vh;
+  margin: 1rem 1rem 3rem 6rem;
+  padding: 0 2rem 0.5rem 0;
+  overflow-y: auto;
 }
 
 .aside-left-list h3 {
@@ -35,7 +38,7 @@
 }
 
 .aside-right-container {
-  margin: 3rem 2rem 1rem 1rem;
+  margin: 1rem 2rem 3rem 1rem;
 }
 
 .aside-right-list a {
@@ -114,7 +117,7 @@ footer {
 
 .main-documentation {
   grid-area: main;
-  padding: 4rem 2rem 3rem 4rem;
+  padding: 2.5rem 2rem 3rem 4rem;
 }
 
 .main-text {
