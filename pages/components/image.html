@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Avatar Component</title>
+    <title>Posh UI | List Component</title>
 
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../assets/brand-logos/apple-touch-icon.png"
+      href="../../assets/brand-logos/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../assets/brand-logos/favicon-32x32.png"
+      href="../../assets/brand-logos/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../assets/brand-logos/favicon-16x16.png"
+      href="../../assets/brand-logos/favicon-16x16.png"
     />
 
     <!-- font awesome -->
@@ -47,7 +47,7 @@
     />
 
     <!-- poshui-documentation css -->
-    <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
     <div class="container documentation m-auto p-2">
@@ -56,18 +56,18 @@
       <header class="header header-documentation">
         <img
           class="img-brand-logo"
-          src="../assets/brand-logos/brand-logo.png"
+          src="../../assets/brand-logos/brand-logo.png"
           alt="brand logo png"
         />
-        <a class="link-brand mx-1" href="../index.html">Posh UI</a>
+        <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
         <nav class="ml-auto">
           <ul>
             <li class="inline-block mx-1">
-              <a class="link" href="../index.html">Home</a>
+              <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="introduction.html">Docs</a>
+              <a class="link" href="../getting-started/introduction.html">Docs</a>
             </li>
             <li class="inline-block mx-1">
               <a
@@ -86,11 +86,20 @@
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
-        <div class="aside-container aside-left-container">
+        <nav class="aside-container aside-left-container">
           <ul class="aside-left-list mb-2">
             <h3 class="my-1p5">Getting Started</h3>
             <li class="aside-link">
-              <a class="link" href="introduction.html">Introduction</a>
+              <a class="link" href="../getting-started/introduction.html">Introduction</a>
+            </li>
+          </ul>
+
+          <ul class="aside-left-list mb-2">
+            <h3 class="my-1p5">Layout</h3>
+            <li class="aside-link">
+              <a class="link" href="../layout/css-grid.html"
+                >CSS Grid</a
+              >
             </li>
           </ul>
 
@@ -100,7 +109,7 @@
               <a class="link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
-              <a class="link link-active" href="avatar.html">Avatar</a>
+              <a class="link" href="avatar.html">Avatar</a>
             </li>
             <li class="aside-link">
               <a class="link" href="badge.html">Badge</a>
@@ -112,7 +121,7 @@
               <a class="link" href="card.html">Card</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
+              <a class="link link-active" href="image.html">Image</a>
             </li>
             <li class="aside-link">
               <a class="link" href="input.html">Input</a>
@@ -121,7 +130,7 @@
               <a class="link" href="list.html">List</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </aside>
 
       <!-- Aside Left Ends -->
@@ -129,112 +138,103 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">Avatar</h1>
-        <p class="main-text">Avatars can be used for user profile picture.</p>
+        <h1 class="mb-3">Image</h1>
+        <p class="main-text">
+          Image can be used to display large picture on the website.
+        </p>
 
-        <!-- Same Sized Avatars Starts -->
+        <!-- Round Image Starts -->
 
-        <section class="my-2 section-component" id="same-sized">
-          <h2 class="my-2">Same Sized Avatars</h2>
+        <section class="my-2 section-component" id="img-round">
+          <h2 class="my-2">Round Image</h2>
 
           <div class="component-container pt-2">
             <div>
               <img
-                class="avatar"
-                src="../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
+                class="img img-round mx-1"
+                src="../../assets/jpegs/do-something-great.jpg"
+                alt="unsplash do something great jpg"
               />
-
               <img
-                class="avatar mx-1"
-                src="../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
-
-              <img
-                class="avatar"
-                src="../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
-
-              <img
-                class="avatar mx-1"
-                src="../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-
-              <img
-                class="avatar"
-                src="../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
+                class="img img-round mx-1"
+                src="../../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
               />
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar mx-1" src="..." alt="..." />        
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar mx-1" src="..." alt="..." />
-          &lt;img class="avatar" src="..." alt="..." />
+          &lt;img class="img img-round mx-1" src="..." alt="..."/>
+          &lt;img class="img img-round mx-1" src="..." alt="..."/>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Same Sized Avatars Ends -->
+        <!-- Round Image Ends -->
 
-        <!-- Different Sized Avatars Starts -->
+        <!-- Square Image Starts -->
 
-        <section class="my-2 section-component" id="different-sized">
-          <h2 class="my-2">Different Sized Avatars</h2>
+        <section class="my-2 section-component" id="img-square">
+          <h2 class="my-2">Square Image</h2>
 
           <div class="component-container pt-2">
             <div>
               <img
-                class="avatar avatar-xs"
-                src="../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
+                class="img img-square mx-1"
+                src="../../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
               />
-
               <img
-                class="avatar avatar-sm mx-1"
-                src="../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
-
-              <img
-                class="avatar"
-                src="../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
-
-              <img
-                class="avatar avatar-md mx-1"
-                src="../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-
-              <img
-                class="avatar avatar-lg"
-                src="../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
+                class="img img-square mx-1"
+                src="../../assets/jpegs/do-something-great.jpg"
+                alt="unsplash do something great jpg"
               />
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="avatar avatar-xs" src="..." alt="..." />
-          &lt;img class="avatar avatar-sm mx-1" src="..." alt="..." />
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar avatar-md mx-1" src="..." alt="..." />
-          &lt;img class="avatar avatar-lg" src="..." alt="..." />
+          &lt;img class="img img-square mx-1" src="..." alt="..."/>
+          &lt;img class="img img-square mx-1" src="..." alt="..."/>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Different Sized Avatars Ends -->
+        <!-- Square Image Ends -->
+
+        <!-- Responsive Image Starts -->
+
+        <section class="my-2 section-component" id="img-responsive">
+          <h2 class="my-2">Responsive Image</h2>
+          <p class="my-2 section-text">
+            Resize your browser window, to see its responsiveness.
+          </p>
+
+          <div class="component-container pt-2">
+            <div class="img-container">
+              <!-- .img-container {max-width: 52vw;} -->
+
+              <img
+                class="img-responsive"
+                src="../../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
+                <code class="language-html">  
+            &lt;div class="img-container">
+              &lt;!-- .img-container {max-width: 52vw;} -->
+
+              &lt;img class="img-responsive" src="..." alt="..."/>
+            &lt;div>
+                </code>
+              </pre>
+          </div>
+        </section>
+
+        <!-- Square Image Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -242,18 +242,22 @@
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
-        <div class="aside-container aside-right-container">
+        <nav class="aside-container aside-right-container">
           <ul class="aside-right-list mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#same-sized">Same Sized Avatars</a>
+              <a href="#img-round">Round Image</a>
             </li>
 
             <li class="aside-link">
-              <a href="#different-sized">Different Sized Avatars</a>
+              <a href="#img-square">Square Image</a>
+            </li>
+
+            <li class="aside-link">
+              <a href="#img-responsive">Responsive Image</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </aside>
 
       <!-- Aside Right Ends -->
@@ -262,13 +266,13 @@
 
       <footer>
         <div>
-          <a class="link" href="alert.html">
-            <i class="fas fa-hand-point-left"></i> Alert
+          <a class="link" href="card.html">
+            <i class="fas fa-hand-point-left"></i> Card
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="badge.html">
-            Badge <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="input.html">
+            Input <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
