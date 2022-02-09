@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | CSS Grid Layout</title>
+    <title>Posh UI | Typography Getting Started</title>
 
     <!-- favicon -->
     <link
@@ -67,9 +67,7 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="introduction.html">Docs</a>
             </li>
             <li class="inline-block mx-1">
               <a
@@ -92,22 +90,18 @@
           <ul class="aside-left-list mb-3">
             <h3 class="my-1p5">Getting Started</h3>
             <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+              <a class="link" href="introduction.html">Introduction</a>
             </li>
 
             <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+              <a class="link link-active" href="typography.html">Typography</a>
             </li>
           </ul>
 
           <ul class="aside-left-list mb-3">
             <h3 class="my-1p5">Layout</h3>
             <li class="aside-link">
-              <a class="link link-active" href="css-grid.html">CSS Grid</a>
+              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
             </li>
           </ul>
 
@@ -146,150 +140,128 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">CSS Grid</h1>
+        <h1 class="mb-3">Typography</h1>
         <p class="main-text">
-          CSS Grid can be used to structure elements in rows and columns.
+          Use Typography to format text content on your web site.
         </p>
 
-        <!-- Two Columns Grid Starts -->
+        <!-- Display Starts -->
 
-        <section class="my-2 section-component" id="two-columns">
-          <h2 class="my-2">Two Columns Grid</h2>
+        <section class="my-2 section-component" id="display">
+          <h2 class="my-2">Display</h2>
 
           <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-cols-2 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Two
-              </div>
-            </div>
+            <p class="fs-xs">Extra Small Posh UI</p>
+            <p class="fs-sm">Small Posh UI</p>
+            <p class="fs-md">Medium Posh UI</p>
+            <p class="fs-lg">Large Posh UI</p>
+            <p class="fs-xl">Extra Large Posh UI</p>
+            <p class="fs-xxl">Extra Extra Large Posh UI</p>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-cols-2 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-          &lt;/div>
+          &lt;p class="fs-xs">Extra Small Posh UI&lt;/p>
+          &lt;p class="fs-sm">Small Posh UI&lt;/p>
+          &lt;p class="fs-md">Medium Posh UI&lt;/p>
+          &lt;p class="fs-lg">Large Posh UI&lt;/p>
+          &lt;p class="fs-xl">Extra Large Posh UI&lt;/p>
+          &lt;p class="fs-xxl">Extra Extra Large Posh UI&lt;/p>    
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Two Columns Grid Ends -->
+        <!-- Display Ends -->
 
-        <!-- Two Rows Grid Starts -->
+        <!-- Headings Starts -->
 
-        <section class="my-2 section-component" id="two-rows">
-          <h2 class="my-2">Two Rows Grid</h2>
+        <section class="my-2 section-component" id="headings">
+          <h2 class="my-2">Headings</h2>
 
           <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-rows-2 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Two
-              </div>
-            </div>
+            <h1 class="my-0p5 fs-3">h1. Posh UI heading</h1>
+            <h2 class="my-0p5">h2. Posh UI heading</h2>
+            <h3 class="my-0p5">h3. Posh UI heading</h3>
+            <h4 class="my-0p5">h4. Posh UI heading</h4>
+            <h5 class="my-0p5">h5. Posh UI heading</h5>
+            <h6 class="my-0p5">h6. Posh UI heading</h6>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-rows-2 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-          &lt;/div>
+          &lt;h1 class="my-0p5">h1. Posh UI heading&lt;/h1>
+          &lt;h2 class="my-0p5">h2. Posh UI heading&lt;/h2>
+          &lt;h3 class="my-0p5">h3. Posh UI heading&lt;/h3>
+          &lt;h4 class="my-0p5">h4. Posh UI heading&lt;/h4>
+          &lt;h5 class="my-0p5">h5. Posh UI heading&lt;/h5>
+          &lt;h6 class="my-0p5">h6. Posh UI heading&lt;/h6>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Two Rows Grid Ends -->
+        <!-- Headings Ends -->
 
-        <!-- Three Columns Grid Starts -->
+        <!-- Alignment Starts -->
 
-        <section class="my-2 section-component" id="three-columns">
-          <h2 class="my-2">Three Columns Grid</h2>
+        <section class="my-2 section-component" id="alignment">
+          <h2 class="my-2">Alignment</h2>
 
           <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-cols-3 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Two
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Three
-              </div>
+            <div class="px-2 w-100pct">
+              <p class="text-left">Hey!👋 I am Left Aligned 😀</p>
+              <p class="text-center">Hey!👋 I am Center Aligned 😀</p>
+              <p class="text-right">Hey!👋 I am Right Aligned 😀</p>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-cols-3 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Three
-              &lt;/div>
-          &lt;/div>
+              <code class="language-html">   
+          &lt;p class="text-left">Hey!👋 I am Left Aligned 😀&lt;/p>
+          &lt;p class="text-center">Hey!👋 I am Center Aligned 😀&lt;/p>
+          &lt;p class="text-right">Hey!👋 I am Right Aligned 😀&lt;/p>              
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Three Columns Grid Ends -->
+        <!-- Alignment Ends -->
 
-        <!-- Three Rows Grid Starts -->
+        <!-- Inline Text Elements Starts -->
 
-        <section class="my-2 section-component" id="three-rows">
-          <h2 class="my-2">Three Rows Grid</h2>
+        <section class="my-2 section-component" id="inline-text">
+          <h2 class="my-2">Inline Text Elements</h2>
 
           <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-rows-3 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Two
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Three
-              </div>
-            </div>
+            <small class="my-0p5">I am the small text😐</small>
+            <p class="my-0p5 text-gray-500">They colored me 😔 in gray</p>
+            <p class="my-0p5 text-overline">
+              You can see the text-decoration:overline
+            </p>
+            <p class="my-0p5 text-line-through">
+              You can see the text-decoration: line-through
+            </p>
+            <p class="my-0p5 text-underline">
+              You can see the text-decoration: underline
+            </p>
 
             <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-rows-3 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Three
-              &lt;/div>
-          &lt;/div>
+              <code class="language-html">   
+          &lt;small class="my-0p5">I am the small text😐&lt;/small>
+          &lt;p class="my-0p5 text-gray-500">They colored me 😔 in gray&lt;/p>
+          &lt;p class="my-0p5 text-overline">
+              You can see the text-decoration:overline
+          &lt;/p>
+          &lt;p class="my-0p5 text-line-through">
+              You can see the text-decoration: line-through
+          &lt;/p>
+          &lt;p class="my-0p5 text-underline">
+              You can see the text-decoration: underline
+          &lt;/p>              
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Three Rows Grid Ends -->
+        <!-- Inline Text Elements Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -301,19 +273,19 @@
           <ul class="aside-right-list mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#two-columns">Two Columns Grid</a>
+              <a href="#display">Display</a>
             </li>
 
             <li class="aside-link">
-              <a href="#two-rows">Two Rows Grid</a>
+              <a href="#headings">Headings</a>
             </li>
 
             <li class="aside-link">
-              <a href="#three-columns">Three Columns Grid</a>
+              <a href="#alignment">Alignment</a>
             </li>
 
             <li class="aside-link">
-              <a href="#three-rows">Three Rows Grid</a>
+              <a href="#inline-text">Inline text elements</a>
             </li>
           </ul>
         </nav>
@@ -325,13 +297,13 @@
 
       <footer>
         <div>
-          <a class="link" href="../getting-started/typography.html">
-            <i class="fas fa-hand-point-left"></i> Typography
+          <a class="link" href="introduction.html">
+            <i class="fas fa-hand-point-left"></i> Introduction
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="../components/alert.html">
-            Alert <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="../layout/css-grid.html">
+            CSS Grid <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
