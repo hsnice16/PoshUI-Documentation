@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI</title>
+    <title>Posh UI | List Component</title>
 
     <!-- favicon -->
     <link
@@ -51,7 +51,6 @@
   </head>
   <body>
     <div class="container documentation m-auto p-2">
-
       <!-- Header Documentation Starts -->
 
       <header class="header header-documentation">
@@ -71,7 +70,8 @@
               <a class="link" href="introduction.html">Docs</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link"
+              <a
+                class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
                 >GitHub</a
@@ -82,7 +82,7 @@
       </header>
 
       <!-- Header Documentation Ends -->
-      
+
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
@@ -97,7 +97,7 @@
           <ul class="aside-left-list mb-2">
             <h3 class="my-1p5">Components</h3>
             <li class="aside-link">
-              <a class=" link" href="alert.html">Alert</a>
+              <a class="link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
               <a class="link" href="avatar.html">Avatar</a>
@@ -116,6 +116,9 @@
             </li>
             <li class="aside-link">
               <a class="link" href="input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="list.html">List</a>
             </li>
           </ul>
         </div>
@@ -138,17 +141,18 @@
 
           <div class="component-container pt-2">
             <div>
-                <img
-                    class="img img-round mx-1"
-                    src="../assets/jpegs/do-something-great.jpg"
-                    alt="unsplash do something great jpg"
-                    />
-                <img
-                    class="img img-round mx-1"
-                    src="../assets/jpegs/stanlee.jpg"
-                    alt="unsplash stanlee jpg"/>
+              <img
+                class="img img-round mx-1"
+                src="../assets/jpegs/do-something-great.jpg"
+                alt="unsplash do something great jpg"
+              />
+              <img
+                class="img img-round mx-1"
+                src="../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
+              />
             </div>
-          
+
             <pre class="pre-code">
               <code class="language-html">      
           &lt;img class="img img-round mx-1" src="..." alt="..."/>
@@ -193,23 +197,23 @@
         <!-- Responsive Image Starts -->
 
         <section class="my-2 section-component" id="img-responsive">
-            <h2 class="my-2">Responsive Image</h2>
-            <p class="my-2 section-text">
-              Resize your browser window, to see its responsiveness.
-            </p>
-    
-            <div class="component-container pt-2">
-              <div class="img-container">
-                <!-- .img-container {max-width: 52vw;} -->
+          <h2 class="my-2">Responsive Image</h2>
+          <p class="my-2 section-text">
+            Resize your browser window, to see its responsiveness.
+          </p>
 
-                <img
-                    class="img-responsive"
-                    src="../assets/jpegs/stanlee.jpg"
-                    alt="unsplash stanlee jpg"
-                  />
-              </div>
-    
-              <pre class="pre-code">
+          <div class="component-container pt-2">
+            <div class="img-container">
+              <!-- .img-container {max-width: 52vw;} -->
+
+              <img
+                class="img-responsive"
+                src="../assets/jpegs/stanlee.jpg"
+                alt="unsplash stanlee jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
                 <code class="language-html">  
             &lt;div class="img-container">
               &lt;!-- .img-container {max-width: 52vw;} -->
@@ -218,11 +222,10 @@
             &lt;div>
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
 
-        <!-- Square Image Ends -->          
-
+        <!-- Square Image Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -276,6 +279,5 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    </div>
   </body>
 </html>

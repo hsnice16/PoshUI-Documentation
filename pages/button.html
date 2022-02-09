@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI</title>
+    <title>Posh UI | Button Component</title>
 
     <!-- favicon -->
     <link
@@ -51,7 +51,6 @@
   </head>
   <body>
     <div class="container documentation m-auto p-2">
-
       <!-- Header Documentation Starts -->
 
       <header class="header header-documentation">
@@ -71,7 +70,8 @@
               <a class="link" href="introduction.html">Docs</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link"
+              <a
+                class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
                 >GitHub</a
@@ -82,7 +82,7 @@
       </header>
 
       <!-- Header Documentation Ends -->
-      
+
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
@@ -97,7 +97,7 @@
           <ul class="aside-left-list mb-2">
             <h3 class="my-1p5">Components</h3>
             <li class="aside-link">
-              <a class=" link" href="alert.html">Alert</a>
+              <a class="link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
               <a class="link" href="avatar.html">Avatar</a>
@@ -117,6 +117,9 @@
             <li class="aside-link">
               <a class="link" href="input.html">Input</a>
             </li>
+            <li class="aside-link">
+              <a class="link" href="list.html">List</a>
+            </li>
           </ul>
         </div>
       </aside>
@@ -128,7 +131,8 @@
       <main class="main-documentation">
         <h1 class="mb-3">Button</h1>
         <p class="main-text">
-          Buttons can be used to make your web page interactive to your user. You can use them to take user action.
+          Buttons can be used to make your web page interactive to your user.
+          You can use them to take user action.
         </p>
 
         <!-- Filled Primary Buttons Starts -->
@@ -138,13 +142,13 @@
 
           <div class="component-container pt-2">
             <div class="primary-btn-container">
-                <button class="btn">Default</button>
-                <button class="btn btn-error-solid">Error</button>
-                <button class="btn btn-primary-solid">Primary</button>
-                <button class="btn btn-secondary-solid">Secondary</button>
-                <button class="btn btn-success-solid">Success</button>
+              <button class="btn">Default</button>
+              <button class="btn btn-error-solid">Error</button>
+              <button class="btn btn-primary-solid">Primary</button>
+              <button class="btn btn-secondary-solid">Secondary</button>
+              <button class="btn btn-success-solid">Success</button>
             </div>
-          
+
             <pre class="pre-code">
               <code class="language-html">      
           &lt;button class="btn">Default&lt;/button>
@@ -166,10 +170,10 @@
 
           <div class="component-container pt-2">
             <div class="primary-btn-container">
-                <button class="btn btn-error-outline">Error</button>
-                <button class="btn btn-primary-outline">Primary</button>
-                <button class="btn btn-secondary-outline">Secondary</button>
-                <button class="btn btn-success-outline">Success</button>
+              <button class="btn btn-error-outline">Error</button>
+              <button class="btn btn-primary-outline">Primary</button>
+              <button class="btn btn-secondary-outline">Secondary</button>
+              <button class="btn btn-success-outline">Success</button>
             </div>
 
             <pre class="pre-code">
@@ -188,19 +192,21 @@
         <!-- Link Button Starts -->
 
         <section class="my-2 section-component" id="btn-link">
-            <h2 class="my-2">Link Button</h2>
-    
-            <div class="component-container pt-2">
-              <div>
-                  <a href="#">
-                      <button class="btn btn-primary-solid btn-rounded">Link</button>
-                  </a>
-                  <a href="#">
-                      <button class="btn btn-primary-outline btn-rounded">Link</button></a
-                  >
-              </div>
-  
-              <pre class="pre-code">
+          <h2 class="my-2">Link Button</h2>
+
+          <div class="component-container pt-2">
+            <div>
+              <a href="#">
+                <button class="btn btn-primary-solid btn-rounded">Link</button>
+              </a>
+              <a href="#">
+                <button class="btn btn-primary-outline btn-rounded">
+                  Link
+                </button></a
+              >
+            </div>
+
+            <pre class="pre-code">
                 <code class="language-html">      
             &lt;a href="#">
                 &lt;button class="btn btn-primary-solid btn-rounded">Link&lt;/button>
@@ -210,27 +216,27 @@
             &lt;/a>
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
 
-        <!-- Link Button Ends -->        
+        <!-- Link Button Ends -->
 
         <!-- Icon Button Starts -->
 
         <section class="my-2 section-component" id="btn-icon">
-            <h2 class="my-2">Icon Button</h2>
-  
-            <div class="component-container pt-2">
-              <div>
-                <button class="btn btn-error-solid btn-squared">
-                    <i class="fas fa-door-open"></i> Log In
-                  </button>
-                  <button class="btn btn-error-outline btn-squared">
-                    <i class="fas fa-door-open"></i> Log In
-                </button>
-              </div>
-  
-              <pre class="pre-code">
+          <h2 class="my-2">Icon Button</h2>
+
+          <div class="component-container pt-2">
+            <div>
+              <button class="btn btn-error-solid btn-squared">
+                <i class="fas fa-door-open"></i> Log In
+              </button>
+              <button class="btn btn-error-outline btn-squared">
+                <i class="fas fa-door-open"></i> Log In
+              </button>
+            </div>
+
+            <pre class="pre-code">
                 <code class="language-html">      
             &lt;button class="btn btn-error-solid btn-squared">
                 &lt;i class="fas fa-door-open">&lt;/i> Log In
@@ -240,7 +246,7 @@
             &lt;/button>
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
 
         <!-- Icon Button Ends -->
@@ -248,14 +254,15 @@
         <!-- Floating Button Starts -->
 
         <section class="my-2 section-component" id="btn-float">
-            <h2 class="my-2">Floating Button</h2>
-  
-            <div class="component-container pt-2">
-                <a href="#">
-                    <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
-                ></a>
-  
-              <pre class="pre-code">
+          <h2 class="my-2">Floating Button</h2>
+
+          <div class="component-container pt-2">
+            <a href="#">
+              <button class="btn-floating">
+                <i class="fas fa-arrow-up"></i></button
+            ></a>
+
+            <pre class="pre-code">
                 <code class="language-html">      
             &lt;a href="#">
                 &lt;button class="btn-floating">
@@ -264,11 +271,10 @@
             &lt;/a>
                 </code>
               </pre>
-            </div>
+          </div>
         </section>
 
         <!-- Floating Button Ends -->
-
       </main>
 
       <!-- Main Documentation Ends -->
@@ -288,16 +294,16 @@
             </li>
 
             <li class="aside-link">
-                <a href="#btn-link">Link Button</a>
+              <a href="#btn-link">Link Button</a>
             </li>
 
             <li class="aside-link">
-                <a href="#btn-icon">Icon Button</a>
+              <a href="#btn-icon">Icon Button</a>
             </li>
 
             <li class="aside-link">
-                <a href="#btn-float">Floating Button</a>
-            </li>  
+              <a href="#btn-float">Floating Button</a>
+            </li>
           </ul>
         </div>
       </aside>
@@ -320,7 +326,7 @@
       </footer>
 
       <!-- Footer Ends -->
-      
+
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
       ></a>
@@ -330,6 +336,5 @@
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    </div>
   </body>
 </html>
