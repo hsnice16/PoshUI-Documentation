@@ -133,6 +133,9 @@
             <li class="aside-link">
               <a class="link" href="../components/list.html">List</a>
             </li>
+            <li class="aside-link">
+              <a class="link" href="../components/modal.html">Modal</a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -158,25 +161,55 @@
 
         <section class="my-2 section-component" id="quick-start">
           <h2 class="my-2">Quick Start</h2>
-          <p class="my-2 section-text">
-            To start using the components in your project, Copy-paste the
-            stylesheet
-            <code class="language-html hljs language-xml">&lt;link></code> into
-            your
-            <code class="language-html hljs language-xml">&lt;head></code>
-            before all other stylesheets to load our CSS.
-          </p>
 
-          <div class="component-container">
-            <pre class="pre-code intro-pre">
-              <code class="language-html">
-          &lt;link
-            rel="stylesheet"
-            href="https://poshui-components.netlify.app/css/main.css"
-          />          
-              </code>
-            </pre>
-          </div>
+          <article class="my-2">
+            <h3>CSS</h3>
+
+            <p class="my-2 section-text">
+              To start using the components in your project, Copy-paste the
+              stylesheet
+              <code class="language-html hljs language-xml">&lt;link></code>
+              into your
+              <code class="language-html hljs language-xml">&lt;head></code>
+              before all other stylesheets to load our CSS.
+            </p>
+
+            <div class="component-container">
+              <pre class="pre-code intro-pre">
+                <code class="language-html">
+            &lt;link
+              rel="stylesheet"
+              href="https://poshui-components.netlify.app/css/main.css"
+            />          
+                </code>
+              </pre>
+            </div>
+          </article>
+
+          <article class="my-2">
+            <h3>JS</h3>
+
+            <p class="my-2 section-text">
+              Many of Posh UI components, like Modal, Toast, and others, require
+              the use of JavaScript to function. For proper functioning of
+              those, Copy-paste the following
+              <code class="language-html hljs language-xml">&lt;script></code>
+              near the end of your pages, right before the closing
+              <code class="language-html hljs language-xml">&lt;/body></code>
+              tag, to enable them.
+            </p>
+
+            <div class="component-container">
+              <pre class="pre-code intro-pre">
+                <code class="language-html">
+            &lt;script 
+                src="https://poshui-components.netlify.app/js/main.js"
+                >
+            &lt;/script>          
+                </code>
+              </pre>
+            </div>
+          </article>
         </section>
       </main>
 

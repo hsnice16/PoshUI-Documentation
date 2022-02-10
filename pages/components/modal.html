@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Avatar Component</title>
+    <title>Posh UI | Modal Component</title>
 
     <!-- favicon -->
     <link
@@ -117,7 +117,7 @@
               <a class="link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
-              <a class="link link-active" href="avatar.html">Avatar</a>
+              <a class="link" href="avatar.html">Avatar</a>
             </li>
             <li class="aside-link">
               <a class="link" href="badge.html">Badge</a>
@@ -138,7 +138,7 @@
               <a class="link" href="list.html">List</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
+              <a class="link link-active" href="modal.html">Modal</a>
             </li>
           </ul>
         </nav>
@@ -149,112 +149,150 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">Avatar</h1>
-        <p class="main-text">Avatars can be used for user profile picture.</p>
+        <h1 class="mb-3">Modal</h1>
+        <p class="main-text">
+          Modal can be used for creating dialog boxes, to communicate with user.
+        </p>
 
-        <!-- Same Sized Avatars Starts -->
+        <!-- Modal Component Starts -->
 
-        <section class="my-2 section-component" id="same-sized">
-          <h2 class="my-2">Same Sized Avatars</h2>
+        <section class="my-2 section-component" id="modal-component">
+          <h2 class="my-2">Modal Component</h2>
 
           <div class="component-container pt-2">
-            <div>
-              <img
-                class="avatar"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
-              />
+            <div class="border-slate-300 border-thin border-solid modal">
+              <div class="modal-head">Modal Head</div>
 
-              <img
-                class="avatar mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
+              <p class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
 
-              <img
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
-
-              <img
-                class="avatar mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-
-              <img
-                class="avatar"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
-              />
+              <div class="modal-foot">
+                <button
+                  class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+                >
+                  Save
+                </button>
+                <button class="border-r-0p2 btn btn-primary-outline px-1p5">
+                  Close
+                </button>
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar mx-1" src="..." alt="..." />        
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar mx-1" src="..." alt="..." />
-          &lt;img class="avatar" src="..." alt="..." />
+          &lt;div class="border-slate-300 border-thin border-solid modal">
+              &lt;div class="modal-head">Modal Head&lt;/div>
+
+              &lt;p class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              &lt;/p>
+
+              &lt;div class="modal-foot">
+              &lt;button
+                  class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+                >
+                  Save
+                &lt;/button>
+                &lt;button class="border-r-0p2 btn btn-primary-outline px-1p5">
+                  Close
+                &lt;/button>
+              &lt;/div>
+          &lt;/div>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Same Sized Avatars Ends -->
+        <!-- Modal Component Ends -->
 
-        <!-- Different Sized Avatars Starts -->
+        <!-- Modal Demo Starts -->
 
-        <section class="my-2 section-component" id="different-sized">
-          <h2 class="my-2">Different Sized Avatars</h2>
+        <section class="my-2 section-component" id="modal-demo">
+          <h2 class="my-2">Modal Demo</h2>
 
           <div class="component-container pt-2">
-            <div>
-              <img
-                class="avatar avatar-xs"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
-              />
+            <button
+              id="modal-demo-btn"
+              class="btn btn-primary-solid btn-squared"
+            >
+              Modal Demo
+            </button>
 
-              <img
-                class="avatar avatar-sm mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
+            <div id="modal-container" class="hide modal-container">
+              <div class="mx-auto modal">
+                <div class="modal-head">Modal Head</div>
 
-              <img
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther jpg"
-              />
+                <p class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
-              <img
-                class="avatar avatar-md mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man jpg"
-              />
-
-              <img
-                class="avatar avatar-lg"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
-              />
+                <div class="modal-foot">
+                  <button
+                    class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+                  >
+                    Save
+                  </button>
+                  <button
+                    id="modal-close-btn"
+                    class="border-r-0p2 btn btn-primary-outline px-1p5"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="avatar avatar-xs" src="..." alt="..." />
-          &lt;img class="avatar avatar-sm mx-1" src="..." alt="..." />
-          &lt;img class="avatar" src="..." alt="..." />
-          &lt;img class="avatar avatar-md mx-1" src="..." alt="..." />
-          &lt;img class="avatar avatar-lg" src="..." alt="..." />
+          &lt;button
+               id="modal-demo-btn"
+               class="btn btn-primary-solid btn-squared"
+          >
+               Modal Demo
+          &lt;/button>
+      
+          &lt;div id="modal-container" class="hide modal-container">
+              &lt;div class="mx-auto modal">
+                  &lt;div class="modal-head">Modal Head&lt;/div>
+      
+                  &lt;p class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                  &lt;/p>
+      
+                  &lt;div class="modal-foot">
+                      &lt;button
+                        class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+                      >
+                        Save
+                      &lt;/button>
+                      &lt;button
+                        id="modal-close-btn"
+                        class="border-r-0p2 btn btn-primary-outline px-1p5"
+                      >
+                        Close
+                      &lt;/button>
+                  &lt;/div>
+              &lt;/div>
+          &lt;/div>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Different Sized Avatars Ends -->
+        <!-- Modal Demo Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -266,11 +304,11 @@
           <ul class="aside-right-list mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#same-sized">Same Sized Avatars</a>
+              <a href="#modal-component">Modal Component</a>
             </li>
 
             <li class="aside-link">
-              <a href="#different-sized">Different Sized Avatars</a>
+              <a href="#modal-demo">Modal Demo</a>
             </li>
           </ul>
         </nav>
@@ -282,13 +320,8 @@
 
       <footer>
         <div>
-          <a class="link" href="alert.html">
-            <i class="fas fa-hand-point-left"></i> Alert
-          </a>
-        </div>
-        <div class="ml-auto">
-          <a class="link" href="badge.html">
-            Badge <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="list.html">
+            <i class="fas fa-hand-point-left"></i> List
           </a>
         </div>
       </footer>
@@ -304,5 +337,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="https://poshui-components.netlify.app/js/main.js"></script>
   </body>
 </html>

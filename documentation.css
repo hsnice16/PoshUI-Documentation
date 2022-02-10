@@ -79,7 +79,7 @@ footer {
   padding: 1rem 0.5rem;
   position: fixed;
   right: 0;
-  z-index: 9;
+  z-index: 1;
 }
 
 /** Header Documentation **/
@@ -89,7 +89,7 @@ footer {
   grid-area: header;
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 1;
 }
 
 /** Introduction Page **/
@@ -130,6 +130,14 @@ footer {
 .form {
   border: thin solid var(--COLOR-SLATE-300);
   width: 30rem;
+}
+
+#modal-component .modal {
+  z-index: 0;
+}
+
+#modal-demo .modal-container {
+  z-index: 3;
 }
 
 .textarea-container {
