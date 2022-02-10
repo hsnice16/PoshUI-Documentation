@@ -142,6 +142,10 @@ footer {
   z-index: 3;
 }
 
+.section-component .component-container .nav-container {
+  width: 95%;
+}
+
 .toast:not(.hide, .show) {
   z-index: 0;
 }

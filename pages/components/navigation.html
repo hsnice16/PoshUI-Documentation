@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Badge Component</title>
+    <title>Posh UI | Navigation Component</title>
 
     <!-- favicon -->
     <link
@@ -120,7 +120,7 @@
               <a class="link" href="avatar.html">Avatar</a>
             </li>
             <li class="aside-link">
-              <a class="link link-active" href="badge.html">Badge</a>
+              <a class="link" href="badge.html">Badge</a>
             </li>
             <li class="aside-link">
               <a class="link" href="button.html">Button</a>
@@ -141,7 +141,7 @@
               <a class="link" href="modal.html">Modal</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
+              <a class="link link-active" href="navigation.html">Navigation</a>
             </li>
             <li class="aside-link">
               <a class="link" href="toast.html">Toast</a>
@@ -155,116 +155,131 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">Badge</h1>
+        <h1 class="mb-3">Navigation</h1>
         <p class="main-text">
-          Badge can be used to show either status of the user (online, or
-          offline) or you can use it show notification count.
+          Navigation can be used to give the user facility to navigate between
+          different pages.
         </p>
 
-        <!-- Badge on Icons Starts -->
+        <!-- Desktop Variation One Starts -->
 
-        <section class="my-2 section-component" id="badge-icon">
-          <h2 class="my-2">Badge on Icons</h2>
+        <section class="my-2 section-component" id="desktop-variation-one">
+          <h2 class="my-2">Desktop Variation One</h2>
 
           <div class="component-container pt-2">
-            <div>
-              <button class="badge-btn mx-1">
-                <i class="fas fa-home"></i>
-                <span class="badge-count bg-amber-500">9</span>
-              </button>
+            <div class="bg-stone nav-container">
+              <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+                <div class="align-i-ctr flex justify-c-sb">
+                  <img
+                    class="img-brand-logo"
+                    src="../../assets/pngs/logo-bg-stone.png"
+                    alt="flaticon cart logo"
+                  />
 
-              <button class="badge-btn mx-1">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge-count bg-lime-500">9+</span>
-              </button>
+                  <a
+                    class="flex flex-direction-col ml-1"
+                    href="https://inclusive-mart.netlify.app"
+                    target="_blank"
+                  >
+                    <span class="fs-1p7 text-white">Inclusive</span>
+                    <span class="mart-text text-red-500">Mart</span>
+                  </a>
+                </div>
 
-              <button class="badge-btn mx-1">
-                <i class="fas fa-bell"></i>
-                <span class="badge-count bg-red-500"> 99+ </span>
-              </button>
+                <form
+                  class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+                >
+                  <input
+                    class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                    type="text"
+                    placeholder="search for product"
+                  />
+                  <button
+                    class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+                    type="submit"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+
+                <div class="align-i-ctr flex justify-c-sb">
+                  <button
+                    class="btn bg-white bg-white-hover border-r-0p2 translate-y"
+                  >
+                    Log In
+                  </button>
+
+                  <a href="#" class="badge-btn mx-2 text-white translate-y">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge-count bg-red-500">0</span>
+                  </a>
+
+                  <a href="#" class="badge-btn mr-1 text-white translate-y">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-count bg-red-500">0</span>
+                  </a>
+                </div>
+              </nav>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;button class="badge-btn mx-1">
-            &lt;i class="fas fa-home">&lt;/i>
-            &lt;span class="badge-count bg-amber-500">9&lt;/span>
-          &lt;/button>
-  
-          &lt;button class="badge-btn mx-1">
-            &lt;i class="fas fa-shopping-cart">&lt;/i>
-            &lt;span class="badge-count bg-lime-500">9+&lt;/span>
-          &lt;/button>
-  
-          &lt;button class="badge-btn mx-1">
-            &lt;i class="fas fa-bell">&lt;/i>
-            &lt;span class="badge-count bg-red-500"> 99+ &lt;/span>
-          &lt;/button>            
+          &lt;div class="bg-stone nav-container">
+              &lt;nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+                  &lt;div class="align-i-ctr flex justify-c-sb">
+                      &lt;img class="img-brand-logo" src="..." alt="..." />
+      
+                      &lt;a
+                          class="flex flex-direction-col ml-1"
+                          href="https://inclusive-mart.netlify.app"
+                          target="_blank"
+                      >
+                          &lt;span class="fs-1p7 text-white">Inclusive&lt;/span>
+                          &lt;span class="mart-text text-red-500">Mart&lt;/span>
+                      &lt;/a>
+                  &lt;/div>
+      
+                  &lt;form
+                      class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+                  >
+                      &lt;input
+                          class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                          type="text"
+                          placeholder="search for product"
+                      />
+                      &lt;button
+                          class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+                          type="submit"
+                      >
+                          &lt;i class="fas fa-search">&lt;/i>
+                      &lt;/button>
+                  &lt;/form>
+      
+                  &lt;div class="align-i-ctr flex justify-c-sb">
+                      &lt;button
+                          class="btn bg-white bg-white-hover border-r-0p2 translate-y"
+                      >
+                          Log In
+                      &lt;/button>
+      
+                      &lt;a href="#" class="badge-btn mx-2 text-white translate-y">
+                          &lt;i class="fas fa-heart">&lt;/i>
+                          &lt;span class="badge-count bg-red-500">0&lt;/span>
+                      &lt;/a>
+      
+                      &lt;a href="#" class="badge-btn mr-1 text-white translate-y">
+                          &lt;i class="fas fa-shopping-cart">&lt;/i>
+                          &lt;span class="badge-count bg-red-500">0&lt;/span>
+                      &lt;/a>
+                  &lt;/div>
+              &lt;/nav>
+          &lt;/div>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Badge on Icons Ends -->
-
-        <!-- Badge on Avatars Starts -->
-
-        <section class="my-2 section-component" id="badge-avatar">
-          <h2 class="my-2">Badge on Avatars</h2>
-
-          <div class="component-container pt-2">
-            <div class="badge">
-              <img
-                class="avatar"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="undraw female avatar svg"
-              />
-
-              <span class="badge-status bg-lime-500"></span>
-            </div>
-
-            <div class="badge">
-              <img
-                class="avatar"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man jpg"
-              />
-
-              <span class="badge-status bg-red-500"></span>
-            </div>
-
-            <div class="badge">
-              <img
-                class="avatar"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="undraw male avatar svg"
-              />
-
-              <span class="badge-status bg-slate-400"></span>
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="badge">
-            &lt;img class="avatar" src="..." alt="..." />        
-            &lt;span class="badge-status bg-lime-500">&lt;/span>
-          &lt;/div>
-
-          &lt;div class="badge">
-            &lt;img class="avatar" src="..." alt="..." />        
-            &lt;span class="badge-status bg-red-500">&lt;/span>
-          &lt;/div>
-  
-          &lt;div class="badge">
-            &lt;img class="avatar" src="..." alt="..." />
-            &lt;span class="badge-status bg-slate-400">&lt;/span>
-          &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Badge on Avatars Ends -->
+        <!-- Desktop Variation One Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -276,11 +291,7 @@
           <ul class="aside-right-list mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#badge-icon">Badge on Icons</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#badge-avatar">Badge on Avatars</a>
+              <a href="#desktop-variation-one">Desktop Variation One</a>
             </li>
           </ul>
         </nav>
@@ -292,13 +303,13 @@
 
       <footer>
         <div>
-          <a class="link" href="avatar.html">
-            <i class="fas fa-hand-point-left"></i> Avatar
+          <a class="link" href="modal.html">
+            <i class="fas fa-hand-point-left"></i> Modal
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="button.html">
-            Button <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            Toast <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
@@ -314,5 +325,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="https://poshui-components.netlify.app/js/main.js"></script>
   </body>
 </html>

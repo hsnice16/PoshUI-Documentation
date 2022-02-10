@@ -73,7 +73,7 @@ body {
   padding: 1rem 4rem;
 }
 
-.img-brand-logo {
+.header .img-brand-logo {
   max-height: 7rem;
   max-width: 7rem;
 }
@@ -100,7 +100,8 @@ body {
     grid-template-columns: 25rem minmax(0, 1fr);
   }
 
-  .aside-right, .aside-right-container {
+  .aside-right,
+  .aside-right-container {
     display: none;
   }
 
@@ -109,7 +110,7 @@ body {
   }
 }
 
-@media  only screen and (max-width: 59em) {
+@media only screen and (max-width: 59em) {
   .documentation {
     grid-template-columns: 20rem minmax(0, 1fr);
   }
@@ -135,7 +136,8 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .aside-left, .aside-left-container {
+  .aside-left,
+  .aside-left-container {
     display: none;
   }
 
@@ -154,12 +156,11 @@ body {
   .link-to-top {
     display: none;
   }
-  
+
   .main-documentation {
     padding: 3.5rem 0.5rem;
   }
 }
-
 
 @media only screen and (max-width: 40em) {
   html {
