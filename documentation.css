@@ -136,8 +136,14 @@ footer {
   z-index: 0;
 }
 
-#modal-demo .modal-container {
+#modal-demo .modal-container,
+.stacked-toast,
+.toast {
   z-index: 3;
+}
+
+.toast:not(.hide, .show) {
+  z-index: 0;
 }
 
 .textarea-container {
