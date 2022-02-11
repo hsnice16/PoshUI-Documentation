@@ -1,0 +1,179 @@
+.documentation {
+  display: grid;
+  grid-template-areas:
+    "header header  header"
+    "aside-left main aside-right";
+  grid-template-columns: 25rem minmax(0, 1fr) 20rem;
+  grid-template-rows: 8rem 1fr;
+}
+
+/** Asides **/
+
+.aside-container {
+  background: var(--COLOR-SLATE-50);
+  position: fixed;
+}
+
+.aside-left {
+  grid-area: aside-left;
+}
+
+.aside-left-container {
+  height: 80vh;
+  margin: 1rem 1rem 3rem 6rem;
+  padding: 0 2rem 0.5rem 0;
+  overflow-y: auto;
+}
+
+.aside-left-list h3 {
+  font-size: 2.1rem;
+}
+
+.aside-link {
+  margin: 1.2rem 0.2rem;
+}
+
+.aside-right {
+  grid-area: aside-right;
+}
+
+.aside-right-container {
+  margin: 1rem 2rem 3rem 1rem;
+}
+
+.aside-right-list a {
+  color: var(--COLOR-SLATE-700);
+}
+
+.aside-right-list a:hover {
+  color: var(--COLOR-BRAND);
+}
+
+/** Component Container **/
+
+.component-container {
+  align-items: center;
+  background: var(--COLOR-WHITE);
+  border: thin solid var(--COLOR-BRAND-LIGHT);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.primary-btn-container {
+  text-align: center;
+}
+
+/** Footer **/
+
+footer {
+  align-items: center;
+  background: var(--COLOR-SLATE-50);
+  border-top: thin solid var(--COLOR-BRAND-LIGHT);
+  bottom: 0;
+  display: none;
+  height: 5rem;
+  left: 0;
+  margin: 0 0.5rem;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+/** Header Documentation **/
+
+.header-documentation {
+  background: var(--COLOR-SLATE-50);
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/** Introduction Page **/
+
+.intro-pre {
+  margin-top: -2rem;
+}
+
+.intro-github {
+  color: var(--COLOR-BRAND-DARK) !important;
+}
+
+/** Link to Top **/
+
+.link-to-top {
+  bottom: 0;
+  display: none;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  position: fixed;
+  right: 0;
+}
+
+/** Main **/
+
+.main-documentation {
+  grid-area: main;
+  padding: 2.5rem 2rem 3rem 4rem;
+}
+
+.main-text {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+}
+
+/** Overidding **/
+
+.form {
+  border: thin solid var(--COLOR-SLATE-300);
+  width: 30rem;
+}
+
+#modal-component .modal {
+  z-index: 0;
+}
+
+#modal-demo .modal-container,
+.stacked-toast,
+.toast {
+  z-index: 3;
+}
+
+.section-component .component-container .nav-container {
+  width: 95%;
+}
+
+.toast:not(.hide, .show) {
+  z-index: 0;
+}
+
+.textarea-container {
+  width: 40rem;
+}
+
+/** Pre Code **/
+
+.pre-code {
+  margin-bottom: -5rem;
+  width: 100%;
+}
+
+code.hljs {
+  background: var(--COLOR-BRAND-LIGHT);
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+/** Section **/
+
+.section-component {
+  border-top: thin solid var(--COLOR-BRAND-LIGHT);
+}
+
+.section-text {
+  font-size: 1.65rem;
+  line-height: 1.5em;
+}

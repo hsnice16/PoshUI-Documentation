@@ -1,4 +1,4 @@
-@import url("css/main.css");
+@import url("documentation.css");
 
 html {
   font-size: 62.5%;
@@ -13,15 +13,170 @@ body {
 /** Container **/
 
 .container {
+  color: var(--COLOR-SLATE-700);
   min-height: 100vh;
   max-width: 140rem;
-  padding: 2rem;
+}
+
+/** Link **/
+
+.link {
+  color: inherit;
+  font-size: 2rem;
+  position: relative;
+}
+
+.link::after {
+  background: var(--COLOR-SLATE-700);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s, left 0.3s;
+  width: 0;
+}
+
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.link-active {
+  color: var(--COLOR-BRAND);
+  font-weight: 600;
+}
+
+.link-active::after {
+  background: var(--COLOR-BRAND);
+}
+
+/** Home **/
+
+.btn-home {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-SLATE-300);
+  font-size: 2rem;
+  margin: 3rem 1rem 1rem 0;
+  width: 20rem;
+}
+
+.btn-home-outline:hover {
+  background: var(--COLOR-SLATE-50);
+  color: var(--COLOR-BRAND);
+}
+
+.header {
+  align-items: center;
+  border-bottom: thin solid var(--COLOR-SLATE-300);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 4rem;
+}
+
+.header .img-brand-logo {
+  max-height: 7rem;
+  max-width: 7rem;
+}
+
+.link-brand {
+  color: var(--COLOR-BRAND);
+  font-size: 3.5rem;
+}
+
+.main {
+  font-size: 2.5rem;
+  margin: 10rem auto 0;
+  max-width: 55rem;
+  text-align: center;
 }
 
 /** Media Query **/
 
+@media only screen and (max-width: 63em) {
+  .documentation {
+    grid-template-areas:
+      "header header"
+      "aside-left main";
+    grid-template-columns: 25rem minmax(0, 1fr);
+  }
+
+  .aside-right,
+  .aside-right-container {
+    display: none;
+  }
+
+  .link-to-top {
+    display: unset;
+  }
+}
+
+@media only screen and (max-width: 59em) {
+  .documentation {
+    grid-template-columns: 20rem minmax(0, 1fr);
+  }
+
+  .aside-left-container {
+    margin-left: 3rem;
+  }
+
+  .card-horizontal {
+    margin: 0 1rem;
+  }
+
+  .textarea-container {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 44em) {
+  .documentation {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .aside-left,
+  .aside-left-container {
+    display: none;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .header {
+    padding: 1rem 0.5rem;
+  }
+
+  .link-to-top {
+    display: none;
+  }
+
+  .main-documentation {
+    padding: 3.5rem 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 40em) {
   html {
-    font-size: 55%;
+    font-size: 60%;
+  }
+
+  .documentation {
+    grid-template-rows: 12rem 1fr;
+  }
+
+  .header {
+    height: 12rem;
+  }
+
+  .main {
+    font-size: 2rem;
+    margin-top: 10rem;
   }
 }
