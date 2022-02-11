@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Alert Component</title>
+    <title>Posh UI | Rating Component</title>
 
     <!-- favicon -->
     <link
@@ -114,7 +114,7 @@
           <ul class="aside-left-list mb-3">
             <h3 class="my-1p5">Components</h3>
             <li class="aside-link">
-              <a class="link link-active" href="alert.html">Alert</a>
+              <a class="link" href="alert.html">Alert</a>
             </li>
             <li class="aside-link">
               <a class="link" href="avatar.html">Avatar</a>
@@ -144,7 +144,7 @@
               <a class="link" href="navigation.html">Navigation</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="rating.html">Rating</a>
+              <a class="link link-active" href="rating.html">Rating</a>
             </li>
             <li class="aside-link">
               <a class="link" href="toast.html">Toast</a>
@@ -158,174 +158,144 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">Alert</h1>
+        <h1 class="mb-3">Rating</h1>
         <p class="main-text">
-          Alerts can be used to show a message to the user.
+          Rating can be used to show ratings on the product, or it can also be
+          used for taking ratings from the user.
         </p>
 
-        <!-- Alert Danger Starts -->
+        <!-- Filled Rating Starts -->
 
-        <section class="my-2 section-component" id="alert-danger">
-          <h2 class="my-2">Danger Alert</h2>
+        <section class="my-2 section-component" id="filled-rating">
+          <h2 class="my-2">Filled Rating</h2>
 
           <div class="component-container pt-2">
-            <div class="alert alert-danger-solid">
-              Hey!👋 I'm a Danger Alert
-            </div>
-            <div class="alert alert-danger-outline">
-              Hey!👋 I'm a Danger Alert
+            <div>
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star"> &#9733; </span>
+              <span class="rating-star"> &#9733; </span>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-danger-solid">
-              Hey!👋 I'm a Danger Alert
-          &lt;/div>
-          &lt;div class="alert alert-danger-outline">
-              Hey!👋 I'm a Danger Alert
-          &lt;/div>
+              <code class="language-html">
+          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+          &lt;span class="rating-star"> &amp;#9733; &lt;/span>
+          &lt;span class="rating-star"> &amp;#9733; &lt;/span>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Alert Danger Ends -->
+        <!-- Filled Rating Ends -->
 
-        <!-- Alert Info Starts -->
+        <!-- Live Rating Starts -->
 
-        <section class="my-2 section-component" id="alert-info">
-          <h2 class="my-2">Info Alert</h2>
+        <section class="my-2 section-component" id="live-rating">
+          <h2 class="my-2">Live Rating</h2>
 
           <div class="component-container pt-2">
-            <div class="alert alert-info-solid">Hey!👋 I'm a Info Alert</div>
-            <div class="alert alert-info-outline">Hey!👋 I'm a Info Alert</div>
+            <fieldset class="ratings">
+              <input type="radio" name="rating" id="star-5" /><label
+                for="star-5"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-4-n-half" /><label
+                for="star-4-n-half"
+                class="half-star"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-4" /><label
+                for="star-4"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-3-n-half" /><label
+                for="star-3-n-half"
+                class="half-star"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-3" /><label
+                for="star-3"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-2-n-half" /><label
+                for="star-2-n-half"
+                class="half-star"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-2" /><label
+                for="star-2"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-1-n-half" /><label
+                for="star-1-n-half"
+                class="half-star"
+              >
+                &#9733;
+              </label>
+              <input type="radio" name="rating" id="star-1" /><label
+                for="star-1"
+              >
+                &#9733;
+              </label>
+            </fieldset>
 
             <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-info-solid">
-            Hey!👋 I'm a Info Alert
-          &lt;/div>
-          &lt;div class="alert alert-info-outline">
-            Hey!👋 I'm a Info Alert
-          &lt;/div>
+              <code class="language-html">
+          &lt;fieldset class="ratings">
+              &lt;input type="radio" name="rating" id="star-5" />
+              &lt;label for="star-5">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-4-n-half" />
+              &lt;label for="star-4-n-half" class="half-star">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-4" />
+              &lt;label for="star-4">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-3-n-half" />
+              &lt;label for="star-3-n-half" class="half-star">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-3" />
+              &lt;label for="star-3">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-2-n-half" />
+              &lt;label for="star-2-n-half" class="half-star">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-2" />
+              &lt;label for="star-2">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-1-n-half" />
+              &lt;label for="star-1-n-half" class="half-star">
+                  &amp;#9733;
+              &lt;/label>
+              &lt;input type="radio" name="rating" id="star-1" />
+              &lt;label for="star-1">
+                  &amp;#9733;
+              &lt;/label>
+          &lt;/fieldset>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Alert Info Ends -->
-
-        <!-- Alert Primary Starts -->
-
-        <section class="my-2 section-component" id="alert-primary">
-          <h2 class="my-2">Primary Alert</h2>
-
-          <div class="component-container pt-2">
-            <div class="alert alert-primary-solid">
-              Hey!👋 I'm a Primary Alert
-            </div>
-            <div class="alert alert-primary-outline">
-              Hey!👋 I'm a Primary Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-primary-solid">
-            Hey!👋 I'm a Primary Alert
-          &lt;/div>
-          &lt;div class="alert alert-primary-outline">
-            Hey!👋 I'm a Primary Alert
-          &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Primary Ends -->
-
-        <!-- Alert Secondary Starts -->
-
-        <section class="my-2 section-component" id="alert-secondary">
-          <h2 class="my-2">Secondary Alert</h2>
-
-          <div class="component-container pt-2">
-            <div class="alert alert-secondary-solid">
-              Hey!👋 I'm a Secondary Alert
-            </div>
-            <div class="alert alert-secondary-outline">
-              Hey!👋 I'm a Secondary Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-secondary-solid">
-            Hey!👋 I'm a Secondary Alert
-          &lt;/div>
-          &lt;div class="alert alert-secondary-outline">
-            Hey!👋 I'm a Secondary Alert
-          &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Secondary Ends -->
-
-        <!-- Alert Success Starts -->
-
-        <section class="my-2 section-component" id="alert-success">
-          <h2 class="my-2">Success Alert</h2>
-
-          <div class="component-container pt-2">
-            <div class="alert alert-success-solid">
-              Hey!👋 I'm a Success Alert
-            </div>
-            <div class="alert alert-success-outline">
-              Hey!👋 I'm a Success Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-success-solid">
-            Hey!👋 I'm a Success Alert
-          &lt;/div>
-          &lt;div class="alert alert-success-outline">
-            Hey!👋 I'm a Success Alert
-          &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Success Ends -->
-
-        <!-- Alert Warning Starts -->
-
-        <section class="my-2 section-component" id="alert-warning">
-          <h2 class="my-2">Warning Alert</h2>
-
-          <div class="component-container pt-2">
-            <div class="alert alert-warning-solid">
-              Hey!👋 I'm a Warning Alert
-            </div>
-            <div class="alert alert-warning-outline">
-              Hey!👋 I'm a Warning Alert
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-          &lt;div class="alert alert-warning-solid">
-            Hey!👋 I'm a Warning Alert
-          &lt;/div>
-          &lt;div class="alert alert-warning-outline">
-            Hey!👋 I'm a Warning Alert
-          &lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Alert Warning Ends -->
+        <!-- Live Rating Ends -->
       </main>
 
       <!-- Main Documentation Ends -->
@@ -337,27 +307,11 @@
           <ul class="aside-right-list mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li class="aside-link">
-              <a href="#alert-danger">Danger Alert</a>
+              <a href="#filled-rating">Filled Rating</a>
             </li>
 
             <li class="aside-link">
-              <a href="#alert-info">Info Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-primary">Primary Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-secondary">Secondary Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-success">Success Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-warning">Warning Alert</a>
+              <a href="#live-rating">Live Rating</a>
             </li>
           </ul>
         </nav>
@@ -369,13 +323,13 @@
 
       <footer>
         <div>
-          <a class="link" href="../layout/css-grid.html">
-            <i class="fas fa-hand-point-left"></i> CSS Grid
+          <a class="link" href="navigation.html">
+            <i class="fas fa-hand-point-left"></i> Navigation
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="avatar.html">
-            Avatar <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            Toast <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
@@ -391,5 +345,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="https://poshui-components.netlify.app/js/main.js"></script>
   </body>
 </html>
