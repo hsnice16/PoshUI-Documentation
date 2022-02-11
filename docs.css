@@ -1,4 +1,4 @@
-.documentation {
+.docs {
   display: grid;
   grid-template-areas:
     "header header  header"
@@ -65,9 +65,9 @@
   text-align: center;
 }
 
-/** Footer **/
+/** Footer Docs **/
 
-footer {
+.footer-docs {
   align-items: center;
   background: var(--COLOR-SLATE-50);
   border-top: thin solid var(--COLOR-BRAND-LIGHT);
@@ -82,9 +82,9 @@ footer {
   z-index: 1;
 }
 
-/** Header Documentation **/
+/** Header Docs **/
 
-.header-documentation {
+.header-docs {
   background: var(--COLOR-SLATE-50);
   grid-area: header;
   position: sticky;
@@ -113,9 +113,9 @@ footer {
   right: 0;
 }
 
-/** Main **/
+/** Main Docs **/
 
-.main-documentation {
+.main-docs {
   grid-area: main;
   padding: 2.5rem 2rem 3rem 4rem;
 }
