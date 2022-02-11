@@ -1,4 +1,4 @@
-@import url("documentation.css");
+@import url("docs.css");
 
 html {
   font-size: 62.5%;
@@ -65,12 +65,22 @@ body {
   color: var(--COLOR-BRAND);
 }
 
+.footer-home {
+  border-top: thin solid var(--COLOR-SLATE-300);
+  justify-content: center;
+  min-height: 15vh;
+}
+
+.footer-home,
 .header {
   align-items: center;
-  border-bottom: thin solid var(--COLOR-SLATE-300);
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 4rem;
+}
+
+.header {
+  border-bottom: thin solid var(--COLOR-SLATE-300);
 }
 
 .header .img-brand-logo {
@@ -84,8 +94,15 @@ body {
 }
 
 .main {
+  align-items: center;
+  display: flex;
   font-size: 2.5rem;
-  margin: 10rem auto 0;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+.main div {
+  font-size: 2.5rem;
   max-width: 55rem;
   text-align: center;
 }
@@ -93,7 +110,7 @@ body {
 /** Media Query **/
 
 @media only screen and (max-width: 63em) {
-  .documentation {
+  .docs {
     grid-template-areas:
       "header header"
       "aside-left main";
@@ -111,7 +128,7 @@ body {
 }
 
 @media only screen and (max-width: 59em) {
-  .documentation {
+  .docs {
     grid-template-columns: 20rem minmax(0, 1fr);
   }
 
@@ -129,7 +146,7 @@ body {
 }
 
 @media only screen and (max-width: 44em) {
-  .documentation {
+  .docs {
     grid-template-areas:
       "header"
       "main";
@@ -145,7 +162,7 @@ body {
     padding: 0.5rem;
   }
 
-  footer {
+  .footer-docs {
     display: flex;
   }
 
@@ -157,7 +174,7 @@ body {
     display: none;
   }
 
-  .main-documentation {
+  .main-docs {
     padding: 3.5rem 0.5rem;
   }
 }
@@ -167,7 +184,7 @@ body {
     font-size: 60%;
   }
 
-  .documentation {
+  .docs {
     grid-template-rows: 12rem 1fr;
   }
 
@@ -177,6 +194,5 @@ body {
 
   .main {
     font-size: 2rem;
-    margin-top: 10rem;
   }
 }

@@ -23,7 +23,15 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
         rel="stylesheet"
         href="https://poshui-components.netlify.app/css/main.css"
     />
-```   
+```
+
+Many of Posh UI components, like Modal, Toast, and others, require the use of JavaScript to function. For proper functioning of those, Copy-paste the following `<script>` near the end of your pages, right before the closing `</body>` tag, to enable them.
+
+```html
+    <script 
+        src="https://poshui-components.netlify.app/js/main.js">
+    </script>
+```
 
 ### Posh UI contains the following components
 
@@ -32,8 +40,15 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 - [Badge](#badge)
 - [Button](#button)
 - [Card](#card)
+- [CSS Grid](#css-grid)
 - [Image](#image)
 - [Input](#input)
+- [List](#list)
+- [Modal](#modal)
+- [Navigation](#navigation)
+- [Rating](#rating)
+- [Toast](#toast)
+- [Typography](#typography)
 
 ---
 
@@ -41,7 +56,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 
 Alerts can be used to show a message to the user.
 
-You will find the following types of *Alert* on https://poshui.netlify.app/pages/alert.html
+You will find the following types of _Alert_ on https://poshui.netlify.app/pages/components/alert.html
 
 - Danger Alert
 - Info Alert
@@ -56,7 +71,7 @@ You will find the following types of *Alert* on https://poshui.netlify.app/pages
 
 Avatars can be used for user profile picture.
 
-You will find the following types of *Avatar* on https://poshui.netlify.app/pages/avatar.html
+You will find the following types of _Avatar_ on https://poshui.netlify.app/pages/components/avatar.html
 
 - Same Sized Avatars
 - Different Sized Avatars
@@ -67,7 +82,7 @@ You will find the following types of *Avatar* on https://poshui.netlify.app/page
 
 Badge can be used to show either status of the user (online, or offline) or you can use it show notification count.
 
-You will find the following types of *Badge* on https://poshui.netlify.app/pages/badge.html
+You will find the following types of _Badge_ on https://poshui.netlify.app/pages/components/badge.html
 
 - Badge on Icons
 - Badge on Avatars
@@ -78,7 +93,7 @@ You will find the following types of *Badge* on https://poshui.netlify.app/pages
 
 Buttons can be used to make your web page interactive to your user. You can use them to take user action.
 
-You will find the following types of *Button* on https://poshui.netlify.app/pages/button.html
+You will find the following types of _Button_ on https://poshui.netlify.app/pages/components/button.html
 
 - Filled Primary Buttons
 - Outlined Primary Buttons
@@ -92,7 +107,7 @@ You will find the following types of *Button* on https://poshui.netlify.app/page
 
 Cards can be proved very useful. You can use them to display content on an e-commerce app, or on a video library app. You can also use them to show user feedback in the form of text-only card on your site.
 
-You will find the following types of *Card* on https://poshui.netlify.app/pages/card.html
+You will find the following types of _Card_ on https://poshui.netlify.app/pages/components/card.html
 
 - Horizontal Text Card
 - Vertical Item Card
@@ -101,11 +116,24 @@ You will find the following types of *Card* on https://poshui.netlify.app/pages/
 
 ---
 
+### CSS Grid
+
+CSS Grid can be used to structure elements in rows and columns.
+
+You will find the following types of _Grid_ on https://poshui.netlify.app/pages/layout/css-grid.html
+
+- Two Columns Grid
+- Two Rows Grid
+- Three Columns Grid
+- Three Columns Grid
+
+---
+
 ### Image
 
 Image can be used to display large picture on the website.
 
-You will find the following types of *Image* on https://poshui.netlify.app/pages/image.html
+You will find the following types of _Image_ on https://poshui.netlify.app/pages/components/image.html
 
 - Round Image
 - Square Image
@@ -117,11 +145,89 @@ You will find the following types of *Image* on https://poshui.netlify.app/pages
 
 Input can be used to take input from your user. It can make your site more interactive.
 
-You will find the following types of *Input* on https://poshui.netlify.app/pages/input.html
+You will find the following types of _Input_ on https://poshui.netlify.app/pages/components/input.html
 
 - Text Area
 - Form Input
 - Error Form Input
+
+---
+
+### List
+
+List can be used to show a list of items.
+
+You will find the following types of _List_ on https://poshui.netlify.app/pages/components/list.html
+
+- Numbered List
+- Reversed List
+- Lower Roman List
+- Lower Alpha List
+- Disc List
+- Circle List
+- Square List
+- Category Checkbox List
+- Price Radio List
+- Notification Stacked List
+
+---
+
+### Modal
+
+Modal can be used for creating dialog boxes, to communicate with user.
+
+You will find the following types of _Modal_ on https://poshui.netlify.app/pages/components/modal.html
+
+- Modal Component
+- Modal Demo
+
+---
+
+### Navigation
+
+Navigation can be used to give the user facility to navigate between
+different pages.
+
+You will find the following types of _Navigation_ on https://poshui.netlify.app/pages/components/navigation.html
+
+- Desktop Variation One
+
+---
+
+### Rating
+
+Rating can be used to show ratings on the product, or it can also be
+used for taking ratings from the user.
+
+You will find the following types of _Rating_ on https://poshui.netlify.app/pages/components/rating.html
+
+- Filled Rating
+- Live Rating
+
+---
+
+### Toast
+
+Toast can be used to show notifications to the user.
+
+You will find the following types of _Toast_ on https://poshui.netlify.app/pages/components/toast.html
+
+- Notification Toast
+- Notification Toast Demo
+- Stacked Notification Toast Demo
+
+---
+
+### Typography
+
+Use Typography to format text content on your web site.
+
+You will find the following types of _Typography_ on https://poshui.netlify.app/pages/getting-started/typography.html
+
+- Display
+- Headings
+- Alignment
+- Inline text elements
 
 ---
 
