@@ -98,8 +98,8 @@
   margin-top: -2rem;
 }
 
-.intro-github {
-  color: var(--COLOR-BRAND-DARK) !important;
+.link.intro-github {
+  color: var(--COLOR-BRAND-DARK);
 }
 
 /** Link to Top **/
