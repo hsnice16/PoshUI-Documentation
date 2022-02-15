@@ -1,3 +1,7 @@
+/** 
+  Contains CSS code for the docs navbar option
+**/
+
 .docs {
   display: grid;
   grid-template-areas:
@@ -10,8 +14,12 @@
 /** Asides **/
 
 .aside-container {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   position: fixed;
+}
+
+.aside-container li {
+  margin: 1.2rem 0.2rem;
 }
 
 .aside-left {
@@ -25,12 +33,8 @@
   overflow-y: auto;
 }
 
-.aside-left-list h3 {
+.aside-left-container h3 {
   font-size: 2.1rem;
-}
-
-.aside-link {
-  margin: 1.2rem 0.2rem;
 }
 
 .aside-right {
@@ -41,11 +45,11 @@
   margin: 1rem 2rem 3rem 1rem;
 }
 
-.aside-right-list a {
-  color: var(--COLOR-SLATE-700);
+.aside-right-container a {
+  color: var(--COLOR-TEXT);
 }
 
-.aside-right-list a:hover {
+.aside-right-container a:hover {
   color: var(--COLOR-BRAND);
 }
 
@@ -56,20 +60,18 @@
   background: var(--COLOR-WHITE);
   border: thin solid var(--COLOR-BRAND-LIGHT);
   border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
-.primary-btn-container {
-  text-align: center;
+.component-container > div {
+  padding: 2rem 2rem 0;
 }
 
 /** Footer Docs **/
 
 .footer-docs {
   align-items: center;
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   border-top: thin solid var(--COLOR-BRAND-LIGHT);
   bottom: 0;
   display: none;
@@ -85,7 +87,7 @@
 /** Header Docs **/
 
 .header-docs {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   grid-area: header;
   position: sticky;
   top: 0;
@@ -100,6 +102,13 @@
 
 .link.intro-github {
   color: var(--COLOR-BRAND-DARK);
+}
+
+p > code.hljs {
+  color: var(--COLOR-BRAND-DARK);
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.5rem;
 }
 
 /** Link to Top **/
@@ -127,31 +136,18 @@
 
 /** Overidding **/
 
-.form {
-  border: thin solid var(--COLOR-SLATE-300);
-  width: 30rem;
-}
-
 #modal-component .modal {
   z-index: 0;
 }
 
-#modal-demo .modal-container,
+#modal-container,
 .stacked-toast,
 .toast {
   z-index: 3;
 }
 
-.section-component .component-container .nav-container {
-  width: 95%;
-}
-
 .toast:not(.hide, .show) {
   z-index: 0;
-}
-
-.textarea-container {
-  width: 40rem;
 }
 
 /** Pre Code **/

@@ -1,4 +1,17 @@
-@import url("docs.css");
+@import url("css/docs.css");
+
+:root {
+  /** variables are coming from https://poshui-components.netlify.app/css/main.css **/
+
+  --COLOR-BACKGROUND: var(--COLOR-SLATE-50);
+
+  --COLOR-BRAND: var(--COLOR-GLOSSY-BLUE-500);
+  --COLOR-BRAND-DARK: var(--COLOR-GLOSSY-BLUE-700);
+  --COLOR-BRAND-LIGHT: var(--COLOR-GLOSSY-BLUE-100);
+
+  --COLOR-TEXT: var(--COLOR-SLATE-700);
+  --COLOR-TEXT-300: var(--COLOR-SLATE-300);
+}
 
 html {
   font-size: 62.5%;
@@ -6,14 +19,14 @@ html {
 }
 
 body {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   font-size: 1.6rem;
 }
 
 /** Container **/
 
 .container {
-  color: var(--COLOR-SLATE-700);
+  color: var(--COLOR-TEXT);
   min-height: 100vh;
   max-width: 140rem;
 }
@@ -27,13 +40,13 @@ body {
 }
 
 .link::after {
-  background: var(--COLOR-SLATE-700);
+  background: var(--COLOR-TEXT);
   content: "";
   display: block;
   height: 1px;
   left: 50%;
   position: absolute;
-  transition: width 0.3s, left 0.3s;
+  transition: width 0.2s, left 0.2s;
   width: 0;
 }
 
@@ -54,19 +67,19 @@ body {
 /** Home **/
 
 .btn-home {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-SLATE-300);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-TEXT-300);
   font-size: 2rem;
   margin: 3rem 1rem 1rem 0;
   width: 20rem;
 }
 
 .btn-home-outline:hover {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   color: var(--COLOR-BRAND);
 }
 
 .footer-home {
-  border-top: thin solid var(--COLOR-SLATE-300);
+  border-top: thin solid var(--COLOR-TEXT-300);
   justify-content: center;
   min-height: 15vh;
 }
@@ -80,7 +93,7 @@ body {
 }
 
 .header {
-  border-bottom: thin solid var(--COLOR-SLATE-300);
+  border-bottom: thin solid var(--COLOR-TEXT-300);
 }
 
 .header .img-brand-logo {
@@ -134,14 +147,6 @@ body {
 
   .aside-left-container {
     margin-left: 3rem;
-  }
-
-  .card-horizontal {
-    margin: 0 1rem;
-  }
-
-  .textarea-container {
-    width: 30rem;
   }
 }
 
