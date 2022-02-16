@@ -33,13 +33,17 @@ body {
 
 /** Link **/
 
-.link {
+/* aside-left-container is present in docs.css */
+
+.link,
+.aside-left-container a {
   color: inherit;
   font-size: 2rem;
   position: relative;
 }
 
-.link::after {
+.link::after,
+.aside-left-container a::after {
   background: var(--COLOR-TEXT);
   content: "";
   display: block;
@@ -50,17 +54,20 @@ body {
   width: 0;
 }
 
-.link:hover::after {
+.link:hover::after,
+.aside-left-container a:hover::after {
   left: 0;
   width: 100%;
 }
 
-.link-active {
+.link-active,
+.aside-left-container a.link-active {
   color: var(--COLOR-BRAND);
   font-weight: 600;
 }
 
-.link-active::after {
+.link-active::after,
+.aside-left-container a.link-active::after {
   background: var(--COLOR-BRAND);
 }
 
@@ -121,6 +128,16 @@ body {
 }
 
 /** Media Query **/
+
+/* 
+  .docs, 
+  .aside-right, 
+  .aside-right-container, 
+  .link-to-top, 
+  .footer-docs, 
+  .main-docs 
+    are present in docs.css 
+*/
 
 @media only screen and (max-width: 63em) {
   .docs {
