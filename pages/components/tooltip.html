@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Modal Component</title>
+    <title>Posh UI | Tooltip Component</title>
 
     <!-- favicon -->
     <link
@@ -116,13 +116,13 @@
             <li><a href="image.html">Image</a></li>
             <li><a href="input.html">Input</a></li>
             <li><a href="list.html">List</a></li>
-            <li>
-              <a class="link-active" href="modal.html">Modal</a>
-            </li>
+            <li><a href="modal.html">Modal</a></li>
             <li><a href="navigation.html">Navigation</a></li>
             <li><a href="rating.html">Rating</a></li>
             <li><a href="toast.html">Toast</a></li>
-            <li><a href="tooltip.html">Tooltip</a></li>
+            <li>
+              <a class="link-active" href="tooltip.html">Tooltip</a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -132,134 +132,97 @@
       <!-- Main Docs Starts -->
 
       <main class="main-docs">
-        <h1 class="mb-3">Modal</h1>
+        <h1 class="mb-3">Tooltip</h1>
         <p class="main-text">
-          Modal can be used for creating dialog boxes, to communicate with user.
+          Tooltip can be used to show user some information, when user hovers
+          the pointer over an item, without clicking it, and a tooltip may
+          appear—a small "hover box" with information about the item being
+          hovered over
         </p>
 
-        <!-- Modal Component Starts -->
+        <!-- Left Tooltip Starts -->
 
-        <section class="my-2 section-component" id="modal-component">
-          <h2 class="my-2">Modal Component</h2>
-
-          <div class="component-container">
-            <div>
-              <div class="modal">
-                <div class="modal-head">Modal Head</div>
-
-                <p class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-
-                <div class="modal-foot">
-                  <button class="btn btn-primary-outline">Close</button>
-                  <button class="btn btn-primary-solid">Save Changes</button>
-                </div>
-              </div>
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-&lt;div class="modal">
-  &lt;div class="modal-head">Modal Head&lt;/div>
-
-  &lt;p class="modal-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat.
-  &lt;/p>
-
-  &lt;div class="modal-foot">
-    &lt;button class="btn btn-primary-outline">Close&lt;/button>
-    &lt;button class="btn btn-primary-solid">Save Changes&lt;/button>
-  &lt;/div>
-&lt;/div>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Modal Component Ends -->
-
-        <!-- Modal Demo Starts -->
-
-        <section class="my-2 section-component" id="modal-demo">
-          <h2 class="my-2">Modal Demo</h2>
+        <section class="my-2 section-component" id="left-tooltip">
+          <h2 class="my-2">Left Tooltip</h2>
 
           <div class="component-container">
-            <div>
-              <button
-                id="modal-demo-btn"
-                class="btn btn-primary-solid btn-squared"
-              >
-                Modal Demo
+            <div class="flex ml-5">
+              <button class="card-icon-btn mx-0p5 tooltip">
+                <i class="far fa-heart m-auto"></i>
+                <span class="tooltip-left tooltip-text">add to wishlist</span>
               </button>
 
-              <div id="modal-container" class="hide modal-container">
-                <div class="mx-auto modal">
-                  <div class="modal-head">Modal Head</div>
-
-                  <p class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-
-                  <div class="modal-foot">
-                    <button
-                      id="modal-close-btn"
-                      class="btn btn-primary-outline"
-                    >
-                      Close
-                    </button>
-                    <button class="btn btn-primary-solid">Save Changes</button>
-                  </div>
-                </div>
-              </div>
+              <button class="bg-red-50 card-icon-btn mx-0p5 tooltip">
+                <i class="fas fa-heart m-auto"></i>
+                <span class="tooltip-left tooltip-text">
+                  remove from wishlist
+                </span>
+              </button>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;button
-  id="modal-demo-btn"
-  class="btn btn-primary-solid btn-squared"
->
-  Modal Demo
+              <code class="language-html">
+&lt;button class="card-icon-btn tooltip">
+  &lt;i class="far fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-left tooltip-text">
+    add to wishlist
+  &lt;/span>
 &lt;/button>
 
-&lt;div id="modal-container" class="hide modal-container">
-  &lt;div class="mx-auto modal">
-    &lt;div class="modal-head">Modal Head&lt;/div>
-
-    &lt;p class="modal-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    &lt;/p>
-
-    &lt;div class="modal-foot">
-      &lt;button
-        id="modal-close-btn"
-        class="btn btn-primary-outline"
-      >
-        Close
-      &lt;/button>
-      &lt;button class="btn btn-primary-solid">Save Changes&lt;/button>
-    &lt;/div>
-  &lt;/div>
-&lt;/div>  
+&lt;button class="bg-red-50 card-icon-btn tooltip">
+  &lt;i class="fas fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-left tooltip-text">
+    remove from wishlist
+  &lt;/span>
+&lt;/button>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Modal Demo Ends -->
+        <!-- Left Tooltip Ends -->
+
+        <!-- Right Tooltip Starts -->
+
+        <section class="my-2 section-component" id="right-tooltip">
+          <h2 class="my-2">Right Tooltip</h2>
+
+          <div class="component-container">
+            <div class="flex ml-5">
+              <button class="card-icon-btn mx-0p5 tooltip">
+                <i class="far fa-heart m-auto"></i>
+                <span class="tooltip-right tooltip-text">add to wishlist</span>
+              </button>
+
+              <button class="bg-red-50 card-icon-btn mx-0p5 tooltip">
+                <i class="fas fa-heart m-auto"></i>
+                <span class="tooltip-right tooltip-text">
+                  remove from wishlist
+                </span>
+              </button>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">
+&lt;button class="card-icon-btn tooltip">
+  &lt;i class="far fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-right tooltip-text">
+    add to wishlist
+  &lt;/span>
+&lt;/button>
+
+&lt;button class="bg-red-50 card-icon-btn tooltip">
+  &lt;i class="fas fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-right tooltip-text">
+    remove from wishlist
+  &lt;/span>
+&lt;/button>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Right Tooltip Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -270,8 +233,8 @@
         <nav class="aside-container aside-right-container">
           <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li><a href="#modal-component">Modal Component</a></li>
-            <li><a href="#modal-demo">Modal Demo</a></li>
+            <li><a href="#left-tooltip">Left Tooltip</a></li>
+            <li><a href="#right-tooltip">Right Tooltip</a></li>
           </ul>
         </nav>
       </aside>
@@ -282,13 +245,8 @@
 
       <footer class="footer-docs">
         <div>
-          <a class="link" href="list.html">
-            <i class="fas fa-hand-point-left"></i> List
-          </a>
-        </div>
-        <div class="ml-auto">
-          <a class="link" href="navigation.html">
-            Navigation <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            <i class="fas fa-hand-point-left"></i> Toast
           </a>
         </div>
       </footer>
@@ -304,6 +262,5 @@
     <script>
       hljs.highlightAll();
     </script>
-    <script src="https://poshui-components.netlify.app/js/main.js"></script>
   </body>
 </html>
