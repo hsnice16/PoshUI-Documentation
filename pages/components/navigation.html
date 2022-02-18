@@ -55,9 +55,10 @@
 
       <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,17 +68,18 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,66 +91,37 @@
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li>
+              <a class="link-active" href="navigation.html">Navigation</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="rating.html">Rating</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
           </ul>
         </nav>
       </aside>
@@ -169,114 +142,118 @@
         <section class="my-2 section-component" id="desktop-variation-one">
           <h2 class="my-2">Desktop Variation One</h2>
 
-          <div class="component-container pt-2">
-            <div class="bg-stone nav-container">
-              <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
-                <div class="align-i-ctr flex justify-c-sb">
-                  <img
-                    class="img-brand-logo"
-                    src="../../assets/pngs/logo-bg-stone.png"
-                    alt="flaticon cart logo"
-                  />
+          <div class="component-container">
+            <div>
+              <button
+                id="modal-demo-btn"
+                class="btn btn-primary-solid btn-squared"
+              >
+                Navigation Demo
+              </button>
 
-                  <a
-                    class="flex flex-direction-col ml-1"
-                    href="https://inclusive-mart.netlify.app"
-                    target="_blank"
-                  >
-                    <span class="fs-1p7 text-white">Inclusive</span>
-                    <span class="mart-text text-red-500">Mart</span>
-                  </a>
+              <div id="modal-container" class="hide modal-container">
+                <div class="navbar-container">
+                  <nav class="navbar-align px-2 py-1">
+                    <div class="navbar-align">
+                      <img
+                        loading="lazy"
+                        class="img-brand-logo"
+                        src="../../assets/pngs/logo-bg-stone.png"
+                        alt="inclusive mart brand logo"
+                      />
+
+                      <a
+                        class="brand-name"
+                        href="https://inclusive-mart.netlify.app"
+                        target="_blank"
+                      >
+                        <span>Inclusive</span>
+                        <span class="mart-text">Mart</span>
+                      </a>
+                    </div>
+
+                    <form class="navbar-form">
+                      <input type="text" placeholder="search for product" />
+                      <button type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+
+                    <div class="navbar-align">
+                      <button class="navbar-btn-log translate-y">Log In</button>
+
+                      <a href="#" class="badge-btn mx-2 text-white translate-y">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge-count bg-red-500">0</span>
+                      </a>
+
+                      <a href="#" class="badge-btn mr-1 text-white translate-y">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge-count bg-red-500">0</span>
+                      </a>
+                    </div>
+                  </nav>
+                  <div class="navbar-md-container">
+                    <form class="navbar-form">
+                      <input type="text" placeholder="search for product" />
+                      <button type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+                    <button class="navbar-btn-log translate-y">Log In</button>
+                  </div>
                 </div>
-
-                <form
-                  class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-                >
-                  <input
-                    class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-                    type="text"
-                    placeholder="search for product"
-                  />
-                  <button
-                    class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
-                    type="submit"
-                  >
-                    <i class="fas fa-search"></i>
-                  </button>
-                </form>
-
-                <div class="align-i-ctr flex justify-c-sb">
-                  <button
-                    class="btn bg-white bg-white-hover border-r-0p2 translate-y"
-                  >
-                    Log In
-                  </button>
-
-                  <a href="#" class="badge-btn mx-2 text-white translate-y">
-                    <i class="fas fa-heart"></i>
-                    <span class="badge-count bg-red-500">0</span>
-                  </a>
-
-                  <a href="#" class="badge-btn mr-1 text-white translate-y">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="badge-count bg-red-500">0</span>
-                  </a>
-                </div>
-              </nav>
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-stone nav-container">
-              &lt;nav class="align-i-ctr flex justify-c-sb py-1 px-2">
-                  &lt;div class="align-i-ctr flex justify-c-sb">
-                      &lt;img class="img-brand-logo" src="..." alt="..." />
-      
-                      &lt;a
-                          class="flex flex-direction-col ml-1"
-                          href="https://inclusive-mart.netlify.app"
-                          target="_blank"
-                      >
-                          &lt;span class="fs-1p7 text-white">Inclusive&lt;/span>
-                          &lt;span class="mart-text text-red-500">Mart&lt;/span>
-                      &lt;/a>
-                  &lt;/div>
-      
-                  &lt;form
-                      class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-                  >
-                      &lt;input
-                          class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-                          type="text"
-                          placeholder="search for product"
-                      />
-                      &lt;button
-                          class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
-                          type="submit"
-                      >
-                          &lt;i class="fas fa-search">&lt;/i>
-                      &lt;/button>
-                  &lt;/form>
-      
-                  &lt;div class="align-i-ctr flex justify-c-sb">
-                      &lt;button
-                          class="btn bg-white bg-white-hover border-r-0p2 translate-y"
-                      >
-                          Log In
-                      &lt;/button>
-      
-                      &lt;a href="#" class="badge-btn mx-2 text-white translate-y">
-                          &lt;i class="fas fa-heart">&lt;/i>
-                          &lt;span class="badge-count bg-red-500">0&lt;/span>
-                      &lt;/a>
-      
-                      &lt;a href="#" class="badge-btn mr-1 text-white translate-y">
-                          &lt;i class="fas fa-shopping-cart">&lt;/i>
-                          &lt;span class="badge-count bg-red-500">0&lt;/span>
-                      &lt;/a>
-                  &lt;/div>
-              &lt;/nav>
-          &lt;/div>
+&lt;div class="navbar-container">
+  &lt;nav class="navbar-align px-2 py-1">
+    &lt;div class="navbar-align">
+      &lt;img loading="lazy" class="img-brand-logo" src="..." alt="..." />
+
+      &lt;a
+        class="brand-name"
+        href="https://inclusive-mart.netlify.app"
+        target="_blank"
+      >
+        &lt;span>Inclusive&lt;/span>
+        &lt;span class="mart-text">Mart&lt;/span>
+      &lt;/a>
+    &lt;/div>
+
+    &lt;form class="navbar-form">
+      &lt;input type="text" placeholder="search for product" />
+      &lt;button type="submit">
+        &lt;i class="fas fa-search">&lt;/i>
+      &lt;/button>
+    &lt;/form>
+
+    &lt;div class="navbar-align">
+      &lt;button class="navbar-btn-log translate-y">Log In&lt;/button>
+
+      &lt;a href="#" class="badge-btn mx-2 text-white translate-y">
+        &lt;i class="fas fa-heart">&lt;/i>
+        &lt;span class="badge-count bg-red-500">0&lt;/span>
+      &lt;/a>
+
+      &lt;a href="#" class="badge-btn mr-1 text-white translate-y">
+        &lt;i class="fas fa-shopping-cart">&lt;/i>
+        &lt;span class="badge-count bg-red-500">0&lt;/span>
+      &lt;/a>
+    &lt;/div>
+  &lt;/nav>
+  &lt;div class="navbar-md-container">
+    &lt;form class="navbar-form">
+      &lt;input type="text" placeholder="search for product" />
+      &lt;button type="submit">
+        &lt;i class="fas fa-search">&lt;/i>
+      &lt;/button>
+    &lt;/form>
+    &lt;button class="navbar-btn-log translate-y">Log In&lt;/button>
+  &lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -291,11 +268,9 @@
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#desktop-variation-one">Desktop Variation One</a>
-            </li>
+            <li><a href="#desktop-variation-one">Desktop Variation One</a></li>
           </ul>
         </nav>
       </aside>

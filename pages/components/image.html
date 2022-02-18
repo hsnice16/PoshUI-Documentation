@@ -55,9 +55,10 @@
 
       <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,17 +68,18 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,66 +91,37 @@
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li>
+              <a class="link-active" href="image.html">Image</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="rating.html">Rating</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
           </ul>
         </nav>
       </aside>
@@ -168,24 +141,26 @@
         <section class="my-2 section-component" id="img-round">
           <h2 class="my-2">Round Image</h2>
 
-          <div class="component-container pt-2">
+          <div class="component-container">
             <div>
               <img
+                loading="lazy"
                 class="img img-round mx-1"
                 src="../../assets/jpegs/do-something-great.jpg"
-                alt="unsplash do something great jpg"
+                alt="do something great poster"
               />
               <img
+                loading="lazy"
                 class="img img-round mx-1"
                 src="../../assets/jpegs/stanlee.jpg"
-                alt="unsplash stanlee jpg"
+                alt="stanlee"
               />
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="img img-round mx-1" src="..." alt="..."/>
-          &lt;img class="img img-round mx-1" src="..." alt="..."/>
+&lt;img loading="lazy" class="img img-round" src="..." alt="..."/>
+&lt;img loading="lazy" class="img img-round" src="..." alt="..."/>
               </code>
             </pre>
           </div>
@@ -198,24 +173,26 @@
         <section class="my-2 section-component" id="img-square">
           <h2 class="my-2">Square Image</h2>
 
-          <div class="component-container pt-2">
+          <div class="component-container">
             <div>
               <img
+                loading="lazy"
                 class="img img-square mx-1"
                 src="../../assets/jpegs/stanlee.jpg"
-                alt="unsplash stanlee jpg"
+                alt="stanlee"
               />
               <img
+                loading="lazy"
                 class="img img-square mx-1"
                 src="../../assets/jpegs/do-something-great.jpg"
-                alt="unsplash do something great jpg"
+                alt="do something great"
               />
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;img class="img img-square mx-1" src="..." alt="..."/>
-          &lt;img class="img img-square mx-1" src="..." alt="..."/>
+&lt;img loading="lazy" class="img img-square" src="..." alt="..."/>
+&lt;img loading="lazy" class="img img-square" src="..." alt="..."/>
               </code>
             </pre>
           </div>
@@ -231,30 +208,33 @@
             Resize your browser window, to see its responsiveness.
           </p>
 
-          <div class="component-container pt-2">
-            <div class="img-container">
-              <!-- .img-container {max-width: 52vw;} -->
+          <div class="component-container">
+            <div>
+              <div class="img-container">
+                <!-- .img-container {max-width: 52vw;} -->
 
-              <img
-                class="img-responsive"
-                src="../../assets/jpegs/stanlee.jpg"
-                alt="unsplash stanlee jpg"
-              />
+                <img
+                  loading="lazy"
+                  class="img-responsive"
+                  src="../../assets/jpegs/stanlee.jpg"
+                  alt="stanlee"
+                />
+              </div>
             </div>
 
             <pre class="pre-code">
                 <code class="language-html">  
-            &lt;div class="img-container">
-              &lt;!-- .img-container {max-width: 52vw;} -->
+&lt;div class="img-container">
+  &lt;!-- .img-container {max-width: 52vw;} -->
 
-              &lt;img class="img-responsive" src="..." alt="..."/>
-            &lt;div>
+  &lt;img loading="lazy" class="img-responsive" src="..." alt="..."/>
+&lt;div>
                 </code>
               </pre>
           </div>
         </section>
 
-        <!-- Square Image Ends -->
+        <!-- Responsive Image Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -263,19 +243,11 @@
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#img-round">Round Image</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#img-square">Square Image</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#img-responsive">Responsive Image</a>
-            </li>
+            <li><a href="#img-round">Round Image</a></li>
+            <li><a href="#img-square">Square Image</a></li>
+            <li><a href="#img-responsive">Responsive Image</a></li>
           </ul>
         </nav>
       </aside>

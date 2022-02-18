@@ -55,9 +55,10 @@
 
       <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,17 +68,18 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,66 +91,37 @@
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li>
+              <a class="link-active" href="rating.html">Rating</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="rating.html">Rating</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="toast.html">Toast</a></li>
           </ul>
         </nav>
       </aside>
@@ -169,7 +142,7 @@
         <section class="my-2 section-component" id="filled-rating">
           <h2 class="my-2">Filled Rating</h2>
 
-          <div class="component-container pt-2">
+          <div class="component-container">
             <div>
               <span class="rating-star filled"> &#9733; </span>
               <span class="rating-star filled"> &#9733; </span>
@@ -180,11 +153,11 @@
 
             <pre class="pre-code">
               <code class="language-html">
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star"> &amp;#9733; &lt;/span>
               </code>
             </pre>
           </div>
@@ -197,99 +170,101 @@
         <section class="my-2 section-component" id="live-rating">
           <h2 class="my-2">Live Rating</h2>
 
-          <div class="component-container pt-2">
-            <fieldset class="ratings">
-              <input type="radio" name="rating" id="star-5" /><label
-                for="star-5"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-4-n-half" /><label
-                for="star-4-n-half"
-                class="half-star"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-4" /><label
-                for="star-4"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-3-n-half" /><label
-                for="star-3-n-half"
-                class="half-star"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-3" /><label
-                for="star-3"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-2-n-half" /><label
-                for="star-2-n-half"
-                class="half-star"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-2" /><label
-                for="star-2"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-1-n-half" /><label
-                for="star-1-n-half"
-                class="half-star"
-              >
-                &#9733;
-              </label>
-              <input type="radio" name="rating" id="star-1" /><label
-                for="star-1"
-              >
-                &#9733;
-              </label>
-            </fieldset>
+          <div class="component-container">
+            <div>
+              <fieldset class="ratings">
+                <input type="radio" name="rating" id="star-5" /><label
+                  for="star-5"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-4-n-half" /><label
+                  for="star-4-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-4" /><label
+                  for="star-4"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-3-n-half" /><label
+                  for="star-3-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-3" /><label
+                  for="star-3"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-2-n-half" /><label
+                  for="star-2-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-2" /><label
+                  for="star-2"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-1-n-half" /><label
+                  for="star-1-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-1" /><label
+                  for="star-1"
+                >
+                  &#9733;
+                </label>
+              </fieldset>
+            </div>
 
             <pre class="pre-code">
               <code class="language-html">
-          &lt;fieldset class="ratings">
-              &lt;input type="radio" name="rating" id="star-5" />
-              &lt;label for="star-5">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-4-n-half" />
-              &lt;label for="star-4-n-half" class="half-star">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-4" />
-              &lt;label for="star-4">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-3-n-half" />
-              &lt;label for="star-3-n-half" class="half-star">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-3" />
-              &lt;label for="star-3">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-2-n-half" />
-              &lt;label for="star-2-n-half" class="half-star">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-2" />
-              &lt;label for="star-2">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-1-n-half" />
-              &lt;label for="star-1-n-half" class="half-star">
-                  &amp;#9733;
-              &lt;/label>
-              &lt;input type="radio" name="rating" id="star-1" />
-              &lt;label for="star-1">
-                  &amp;#9733;
-              &lt;/label>
-          &lt;/fieldset>
+&lt;fieldset class="ratings">
+  &lt;input type="radio" name="rating" id="star-5" />
+  &lt;label for="star-5">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-4-n-half" />
+  &lt;label for="star-4-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-4" />
+  &lt;label for="star-4">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-3-n-half" />
+  &lt;label for="star-3-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-3" />
+  &lt;label for="star-3">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-2-n-half" />
+  &lt;label for="star-2-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-2" />
+  &lt;label for="star-2">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-1-n-half" />
+  &lt;label for="star-1-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-1" />
+  &lt;label for="star-1">
+    &amp;#9733;
+  &lt;/label>
+&lt;/fieldset>
               </code>
             </pre>
           </div>
@@ -304,15 +279,10 @@
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#filled-rating">Filled Rating</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#live-rating">Live Rating</a>
-            </li>
+            <li><a href="#filled-rating">Filled Rating</a></li>
+            <li><a href="#live-rating">Live Rating</a></li>
           </ul>
         </nav>
       </aside>
@@ -345,6 +315,5 @@
     <script>
       hljs.highlightAll();
     </script>
-    <script src="https://poshui-components.netlify.app/js/main.js"></script>
   </body>
 </html>

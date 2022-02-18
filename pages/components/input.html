@@ -55,9 +55,10 @@
 
       <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,17 +68,18 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,66 +91,37 @@
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li>
+              <a class="link-active" href="input.html">Input</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="rating.html">Rating</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
           </ul>
         </nav>
       </aside>
@@ -169,30 +142,32 @@
         <section class="my-2 section-component" id="text-area">
           <h2 class="my-2">Text Area</h2>
 
-          <div class="component-container pt-2">
-            <div class="textarea-container">
-              <textarea
-                class="textarea"
-                placeholder="Enter Your Message"
-              ></textarea>
+          <div class="component-container">
+            <div>
+              <div class="textarea-container">
+                <textarea
+                  class="textarea"
+                  placeholder="Enter Your Message"
+                ></textarea>
 
-              <button class="btn btn-primary-solid btn-squared textarea-btn">
-                <i class="fas fa-paper-plane"></i> Send
-              </button>
+                <button class="btn btn-primary-solid btn-squared textarea-btn">
+                  <i class="fas fa-paper-plane"></i> Send
+                </button>
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="textarea-container">
-              &lt;textarea
-                class="textarea"
-                placeholder="Enter Your Message"
-              >&lt;/textarea>
-    
-              &lt;button class="btn btn-primary-solid btn-squared textarea-btn">
-                &lt;i class="fas fa-paper-plane">&lt;/i> Send
-              &lt;/button>
-          &lt;/div>
+&lt;div class="textarea-container">
+  &lt;textarea
+    class="textarea"
+    placeholder="Enter Your Message"
+  >&lt;/textarea>
+
+  &lt;button class="btn btn-primary-solid btn-squared textarea-btn">
+    &lt;i class="fas fa-paper-plane">&lt;/i> Send
+  &lt;/button>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -205,46 +180,48 @@
         <section class="my-2 section-component" id="form-input">
           <h2 class="my-2">Form Input</h2>
 
-          <div class="component-container pt-2">
-            <form class="form">
-              <input
-                class="input"
-                type="email"
-                name="email-id"
-                placeholder="Enter Your Email"
-              />
-              <input
-                class="input"
-                type="password"
-                name="password"
-                placeholder="Enter Your Password"
-              />
+          <div class="component-container">
+            <div>
+              <form class="form">
+                <input
+                  class="input"
+                  type="email"
+                  name="email-id"
+                  placeholder="Enter Your Email"
+                />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Enter Your Password"
+                />
 
-              <button class="btn btn-error-solid btn-squared">
-                <i class="fas fa-door-open"></i> Log In
-              </button>
-            </form>
+                <button class="btn btn-error-solid btn-squared">
+                  <i class="fas fa-door-open"></i> Log In
+                </button>
+              </form>
+            </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;form class="form">
-              &lt;input
-                class="input"
-                type="email"
-                name="email-id"
-                placeholder="Enter Your Email"
-              />
-              &lt;input
-                class="input"
-                type="password"
-                name="password"
-                placeholder="Enter Your Password"
-              />
-    
-              &lt;button class="btn btn-error-solid btn-squared">
-                &lt;i class="fas fa-door-open">&lt;/i> Log In
-              &lt;/button>
-          &lt;/form>
+&lt;form class="form">
+  &lt;input
+    class="input"
+    type="email"
+    name="email-id"
+    placeholder="Enter Your Email"
+  />
+  &lt;input
+    class="input"
+    type="password"
+    name="password"
+    placeholder="Enter Your Password"
+  />
+
+  &lt;button class="btn btn-error-solid btn-squared">
+    &lt;i class="fas fa-door-open">&lt;/i> Log In
+  &lt;/button>
+&lt;/form>
               </code>
             </pre>
           </div>
@@ -257,50 +234,52 @@
         <section class="my-2 section-component" id="error-form-input">
           <h2 class="my-2">Error Form Input</h2>
 
-          <div class="component-container pt-2">
-            <form class="form">
-              <span class="msg-error">Enter correct Email and Password</span>
+          <div class="component-container">
+            <div>
+              <form class="form">
+                <span class="msg-error">Enter correct Email and Password</span>
 
-              <input
-                class="input input-error"
-                type="email"
-                name="email-id"
-                placeholder="Enter Your Email"
-              />
-              <input
-                class="input input-error"
-                type="password"
-                name="password"
-                placeholder="Enter Your Password"
-              />
+                <input
+                  class="input input-error"
+                  type="email"
+                  name="email-id"
+                  placeholder="Enter Your Email"
+                />
+                <input
+                  class="input input-error"
+                  type="password"
+                  name="password"
+                  placeholder="Enter Your Password"
+                />
 
-              <button class="btn btn-error-solid btn-squared">
-                <i class="fas fa-door-open"></i> Log In
-              </button>
-            </form>
+                <button class="btn btn-error-solid btn-squared">
+                  <i class="fas fa-door-open"></i> Log In
+                </button>
+              </form>
+            </div>
 
             <pre class="pre-code">
                 <code class="language-html">      
-              &lt;form class="form">
-                  &lt;span class="msg-error">Enter correct Email and Password&lt;/span>
-        
-                  &lt;input
-                    class="input input-error"
-                    type="email"
-                    name="email-id"
-                    placeholder="Enter Your Email"
-                  />
-                  &lt;input
-                    class="input input-error"
-                    type="password"
-                    name="password"
-                    placeholder="Enter Your Password"
-                  />
-        
-                  &lt;button class="btn btn-error-solid btn-squared">
-                    &lt;i class="fas fa-door-open">&lt;/i> Log In
-                  &lt;/button>
-              &lt;/form>
+&lt;form class="form">
+  &lt;span class="msg-error">Enter correct Email and Password&lt;/span>
+
+  &lt;input
+    class="input input-error"
+    type="email"
+    name="email-id"
+    placeholder="Enter Your Email"
+  />
+  &lt;input
+    class="input input-error"
+    type="password"
+    name="password"
+    placeholder="Enter Your Password"
+  />
+
+  &lt;button class="btn btn-error-solid btn-squared">
+    &lt;i class="fas fa-door-open">&lt;/i> Log In
+  &lt;/button>
+&lt;/form>
                 </code>
               </pre>
           </div>
@@ -315,19 +294,11 @@
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#text-area">Text Area</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#form-input">Form Input</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#error-form-input">Error Form Input</a>
-            </li>
+            <li><a href="#text-area">Text Area</a></li>
+            <li><a href="#form-input">Form Input</a></li>
+            <li><a href="#error-form-input">Error Form Input</a></li>
           </ul>
         </nav>
       </aside>
