@@ -63,7 +63,7 @@
   overflow: hidden;
 }
 
-.component-container > div {
+.component-container > div:not(.grid) {
   padding: 2rem 2rem 0;
 }
 

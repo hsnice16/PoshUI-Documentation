@@ -119,6 +119,7 @@ body {
   font-size: 2.5rem;
   justify-content: center;
   min-height: 75vh;
+  padding: 1.5rem;
 }
 
 .main div {
@@ -132,7 +133,8 @@ body {
 /* 
   .docs, 
   .aside-right, 
-  .aside-right-container, 
+  .aside-right-container,
+  .component-container,
   .link-to-top, 
   .footer-docs, 
   .main-docs 
@@ -150,6 +152,10 @@ body {
   .aside-right,
   .aside-right-container {
     display: none;
+  }
+
+  .component-container > .grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .link-to-top {
@@ -214,7 +220,7 @@ body {
     height: 12rem;
   }
 
-  .main {
+  .main div {
     font-size: 2rem;
   }
 }
