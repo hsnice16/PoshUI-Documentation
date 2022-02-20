@@ -50,14 +50,15 @@
     <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container documentation m-auto p-2">
-      <!-- Header Documentation Starts -->
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
 
-      <header class="header header-documentation">
+      <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,94 +68,71 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
+      <!-- Header Docs Ends -->
 
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li><a href="../getting-started/color.html">Color</a></li>
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link link-active" href="alert.html">Alert</a>
+            <li>
+              <a class="link-active" href="alert.html">Alert</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Left Ends -->
 
-      <!-- Main Documentation Starts -->
+      <!-- Main Docs Starts -->
 
-      <main class="main-documentation">
+      <main class="main-docs">
         <h1 class="mb-3">Alert</h1>
         <p class="main-text">
           Alerts can be used to show a message to the user.
@@ -165,22 +143,24 @@
         <section class="my-2 section-component" id="alert-danger">
           <h2 class="my-2">Danger Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-danger-solid">
-              Hey!👋 I'm a Danger Alert
-            </div>
-            <div class="alert alert-danger-outline">
-              Hey!👋 I'm a Danger Alert
+          <div class="component-container">
+            <div>
+              <div class="alert alert-danger-solid">
+                Hey!👋 I'm a Danger Alert
+              </div>
+              <div class="alert alert-danger-outline">
+                Hey!👋 I'm a Danger Alert
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-danger-solid">
-              Hey!👋 I'm a Danger Alert
-          &lt;/div>
-          &lt;div class="alert alert-danger-outline">
-              Hey!👋 I'm a Danger Alert
-          &lt;/div>
+&lt;div class="alert alert-danger-solid">
+  Hey!👋 I'm a Danger Alert
+&lt;/div>
+&lt;div class="alert alert-danger-outline">
+  Hey!👋 I'm a Danger Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -193,18 +173,22 @@
         <section class="my-2 section-component" id="alert-info">
           <h2 class="my-2">Info Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-info-solid">Hey!👋 I'm a Info Alert</div>
-            <div class="alert alert-info-outline">Hey!👋 I'm a Info Alert</div>
+          <div class="component-container">
+            <div>
+              <div class="alert alert-info-solid">Hey!👋 I'm a Info Alert</div>
+              <div class="alert alert-info-outline">
+                Hey!👋 I'm a Info Alert
+              </div>
+            </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-info-solid">
-            Hey!👋 I'm a Info Alert
-          &lt;/div>
-          &lt;div class="alert alert-info-outline">
-            Hey!👋 I'm a Info Alert
-          &lt;/div>
+&lt;div class="alert alert-info-solid">
+  Hey!👋 I'm a Info Alert
+&lt;/div>
+&lt;div class="alert alert-info-outline">
+  Hey!👋 I'm a Info Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -217,22 +201,24 @@
         <section class="my-2 section-component" id="alert-primary">
           <h2 class="my-2">Primary Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-primary-solid">
-              Hey!👋 I'm a Primary Alert
-            </div>
-            <div class="alert alert-primary-outline">
-              Hey!👋 I'm a Primary Alert
+          <div class="component-container">
+            <div>
+              <div class="alert alert-primary-solid">
+                Hey!👋 I'm a Primary Alert
+              </div>
+              <div class="alert alert-primary-outline">
+                Hey!👋 I'm a Primary Alert
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-primary-solid">
-            Hey!👋 I'm a Primary Alert
-          &lt;/div>
-          &lt;div class="alert alert-primary-outline">
-            Hey!👋 I'm a Primary Alert
-          &lt;/div>
+&lt;div class="alert alert-primary-solid">
+  Hey!👋 I'm a Primary Alert
+&lt;/div>
+&lt;div class="alert alert-primary-outline">
+  Hey!👋 I'm a Primary Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -245,22 +231,24 @@
         <section class="my-2 section-component" id="alert-secondary">
           <h2 class="my-2">Secondary Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-secondary-solid">
-              Hey!👋 I'm a Secondary Alert
-            </div>
-            <div class="alert alert-secondary-outline">
-              Hey!👋 I'm a Secondary Alert
+          <div class="component-container">
+            <div>
+              <div class="alert alert-secondary-solid">
+                Hey!👋 I'm a Secondary Alert
+              </div>
+              <div class="alert alert-secondary-outline">
+                Hey!👋 I'm a Secondary Alert
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-secondary-solid">
-            Hey!👋 I'm a Secondary Alert
-          &lt;/div>
-          &lt;div class="alert alert-secondary-outline">
-            Hey!👋 I'm a Secondary Alert
-          &lt;/div>
+&lt;div class="alert alert-secondary-solid">
+  Hey!👋 I'm a Secondary Alert
+&lt;/div>
+&lt;div class="alert alert-secondary-outline">
+  Hey!👋 I'm a Secondary Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -273,22 +261,24 @@
         <section class="my-2 section-component" id="alert-success">
           <h2 class="my-2">Success Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-success-solid">
-              Hey!👋 I'm a Success Alert
-            </div>
-            <div class="alert alert-success-outline">
-              Hey!👋 I'm a Success Alert
+          <div class="component-container">
+            <div>
+              <div class="alert alert-success-solid">
+                Hey!👋 I'm a Success Alert
+              </div>
+              <div class="alert alert-success-outline">
+                Hey!👋 I'm a Success Alert
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-success-solid">
-            Hey!👋 I'm a Success Alert
-          &lt;/div>
-          &lt;div class="alert alert-success-outline">
-            Hey!👋 I'm a Success Alert
-          &lt;/div>
+&lt;div class="alert alert-success-solid">
+  Hey!👋 I'm a Success Alert
+&lt;/div>
+&lt;div class="alert alert-success-outline">
+  Hey!👋 I'm a Success Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -301,22 +291,24 @@
         <section class="my-2 section-component" id="alert-warning">
           <h2 class="my-2">Warning Alert</h2>
 
-          <div class="component-container pt-2">
-            <div class="alert alert-warning-solid">
-              Hey!👋 I'm a Warning Alert
-            </div>
-            <div class="alert alert-warning-outline">
-              Hey!👋 I'm a Warning Alert
+          <div class="component-container">
+            <div>
+              <div class="alert alert-warning-solid">
+                Hey!👋 I'm a Warning Alert
+              </div>
+              <div class="alert alert-warning-outline">
+                Hey!👋 I'm a Warning Alert
+              </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="alert alert-warning-solid">
-            Hey!👋 I'm a Warning Alert
-          &lt;/div>
-          &lt;div class="alert alert-warning-outline">
-            Hey!👋 I'm a Warning Alert
-          &lt;/div>
+&lt;div class="alert alert-warning-solid">
+  Hey!👋 I'm a Warning Alert
+&lt;/div>
+&lt;div class="alert alert-warning-outline">
+  Hey!👋 I'm a Warning Alert
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -325,46 +317,29 @@
         <!-- Alert Warning Ends -->
       </main>
 
-      <!-- Main Documentation Ends -->
+      <!-- Main Docs Ends -->
 
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#alert-danger">Danger Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-info">Info Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-primary">Primary Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-secondary">Secondary Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-success">Success Alert</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#alert-warning">Warning Alert</a>
-            </li>
+            <li><a href="#alert-danger">Danger Alert</a></li>
+            <li><a href="#alert-info">Info Alert</a></li>
+            <li><a href="#alert-primary">Primary Alert</a></li>
+            <li><a href="#alert-secondary">Secondary Alert</a></li>
+            <li><a href="#alert-success">Success Alert</a></li>
+            <li><a href="#alert-warning">Warning Alert</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Right Ends -->
 
-      <!-- Footer Starts -->
+      <!-- Footer Docs Starts -->
 
-      <footer>
+      <footer class="footer-docs">
         <div>
           <a class="link" href="../layout/css-grid.html">
             <i class="fas fa-hand-point-left"></i> CSS Grid
@@ -377,7 +352,7 @@
         </div>
       </footer>
 
-      <!-- Footer Ends -->
+      <!-- Footer Docs Ends -->
 
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button

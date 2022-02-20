@@ -50,14 +50,15 @@
     <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container documentation m-auto p-2">
-      <!-- Header Documentation Starts -->
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
 
-      <header class="header header-documentation">
+      <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,94 +68,71 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
+      <!-- Header Docs Ends -->
 
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li><a href="../getting-started/color.html">Color</a></li>
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li>
+              <a class="link-active" href="card.html">Card</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Left Ends -->
 
-      <!-- Main Documentation Starts -->
+      <!-- Main Docs Starts -->
 
-      <main class="main-documentation">
+      <main class="main-docs">
         <h1 class="mb-3">Card</h1>
         <p class="main-text">
           Cards can be proved very useful. You can use them to display content
@@ -167,64 +145,67 @@
         <section class="my-2 section-component" id="card-horizontal">
           <h2 class="my-2">Horizontal Text Card</h2>
 
-          <div class="component-container pt-2">
-            <div class="card card-horizontal">
-              <img
-                class="card-horizontal-img"
-                src="../../assets/jpegs/captain-america.jpg"
-                alt="captain america jpg"
-              />
+          <div class="component-container">
+            <div>
+              <div class="card card-horizontal">
+                <img
+                  loading="lazy"
+                  class="card-horizontal-img"
+                  src="../../assets/jpegs/captain-america.jpg"
+                  alt="captain america face"
+                />
 
-              <div>
-                <h1 class="card-head">Captain America</h1>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <div>
+                  <h1 class="card-head">Captain America</h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
 
-                <div class="card-horizontal-footer">
-                  <button class="card-icon-btn">
-                    <i class="far fa-comment m-auto"></i>
-                  </button>
-                  <button class="card-icon-btn">
-                    <i class="far fa-heart m-auto"></i>
-                  </button>
-                  <button class="card-icon-btn">
-                    <i class="far fa-share-square m-auto"></i>
-                  </button>
+                  <div class="card-horizontal-footer">
+                    <button class="card-icon-btn">
+                      <i class="far fa-comment m-auto"></i>
+                    </button>
+                    <button class="card-icon-btn">
+                      <i class="far fa-heart m-auto"></i>
+                    </button>
+                    <button class="card-icon-btn">
+                      <i class="far fa-share-square m-auto"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-        &lt;div class="card card-horizontal">
-            &lt;img class="card-horizontal-img" src="..." alt="..." />
-    
-            &lt;div>
-                &lt;h1 class="card-head">Captain America&lt;/h1>
-                &lt;p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                &lt;/p>
-    
-                &lt;div class="card-horizontal-footer">
-                    &lt;button class="card-icon-btn">
-                        &lt;i class="far fa-comment m-auto">&lt;/i>
-                    &lt;/button>
-                    &lt;button class="card-icon-btn">
-                        &lt;i class="far fa-heart m-auto">&lt;/i>
-                    &lt;/button>
-                    &lt;button class="card-icon-btn">
-                        &lt;i class="far fa-share-square m-auto">&lt;/i>
-                    &lt;/button>
-                &lt;/div>
-            &lt;/div>
-        &lt;/div>
+&lt;div class="card card-horizontal">
+  &lt;img loading="lazy" class="card-horizontal-img" src="..." alt="..." />
+
+  &lt;div>
+    &lt;h1 class="card-head">Captain America&lt;/h1>
+    &lt;p class="card-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna 
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    &lt;/p>
+
+    &lt;div class="card-horizontal-footer">
+      &lt;button class="card-icon-btn">
+        &lt;i class="far fa-comment m-auto">&lt;/i>
+      &lt;/button>
+      &lt;button class="card-icon-btn">
+        &lt;i class="far fa-heart m-auto">&lt;/i>
+      &lt;/button>
+      &lt;button class="card-icon-btn">
+        &lt;i class="far fa-share-square m-auto">&lt;/i>
+      &lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -237,62 +218,65 @@
         <section class="my-2 section-component" id="card-vertical">
           <h2 class="my-2">Vertical Item Card</h2>
 
-          <div class="component-container pt-2">
-            <div class="card card-vertical">
-              <div class="card-vertical-header">
-                <span class="status-badge">In stock </span>
+          <div class="component-container">
+            <div>
+              <div class="card card-vertical">
+                <div class="card-vertical-header">
+                  <span class="status-badge">In stock </span>
 
-                <button class="card-icon-btn ml-auto">
-                  <i class="far fa-heart m-auto"></i>
-                </button>
-              </div>
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
 
-              <img
-                class="card-vertical-img"
-                src="../../assets/jpegs/hulk-bobblehead.jpg"
-                alt="hulk bobblehead jpg"
-              />
+                <img
+                  loading="lazy"
+                  class="card-vertical-img"
+                  src="../../assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead"
+                />
 
-              <h1 class="card-head">Hulk Bobblehead</h1>
-              <p class="card-text">
-                Elegant Lifestyle Super Hero Incredible Hulk Action Figure
-                Limited Edition, Marvel Comics Character
-              </p>
+                <h1 class="card-head">Hulk Bobblehead</h1>
+                <p class="card-text">
+                  Elegant Lifestyle Super Hero Incredible Hulk Action Figure
+                  Limited Edition, Marvel Comics Character
+                </p>
 
-              <div class="card-vertical-footer">
-                <span class="current-price"><strong>₹416</strong></span>
-                <span class="earlier-price">₹1,780</span>
-                <span class="pct-off">76% off</span>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>₹416</strong></span>
+                  <span class="earlier-price">₹1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-        &lt;div class="card card-vertical">
-            &lt;div class="card-vertical-header">
-                &lt;span class="status-badge">In stock &lt;/span>
-    
-                &lt;button class="card-icon-btn ml-auto">
-                &lt;i class="far fa-heart m-auto">&lt;/i>
-                &lt;/button>
-            &lt;/div>
-    
-            &lt;img class="card-vertical-img" src="..." alt="..." />
-    
-            &lt;h1 class="card-head">Hulk Bobblehead&lt;/h1>
-            &lt;p class="card-text">
-                Elegant Lifestyle Super Hero Incredible Hulk Action Figure 
-                Limited Edition, Marvel Comics Character
-            &lt;/p>
-    
-            &lt;div class="card-vertical-footer">
-                &lt;span class="current-price">
-                &lt;strong>₹416&lt;/strong>
-                &lt;/span>
-                &lt;span class="earlier-price">₹1,780&lt;/span>
-                &lt;span class="pct-off">76% off&lt;/span>
-            &lt;/div>
-        &lt;/div>
+&lt;div class="card card-vertical">
+  &lt;div class="card-vertical-header">
+    &lt;span class="status-badge">In stock &lt;/span>
+
+    &lt;button class="card-icon-btn ml-auto">
+      &lt;i class="far fa-heart m-auto">&lt;/i>
+    &lt;/button>
+  &lt;/div>
+
+  &lt;img loading="lazy" class="card-vertical-img" src="..." alt="..." />
+
+  &lt;h1 class="card-head">Hulk Bobblehead&lt;/h1>
+  &lt;p class="card-text">
+    Elegant Lifestyle Super Hero Incredible Hulk Action Figure 
+    Limited Edition, Marvel Comics Character
+  &lt;/p>
+
+  &lt;div class="card-vertical-footer">
+    &lt;span class="current-price">
+      &lt;strong>₹416&lt;/strong>
+    &lt;/span>
+    &lt;span class="earlier-price">₹1,780&lt;/span>
+    &lt;span class="pct-off">76% off&lt;/span>
+  &lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -308,54 +292,58 @@
             You can hover to see overlay transition
           </p>
 
-          <div class="component-container pt-2">
-            <div class="card card-text-overlay card-vertical">
-              <img
-                class="card-vertical-img"
-                src="../../assets/jpegs/eternals.jpg"
-                alt="eternals final trailer jpg"
-              />
-
-              <span class="card-vertical-img overlay-content">
-                <i class="fas fa-play overlay-play-icon"></i> Play
-              </span>
-
-              <div class="card-text-overlay-row">
+          <div class="component-container">
+            <div>
+              <div class="card card-text-overlay card-vertical">
                 <img
-                  class="card-horizontal-img"
-                  src="../../assets/jpegs/marvel.jpg"
-                  alt="marvel entertainment jpg"
+                  loading="lazy"
+                  class="card-vertical-img"
+                  src="../../assets/jpegs/eternals.jpg"
+                  alt="eternals final trailer poster"
                 />
 
-                <div>
-                  <h1 class="card-head">
-                    Marvel Studios' Eternals | Final Trailer
-                  </h1>
-                  <p class="card-text">Marvel Entertainment</p>
+                <span class="card-vertical-img overlay-content">
+                  <i class="fas fa-play overlay-play-icon"></i> Play
+                </span>
+
+                <div class="card-text-overlay-row">
+                  <img
+                    loading="lazy"
+                    class="card-horizontal-img"
+                    src="../../assets/jpegs/marvel.jpg"
+                    alt="marvel entertainment logo"
+                  />
+
+                  <div>
+                    <h1 class="card-head">
+                      Marvel Studios' Eternals | Final Trailer
+                    </h1>
+                    <p class="card-text">Marvel Entertainment</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <pre class="pre-code">
                     <code class="language-html">      
-            &lt;div class="card card-text-overlay card-vertical">
-                &lt;img class="card-vertical-img" src="..." alt="..." />
+&lt;div class="card card-text-overlay card-vertical">
+  &lt;img loading="lazy" class="card-vertical-img" src="..." alt="..." />
 
-                &lt;span class="card-vertical-img overlay-content">
-                    &lt;i class="fas fa-play overlay-play-icon">&lt;/i> Play
-                &lt;/span>
+  &lt;span class="card-vertical-img overlay-content">
+    &lt;i class="fas fa-play overlay-play-icon">&lt;/i> Play
+  &lt;/span>
 
-                &lt;div class="card-text-overlay-row">
-                    &lt;img class="card-horizontal-img" src="..." alt="..." />
+  &lt;div class="card-text-overlay-row">
+    &lt;img loading="lazy" class="card-horizontal-img" src="..." alt="..." />
 
-                    &lt;div>
-                        &lt;h1 class="card-head">
-                            Marvel Studios' Eternals | Final Trailer
-                        &lt;/h1>
-                        &lt;p class="card-text">Marvel Entertainment&lt;/p>
-                    &lt;/div>
-                &lt;/div>
-            &lt;/div>
+    &lt;div>
+      &lt;h1 class="card-head">
+        Marvel Studios' Eternals | Final Trailer
+      &lt;/h1>
+      &lt;p class="card-text">Marvel Entertainment&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
                     </code>
                 </pre>
           </div>
@@ -368,33 +356,35 @@
         <section class="my-2 section-component" id="card-dismiss">
           <h2 class="my-2">Dismiss Card with Shadow</h2>
 
-          <div class="component-container pt-2">
-            <div class="card card-dismiss">
-              <button class="card-icon-btn ml-auto">
-                <i class="fas fa-times m-auto"></i>
-              </button>
+          <div class="component-container">
+            <div>
+              <div class="card card-dismiss">
+                <button class="card-icon-btn ml-auto">
+                  <i class="fas fa-times m-auto"></i>
+                </button>
 
-              <h1 class="card-head">Marvel Heading</h1>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+                <h1 class="card-head">Marvel Heading</h1>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
             </div>
 
             <pre class="pre-code">
                     <code class="language-html">      
-            &lt;div class="card card-dismiss">
-                &lt;button class="card-icon-btn ml-auto">
-                    &lt;i class="fas fa-times m-auto">&lt;/i>
-                &lt;/button>
-        
-                &lt;h1 class="card-head">Marvel Heading&lt;/h1>
-                &lt;p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua.
-                &lt;/p>
-            &lt;/div>
+&lt;div class="card card-dismiss">
+  &lt;button class="card-icon-btn ml-auto">
+    &lt;i class="fas fa-times m-auto">&lt;/i>
+  &lt;/button>
+
+  &lt;h1 class="card-head">Marvel Heading&lt;/h1>
+  &lt;p class="card-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing 
+    elit, sed do eiusmod tempor incididunt ut labore et 
+    dolore magna aliqua.
+  &lt;/p>
+&lt;/div>
                     </code>
                 </pre>
           </div>
@@ -403,38 +393,27 @@
         <!-- Dismiss Card with Shadow Ends -->
       </main>
 
-      <!-- Main Documentation Ends -->
+      <!-- Main Docs Ends -->
 
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#card-horizontal">Horizontal Text Card</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#card-vertical">Vertical Item Card</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#card-text-overlay">Text Overlay Card</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#card-dismiss">Dismiss Card with Shadow</a>
-            </li>
+            <li><a href="#card-horizontal">Horizontal Text Card</a></li>
+            <li><a href="#card-vertical">Vertical Item Card</a></li>
+            <li><a href="#card-text-overlay">Text Overlay Card</a></li>
+            <li><a href="#card-dismiss">Dismiss Card with Shadow</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Right Ends -->
 
-      <!-- Footer Starts -->
+      <!-- Footer Docs Starts -->
 
-      <footer>
+      <footer class="footer-docs">
         <div>
           <a class="link" href="button.html">
             <i class="fas fa-hand-point-left"></i> Button
@@ -447,7 +426,7 @@
         </div>
       </footer>
 
-      <!-- Footer Ends -->
+      <!-- Footer Docs Ends -->
 
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button

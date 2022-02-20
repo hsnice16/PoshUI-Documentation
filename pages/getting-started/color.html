@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posh UI | Color Getting Started</title>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- poshui-components cdn -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- poshui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
+  </head>
+  <body>
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
+
+      <header class="header header-docs">
+        <img
+          loading="lazy"
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo"
+        />
+        <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
+
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/hsnice16/PoshUI-Documentation"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Header Docs Ends -->
+
+      <!-- Aside Left Starts -->
+
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a class="link-active" href="color.html">Color</a></li>
+            <li><a href="typography.html">Typography</a></li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Layout</h3>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
+          </ul>
+
+          <ul class="mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li><a href="../components/alert.html">Alert</a></li>
+            <li><a href="../components/avatar.html">Avatar</a></li>
+            <li><a href="../components/badge.html">Badge</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+            <li><a href="../components/card.html">Card</a></li>
+            <li><a href="../components/image.html">Image</a></li>
+            <li><a href="../components/input.html">Input</a></li>
+            <li><a href="../components/list.html">List</a></li>
+            <li><a href="../components/modal.html">Modal</a></li>
+            <li><a href="../components/navigation.html"> Navigation </a></li>
+            <li><a href="../components/rating.html">Rating</a></li>
+            <li><a href="../components/toast.html">Toast</a></li>
+            <li><a href="../components/tooltip.html">Tooltip</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Docs Starts -->
+
+      <main class="main-docs">
+        <h1 class="mb-3">Color</h1>
+        <p class="main-text">
+          These are some color variable that are present in the
+          <em>Posh UI</em>. You can use these in your custom <em>CSS</em> files.
+          Use it like this,
+        </p>
+
+        <div class="component-container my-2">
+          <pre class="pre-code intro-pre">
+              <code class="language-css">
+.poshui-demo {
+  color: var(--COLOR-AMBER-500);
+  background: var(--COLOR-AMBER-200);
+}
+              </code>
+            </pre>
+        </div>
+
+        <!-- Amber & Blue Color Starts -->
+
+        <section class="my-2 section-component" id="amber-blue">
+          <h2 class="my-2">Amber <em>&</em> Blue</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-AMBER-200</span></td>
+                    <td><span>#fde68a</span></td>
+                    <td><div class="color-view amber-200"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-AMBER-400</span></td>
+                    <td><span>#fbbf24</span></td>
+                    <td><div class="color-view amber-400"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-AMBER-500</span></td>
+                    <td><span>#f59e0b</span></td>
+                    <td><div class="color-view amber-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-AMBER-600</span></td>
+                    <td><span>#d97706</span></td>
+                    <td><div class="color-view amber-600"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-BLUE-50</span></td>
+                    <td><span>#eff6ff</span></td>
+                    <td><div class="color-view blue-50"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-BLUE-300</span></td>
+                    <td><span>#93c5fd</span></td>
+                    <td><div class="color-view blue-300"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-BLUE-500</span></td>
+                    <td><span>#3b82f6</span></td>
+                    <td><div class="color-view blue-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-BLUE-800</span></td>
+                    <td><span>#1e40af</span></td>
+                    <td><div class="color-view blue-800"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Amber & Blue Color Ends -->
+
+        <!-- Cyan & Red Color Starts -->
+
+        <section class="my-2 section-component" id="cyan-red">
+          <h2 class="my-2">Cyan <em>&</em> Red</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-CYAN-50</span></td>
+                    <td><span>#ecfeff</span></td>
+                    <td><div class="color-view cyan-50"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-CYAN-200</span></td>
+                    <td><span>#a5f3fc</span></td>
+                    <td><div class="color-view cyan-200"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-CYAN-500</span></td>
+                    <td><span>#06b6d4</span></td>
+                    <td><div class="color-view cyan-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-CYAN-600</span></td>
+                    <td><span>#0891b2</span></td>
+                    <td><div class="color-view cyan-600"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-RED-50</span></td>
+                    <td><span>#fadddd</span></td>
+                    <td><div class="color-view red-50"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-RED-200</span></td>
+                    <td><span>#fecaca</span></td>
+                    <td><div class="color-view red-200"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-RED-500</span></td>
+                    <td><span>#ef4444</span></td>
+                    <td><div class="color-view red-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-RED-600</span></td>
+                    <td><span>#dc2626</span></td>
+                    <td><div class="color-view red-600"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cyan & Red Color Starts -->
+
+        <!-- Glossy Blue & Lime Color Starts -->
+
+        <section class="my-2 section-component" id="glossyblue-lime">
+          <h2 class="my-2">Glossy Blue <em>&</em> Lime</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-GLOSSY-BLUE-100</span></td>
+                    <td><span>#cfdef9</span></td>
+                    <td><div class="color-view glossy-blue-100"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-GLOSSY-BLUE-500</span></td>
+                    <td><span>#0d5be1</span></td>
+                    <td><div class="color-view glossy-blue-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-GLOSSY-BLUE-700</span></td>
+                    <td><span>#0a49b4</span></td>
+                    <td><div class="color-view glossy-blue-700"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-LIME-200</span></td>
+                    <td><span>#d9f99d</span></td>
+                    <td><div class="color-view lime-200"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-LIME-500</span></td>
+                    <td><span>#84cc16</span></td>
+                    <td><div class="color-view lime-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-LIME-600</span></td>
+                    <td><span>#65a30d</span></td>
+                    <td><div class="color-view lime-600"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Glossy Blue & Lime Color Starts -->
+
+        <!-- Stone & Yellow Color Starts -->
+
+        <section class="my-2 section-component" id="stone-yellow">
+          <h2 class="my-2">Stone <em>&</em> Yellow</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-STONE-50</span></td>
+                    <td><span>#454444</span></td>
+                    <td><div class="color-view stone-50"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-STONE</span></td>
+                    <td><span>#333</span></td>
+                    <td><div class="color-view stone"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-YELLOW</span></td>
+                    <td><span>#ffd814</span></td>
+                    <td><div class="color-view yellow"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-YELLOW-600</span></td>
+                    <td><span>#f4cf13</span></td>
+                    <td><div class="color-view yellow-600"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stone & Yellow Color Starts -->
+
+        <!-- Gray & Overlay Color Starts -->
+
+        <section class="my-2 section-component" id="gray-overlay">
+          <h2 class="my-2">Gray <em>&</em> Overlay</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-GRAY-500</span></td>
+                    <td><span>#6b7280</span></td>
+                    <td><div class="color-view gray-500"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-OVERLAY</span></td>
+                    <td><span>rgba(51, 65, 85, 0.5)</span></td>
+                    <td><div class="color-view overlay"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gray & Overlay Color Starts -->
+
+        <!-- Shadow Light & White Color Starts -->
+
+        <section class="my-2 section-component" id="shadowlight-white">
+          <h2 class="my-2">Shadow Light <em>&</em> White</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-SHADOW-LIGHT</span></td>
+                    <td><span>rgba(149, 157, 165, 0.2)</span></td>
+                    <td><div class="color-view shadow-light"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-WHITE</span></td>
+                    <td><span>#fff</span></td>
+                    <td><div class="color-view white"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Shadow Light & White Color Starts -->
+
+        <!-- Slate Starts -->
+
+        <section class="my-2 section-component" id="slate">
+          <h2 class="my-2">Slate</h2>
+
+          <div class="component-container">
+            <div class="fs-1p5 grid grid-cols-2 p-1">
+              <table class="m-0p5 text-left">
+                <thead>
+                  <tr>
+                    <th>Variable Name</th>
+                    <th>Variable Value</th>
+                    <th>Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span>--COLOR-SLATE-50</span></td>
+                    <td><span>#f8fafc</span></td>
+                    <td><div class="color-view slate-50"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-300</span></td>
+                    <td><span>#cbd5e1</span></td>
+                    <td><div class="color-view slate-300"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-400</span></td>
+                    <td><span>#94a3b8</span></td>
+                    <td><div class="color-view slate-400"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-500</span></td>
+                    <td><span>#64748b</span></td>
+                    <td><div class="color-view slate-500"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-600</span></td>
+                    <td><span>#475569</span></td>
+                    <td><div class="color-view slate-600"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-700</span></td>
+                    <td><span>#334155</span></td>
+                    <td><div class="color-view slate-700"></div></td>
+                  </tr>
+                  <tr>
+                    <td><span>--COLOR-SLATE-800</span></td>
+                    <td><span>#1e293b</span></td>
+                    <td><div class="color-view slate-800"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slate Starts -->
+      </main>
+
+      <!-- Main Docs Ends -->
+
+      <!-- Aside Rigit Starts -->
+
+      <aside class="aside-right">
+        <nav class="aside-container aside-right-container">
+          <ul class="mb-2">
+            <h3 class="my-1p5">On this Page</h3>
+            <li>
+              <a href="#amber-blue">Amber <em>&</em> Blue</a>
+            </li>
+            <li>
+              <a href="#cyan-red">Cyan <em>&</em> Red</a>
+            </li>
+            <li>
+              <a href="#glossyblue-lime">Glossy Blue <em>&</em> Lime</a>
+            </li>
+            <li>
+              <a href="#stone-yellow">Stone <em>&</em> Yellow</a>
+            </li>
+            <li>
+              <a href="#gray-overlay">Gray <em>&</em> Overlay</a>
+            </li>
+            <li>
+              <a href="#shadowlight-white">Shadow Light <em>&</em> White</a>
+            </li>
+            <li><a href="#slate">Slate</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Aside Right Ends -->
+
+      <!-- Footer Docs Starts -->
+
+      <footer class="footer-docs">
+        <div>
+          <a class="link" href="introduction.html">
+            <i class="fas fa-hand-point-left"></i> Introduction
+          </a>
+        </div>
+        <div class="ml-auto">
+          <a class="link" href="typography.html">
+            Typography <i class="fas fa-hand-point-right"></i>
+          </a>
+        </div>
+      </footer>
+
+      <!-- Footer Docs Ends -->
+
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

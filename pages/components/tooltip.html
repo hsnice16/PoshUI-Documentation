@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Avatar Component</title>
+    <title>Posh UI | Tooltip Component</title>
 
     <!-- favicon -->
     <link
@@ -110,9 +110,7 @@
           <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
             <li><a href="alert.html">Alert</a></li>
-            <li>
-              <a class="link-active" href="avatar.html">Avatar</a>
-            </li>
+            <li><a href="avatar.html">Avatar</a></li>
             <li><a href="badge.html">Badge</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="card.html">Card</a></li>
@@ -123,7 +121,9 @@
             <li><a href="navigation.html">Navigation</a></li>
             <li><a href="rating.html">Rating</a></li>
             <li><a href="toast.html">Toast</a></li>
-            <li><a href="tooltip.html">Tooltip</a></li>
+            <li>
+              <a class="link-active" href="tooltip.html">Tooltip</a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -133,122 +133,97 @@
       <!-- Main Docs Starts -->
 
       <main class="main-docs">
-        <h1 class="mb-3">Avatar</h1>
-        <p class="main-text">Avatars can be used for user profile picture.</p>
+        <h1 class="mb-3">Tooltip</h1>
+        <p class="main-text">
+          Tooltip can be used to show user some information, when user hovers
+          the pointer over an item, without clicking it, and a tooltip may
+          appear—a small "hover box" with information about the item being
+          hovered over
+        </p>
 
-        <!-- Same Sized Avatars Starts -->
+        <!-- Left Tooltip Starts -->
 
-        <section class="my-2 section-component" id="same-sized">
-          <h2 class="my-2">Same Sized Avatars</h2>
+        <section class="my-2 section-component" id="left-tooltip">
+          <h2 class="my-2">Left Tooltip</h2>
 
           <div class="component-container">
-            <div>
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="female avatar"
-              />
+            <div class="flex ml-5">
+              <button class="card-icon-btn mx-0p5 tooltip">
+                <i class="far fa-heart m-auto"></i>
+                <span class="tooltip-left tooltip-text">add to wishlist</span>
+              </button>
 
-              <img
-                loading="lazy"
-                class="avatar mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="male avatar"
-              />
+              <button class="bg-red-50 card-icon-btn mx-0p5 tooltip">
+                <i class="fas fa-heart m-auto"></i>
+                <span class="tooltip-left tooltip-text">
+                  remove from wishlist
+                </span>
+              </button>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />        
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
+              <code class="language-html">
+&lt;button class="card-icon-btn tooltip">
+  &lt;i class="far fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-left tooltip-text">
+    add to wishlist
+  &lt;/span>
+&lt;/button>
+
+&lt;button class="bg-red-50 card-icon-btn tooltip">
+  &lt;i class="fas fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-left tooltip-text">
+    remove from wishlist
+  &lt;/span>
+&lt;/button>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Same Sized Avatars Ends -->
+        <!-- Left Tooltip Ends -->
 
-        <!-- Different Sized Avatars Starts -->
+        <!-- Right Tooltip Starts -->
 
-        <section class="my-2 section-component" id="different-sized">
-          <h2 class="my-2">Different Sized Avatars</h2>
+        <section class="my-2 section-component" id="right-tooltip">
+          <h2 class="my-2">Right Tooltip</h2>
 
           <div class="component-container">
-            <div>
-              <img
-                loading="lazy"
-                class="avatar avatar-xs"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="female avatar"
-              />
+            <div class="flex ml-5">
+              <button class="card-icon-btn mx-0p5 tooltip">
+                <i class="far fa-heart m-auto"></i>
+                <span class="tooltip-right tooltip-text">add to wishlist</span>
+              </button>
 
-              <img
-                loading="lazy"
-                class="avatar avatar-sm mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar avatar-md mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar avatar-lg"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="male avatar"
-              />
+              <button class="bg-red-50 card-icon-btn mx-0p5 tooltip">
+                <i class="fas fa-heart m-auto"></i>
+                <span class="tooltip-right tooltip-text">
+                  remove from wishlist
+                </span>
+              </button>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;img loading="lazy" class="avatar avatar-xs" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-sm" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-md" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-lg" src="..." alt="..." />
+              <code class="language-html">
+&lt;button class="card-icon-btn tooltip">
+  &lt;i class="far fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-right tooltip-text">
+    add to wishlist
+  &lt;/span>
+&lt;/button>
+
+&lt;button class="bg-red-50 card-icon-btn tooltip">
+  &lt;i class="fas fa-heart m-auto">&lt;/i>
+  &lt;span class="tooltip-right tooltip-text">
+    remove from wishlist
+  &lt;/span>
+&lt;/button>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Different Sized Avatars Ends -->
+        <!-- Right Tooltip Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -259,8 +234,8 @@
         <nav class="aside-container aside-right-container">
           <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li><a href="#same-sized">Same Sized Avatars</a></li>
-            <li><a href="#different-sized">Different Sized Avatars</a></li>
+            <li><a href="#left-tooltip">Left Tooltip</a></li>
+            <li><a href="#right-tooltip">Right Tooltip</a></li>
           </ul>
         </nav>
       </aside>
@@ -271,13 +246,8 @@
 
       <footer class="footer-docs">
         <div>
-          <a class="link" href="alert.html">
-            <i class="fas fa-hand-point-left"></i> Alert
-          </a>
-        </div>
-        <div class="ml-auto">
-          <a class="link" href="badge.html">
-            Badge <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            <i class="fas fa-hand-point-left"></i> Toast
           </a>
         </div>
       </footer>

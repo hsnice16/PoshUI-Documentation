@@ -50,14 +50,15 @@
     <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container documentation m-auto p-2">
-      <!-- Header Documentation Starts -->
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
 
-      <header class="header header-documentation">
+      <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,94 +68,71 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
+      <!-- Header Docs Ends -->
 
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li><a href="../getting-started/color.html">Color</a></li>
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li>
+              <a class="link-active" href="button.html">Button</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Left Ends -->
 
-      <!-- Main Documentation Starts -->
+      <!-- Main Docs Starts -->
 
-      <main class="main-documentation">
+      <main class="main-docs">
         <h1 class="mb-3">Button</h1>
         <p class="main-text">
           Buttons can be used to make your web page interactive to your user.
@@ -166,8 +144,8 @@
         <section class="my-2 section-component" id="btn-filled">
           <h2 class="my-2">Filled Primary Buttons</h2>
 
-          <div class="component-container pt-2">
-            <div class="primary-btn-container">
+          <div class="component-container">
+            <div>
               <button class="btn">Default</button>
               <button class="btn btn-error-solid">Error</button>
               <button class="btn btn-primary-solid">Primary</button>
@@ -177,11 +155,11 @@
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;button class="btn">Default&lt;/button>
-          &lt;button class="btn btn-error-solid">Error&lt;/button>
-          &lt;button class="btn btn-primary-solid">Primary&lt;/button>
-          &lt;button class="btn btn-secondary-solid">Secondary&lt;/button>
-          &lt;button class="btn btn-success-solid">Success&lt;/button>
+&lt;button class="btn">Default&lt;/button>
+&lt;button class="btn btn-error-solid">Error&lt;/button>
+&lt;button class="btn btn-primary-solid">Primary&lt;/button>
+&lt;button class="btn btn-secondary-solid">Secondary&lt;/button>
+&lt;button class="btn btn-success-solid">Success&lt;/button>
               </code>
             </pre>
           </div>
@@ -194,8 +172,8 @@
         <section class="my-2 section-component" id="btn-outlined">
           <h2 class="my-2">Outlined Primary Buttons</h2>
 
-          <div class="component-container pt-2">
-            <div class="primary-btn-container">
+          <div class="component-container">
+            <div>
               <button class="btn btn-error-outline">Error</button>
               <button class="btn btn-primary-outline">Primary</button>
               <button class="btn btn-secondary-outline">Secondary</button>
@@ -204,10 +182,10 @@
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;button class="btn btn-error-outline">Error&lt;/button>
-          &lt;button class="btn btn-primary-outline">Primary&lt;/button>
-          &lt;button class="btn btn-secondary-outline">Secondary&lt;/button>
-          &lt;button class="btn btn-success-outline">Success&lt;/button>
+&lt;button class="btn btn-error-outline">Error&lt;/button>
+&lt;button class="btn btn-primary-outline">Primary&lt;/button>
+&lt;button class="btn btn-secondary-outline">Secondary&lt;/button>
+&lt;button class="btn btn-success-outline">Success&lt;/button>
               </code>
             </pre>
           </div>
@@ -220,7 +198,7 @@
         <section class="my-2 section-component" id="btn-link">
           <h2 class="my-2">Link Button</h2>
 
-          <div class="component-container pt-2">
+          <div class="component-container">
             <div>
               <a href="#">
                 <button class="btn btn-primary-solid btn-rounded">Link</button>
@@ -234,12 +212,12 @@
 
             <pre class="pre-code">
                 <code class="language-html">      
-            &lt;a href="#">
-                &lt;button class="btn btn-primary-solid btn-rounded">Link&lt;/button>
-            &lt;/a>
-            &lt;a href="#">
-                &lt;button class="btn btn-primary-outline btn-rounded">Link&lt;/button>
-            &lt;/a>
+&lt;a href="#">
+  &lt;button class="btn btn-primary-solid btn-rounded">Link&lt;/button>
+&lt;/a>
+&lt;a href="#">
+  &lt;button class="btn btn-primary-outline btn-rounded">Link&lt;/button>
+&lt;/a>
                 </code>
               </pre>
           </div>
@@ -252,7 +230,7 @@
         <section class="my-2 section-component" id="btn-icon">
           <h2 class="my-2">Icon Button</h2>
 
-          <div class="component-container pt-2">
+          <div class="component-container">
             <div>
               <button class="btn btn-error-solid btn-squared">
                 <i class="fas fa-door-open"></i> Log In
@@ -264,12 +242,12 @@
 
             <pre class="pre-code">
                 <code class="language-html">      
-            &lt;button class="btn btn-error-solid btn-squared">
-                &lt;i class="fas fa-door-open">&lt;/i> Log In
-            &lt;/button>
-            &lt;button class="btn btn-error-outline btn-squared">
-                &lt;i class="fas fa-door-open">&lt;/i> Log In
-            &lt;/button>
+&lt;button class="btn btn-error-solid btn-squared">
+  &lt;i class="fas fa-door-open">&lt;/i> Log In
+&lt;/button>
+&lt;button class="btn btn-error-outline btn-squared">
+  &lt;i class="fas fa-door-open">&lt;/i> Log In
+&lt;/button>
                 </code>
               </pre>
           </div>
@@ -282,19 +260,21 @@
         <section class="my-2 section-component" id="btn-float">
           <h2 class="my-2">Floating Button</h2>
 
-          <div class="component-container pt-2">
-            <a href="#">
-              <button class="btn-floating">
-                <i class="fas fa-arrow-up"></i></button
-            ></a>
+          <div class="component-container">
+            <div>
+              <a href="#">
+                <button class="btn-floating">
+                  <i class="fas fa-arrow-up"></i></button
+              ></a>
+            </div>
 
             <pre class="pre-code">
                 <code class="language-html">      
-            &lt;a href="#">
-                &lt;button class="btn-floating">
-                    &lt;i class="fas fa-arrow-up">&lt;/i>
-                &lt;/button>
-            &lt;/a>
+&lt;a href="#">
+  &lt;button class="btn-floating">
+    &lt;i class="fas fa-arrow-up">&lt;/i>
+  &lt;/button>
+&lt;/a>
                 </code>
               </pre>
           </div>
@@ -303,42 +283,28 @@
         <!-- Floating Button Ends -->
       </main>
 
-      <!-- Main Documentation Ends -->
+      <!-- Main Docs Ends -->
 
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#btn-filled">Filled Primary Buttons</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#btn-outlined">Outlined Primary Buttons</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#btn-link">Link Button</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#btn-icon">Icon Button</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#btn-float">Floating Button</a>
-            </li>
+            <li><a href="#btn-filled">Filled Primary Buttons</a></li>
+            <li><a href="#btn-outlined">Outlined Primary Buttons</a></li>
+            <li><a href="#btn-link">Link Button</a></li>
+            <li><a href="#btn-icon">Icon Button</a></li>
+            <li><a href="#btn-float">Floating Button</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Right Ends -->
 
-      <!-- Footer Starts -->
+      <!-- Footer Docs Starts -->
 
-      <footer>
+      <footer class="footer-docs">
         <div>
           <a class="link" href="badge.html">
             <i class="fas fa-hand-point-left"></i> Badge
@@ -351,7 +317,7 @@
         </div>
       </footer>
 
-      <!-- Footer Ends -->
+      <!-- Footer Docs Ends -->
 
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button

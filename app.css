@@ -1,4 +1,17 @@
-@import url("documentation.css");
+@import url("css/docs.css");
+
+:root {
+  /** variables are coming from https://poshui-components.netlify.app/css/main.css **/
+
+  --COLOR-BACKGROUND: var(--COLOR-SLATE-50);
+
+  --COLOR-BRAND: var(--COLOR-GLOSSY-BLUE-500);
+  --COLOR-BRAND-DARK: var(--COLOR-GLOSSY-BLUE-700);
+  --COLOR-BRAND-LIGHT: var(--COLOR-GLOSSY-BLUE-100);
+
+  --COLOR-TEXT: var(--COLOR-SLATE-700);
+  --COLOR-TEXT-300: var(--COLOR-SLATE-300);
+}
 
 html {
   font-size: 62.5%;
@@ -6,71 +19,88 @@ html {
 }
 
 body {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   font-size: 1.6rem;
 }
 
 /** Container **/
 
 .container {
-  color: var(--COLOR-SLATE-700);
+  color: var(--COLOR-TEXT);
   min-height: 100vh;
   max-width: 140rem;
 }
 
 /** Link **/
 
-.link {
+/* aside-left-container is present in docs.css */
+
+.link,
+.aside-left-container a {
   color: inherit;
   font-size: 2rem;
   position: relative;
 }
 
-.link::after {
-  background: var(--COLOR-SLATE-700);
+.link::after,
+.aside-left-container a::after {
+  background: var(--COLOR-TEXT);
   content: "";
   display: block;
   height: 1px;
   left: 50%;
   position: absolute;
-  transition: width 0.3s, left 0.3s;
+  transition: width 0.2s, left 0.2s;
   width: 0;
 }
 
-.link:hover::after {
+.link:hover::after,
+.aside-left-container a:hover::after {
   left: 0;
   width: 100%;
 }
 
-.link-active {
+.link-active,
+.aside-left-container a.link-active {
   color: var(--COLOR-BRAND);
   font-weight: 600;
 }
 
-.link-active::after {
+.link-active::after,
+.aside-left-container a.link-active::after {
   background: var(--COLOR-BRAND);
 }
 
 /** Home **/
 
 .btn-home {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-SLATE-300);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-TEXT-300);
   font-size: 2rem;
   margin: 3rem 1rem 1rem 0;
   width: 20rem;
 }
 
 .btn-home-outline:hover {
-  background: var(--COLOR-SLATE-50);
+  background: var(--COLOR-BACKGROUND);
   color: var(--COLOR-BRAND);
 }
 
+.footer-home {
+  border-top: thin solid var(--COLOR-TEXT-300);
+  justify-content: center;
+  min-height: 15vh;
+}
+
+.footer-home,
 .header {
   align-items: center;
-  border-bottom: thin solid var(--COLOR-SLATE-300);
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 4rem;
+}
+
+.header {
+  border-bottom: thin solid var(--COLOR-TEXT-300);
 }
 
 .header .img-brand-logo {
@@ -84,16 +114,35 @@ body {
 }
 
 .main {
+  align-items: center;
+  display: flex;
   font-size: 2.5rem;
-  margin: 10rem auto 0;
+  justify-content: center;
+  min-height: 75vh;
+  padding: 1.5rem;
+}
+
+.main div {
+  font-size: 2.5rem;
   max-width: 55rem;
   text-align: center;
 }
 
 /** Media Query **/
 
+/* 
+  .docs, 
+  .aside-right, 
+  .aside-right-container,
+  .component-container,
+  .link-to-top, 
+  .footer-docs, 
+  .main-docs 
+    are present in docs.css 
+*/
+
 @media only screen and (max-width: 63em) {
-  .documentation {
+  .docs {
     grid-template-areas:
       "header header"
       "aside-left main";
@@ -105,31 +154,27 @@ body {
     display: none;
   }
 
+  .component-container > .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .link-to-top {
     display: unset;
   }
 }
 
 @media only screen and (max-width: 59em) {
-  .documentation {
+  .docs {
     grid-template-columns: 20rem minmax(0, 1fr);
   }
 
   .aside-left-container {
     margin-left: 3rem;
   }
-
-  .card-horizontal {
-    margin: 0 1rem;
-  }
-
-  .textarea-container {
-    width: 30rem;
-  }
 }
 
 @media only screen and (max-width: 44em) {
-  .documentation {
+  .docs {
     grid-template-areas:
       "header"
       "main";
@@ -145,7 +190,7 @@ body {
     padding: 0.5rem;
   }
 
-  footer {
+  .footer-docs {
     display: flex;
   }
 
@@ -157,7 +202,7 @@ body {
     display: none;
   }
 
-  .main-documentation {
+  .main-docs {
     padding: 3.5rem 0.5rem;
   }
 }
@@ -167,7 +212,7 @@ body {
     font-size: 60%;
   }
 
-  .documentation {
+  .docs {
     grid-template-rows: 12rem 1fr;
   }
 
@@ -175,8 +220,7 @@ body {
     height: 12rem;
   }
 
-  .main {
+  .main div {
     font-size: 2rem;
-    margin-top: 10rem;
   }
 }

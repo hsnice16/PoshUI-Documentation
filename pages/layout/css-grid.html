@@ -48,16 +48,18 @@
 
     <!-- poshui-documentation css -->
     <link rel="stylesheet" href="../../app.css" />
+    <link rel="stylesheet" href="../../css/pages/layout/css-grid.css" />
   </head>
   <body>
-    <div class="container documentation m-auto p-2">
-      <!-- Header Documentation Starts -->
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
 
-      <header class="header header-documentation">
+      <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,96 +69,71 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
+      <!-- Header Docs Ends -->
 
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html">Introduction</a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li><a href="../getting-started/color.html">Color</a></li>
+            <li>
+              <a href="../getting-started/typography.html">Typography</a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
+            <li>
               <a class="link link-active" href="css-grid.html">CSS Grid</a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="../components/alert.html">Alert</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/navigation.html"
-                >Navigation</a
-              >
-            </li>
-            <li class="aside-link">
-              <a class="link" href="../components/toast.html">Toast</a>
-            </li>
+            <li><a href="../components/alert.html">Alert</a></li>
+            <li><a href="../components/avatar.html">Avatar</a></li>
+            <li><a href="../components/badge.html">Badge</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+            <li><a href="../components/card.html">Card</a></li>
+            <li><a href="../components/image.html">Image</a></li>
+            <li><a href="../components/input.html">Input</a></li>
+            <li><a href="../components/list.html">List</a></li>
+            <li><a href="../components/modal.html">Modal</a></li>
+            <li><a href="../components/navigation.html"> Navigation </a></li>
+            <li><a href="../components/rating.html">Rating</a></li>
+            <li><a href="../components/toast.html">Toast</a></li>
+            <li><a href="../components/tooltip.html">Tooltip</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Left Ends -->
 
-      <!-- Main Documentation Starts -->
+      <!-- Main Docs Starts -->
 
-      <main class="main-documentation">
+      <main class="main-docs">
         <h1 class="mb-3">CSS Grid</h1>
         <p class="main-text">
           CSS Grid can be used to structure elements in rows and columns.
@@ -167,26 +144,20 @@
         <section class="my-2 section-component" id="two-columns">
           <h2 class="my-2">Two Columns Grid</h2>
 
-          <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-cols-2 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Two
+          <div class="component-container">
+            <div>
+              <div class="grid grid-cols-2">
+                <div>Grid Item One</div>
+                <div>Grid Item Two</div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-cols-2 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-          &lt;/div>
+&lt;div class="grid grid-cols-2">
+  &lt;div>Grid Item One&lt;/div>
+  &lt;div>Grid Item Two&lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -199,26 +170,20 @@
         <section class="my-2 section-component" id="two-rows">
           <h2 class="my-2">Two Rows Grid</h2>
 
-          <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-rows-2 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Two
+          <div class="component-container">
+            <div>
+              <div class="grid grid-rows-2">
+                <div>Grid Item One</div>
+                <div>Grid Item Two</div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-rows-2 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-          &lt;/div>
+&lt;div class="grid grid-rows-2">
+  &lt;div>Grid Item One&lt;/div>
+  &lt;div>Grid Item Two&lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -231,32 +196,22 @@
         <section class="my-2 section-component" id="three-columns">
           <h2 class="my-2">Three Columns Grid</h2>
 
-          <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-cols-3 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Two
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                Grid Item Three
+          <div class="component-container">
+            <div>
+              <div class="grid grid-cols-3">
+                <div>Grid Item One</div>
+                <div>Grid Item Two</div>
+                <div>Grid Item Three</div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-cols-3 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold mx-0p5 p-1">
-                  Grid Item Three
-              &lt;/div>
-          &lt;/div>
+&lt;div class="grid grid-cols-3">
+  &lt;div>Grid Item One&lt;/div>
+  &lt;div>Grid Item Two&lt;/div>
+  &lt;div>Grid Item Three&lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -269,32 +224,22 @@
         <section class="my-2 section-component" id="three-rows">
           <h2 class="my-2">Three Rows Grid</h2>
 
-          <div class="component-container pt-2">
-            <div class="bg-lime-200 border-r-0p2 grid grid-rows-3 p-1">
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item One
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Two
-              </div>
-              <div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                Grid Item Three
+          <div class="component-container">
+            <div>
+              <div class="grid grid-rows-3">
+                <div>Grid Item One</div>
+                <div>Grid Item Two</div>
+                <div>Grid Item Three</div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="bg-lime-200 border-r-0p2 grid grid-rows-3 p-1">
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item One
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Two
-              &lt;/div>
-              &lt;div class="bg-lime-500 border-r-0p2 fw-bold my-0p5 p-1">
-                  Grid Item Three
-              &lt;/div>
-          &lt;/div>
+&lt;div class="grid grid-rows-3">
+  &lt;div>Grid Item One&lt;/div>
+  &lt;div>Grid Item Two&lt;/div>
+  &lt;div>Grid Item Three&lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -303,38 +248,27 @@
         <!-- Three Rows Grid Ends -->
       </main>
 
-      <!-- Main Documentation Ends -->
+      <!-- Main Docs Ends -->
 
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#two-columns">Two Columns Grid</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#two-rows">Two Rows Grid</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#three-columns">Three Columns Grid</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#three-rows">Three Rows Grid</a>
-            </li>
+            <li><a href="#two-columns">Two Columns Grid</a></li>
+            <li><a href="#two-rows">Two Rows Grid</a></li>
+            <li><a href="#three-columns">Three Columns Grid</a></li>
+            <li><a href="#three-rows">Three Rows Grid</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Right Ends -->
 
-      <!-- Footer Starts -->
+      <!-- Footer Docs Starts -->
 
-      <footer>
+      <footer class="footer-docs">
         <div>
           <a class="link" href="../getting-started/typography.html">
             <i class="fas fa-hand-point-left"></i> Typography
@@ -347,7 +281,7 @@
         </div>
       </footer>
 
-      <!-- Footer Ends -->
+      <!-- Footer Docs Ends -->
 
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button

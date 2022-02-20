@@ -25,6 +25,15 @@
       href="assets/brand-logos/favicon-16x16.png"
     />
 
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- poshui-components cdn -->
     <link
       rel="stylesheet"
@@ -38,9 +47,10 @@
     <div class="container m-auto p-2">
       <header class="header">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="index.html">Posh UI</a>
 
@@ -50,45 +60,89 @@
               <a class="link" href="index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="pages/getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="pages/getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
       <main class="main">
-        <h1>
-          Now design your project faster and better with
-          <span class="block">Posh UI</span>
-        </h1>
+        <div>
+          <h1>
+            Now design your project faster and better with
+            <span class="block">Posh UI</span>
+          </h1>
 
-        <a href="pages/getting-started/introduction.html">
-          <button class="btn btn-primary-solid btn-squared btn-home">
-            Get Started
-          </button>
-        </a>
+          <a href="pages/getting-started/introduction.html">
+            <button class="btn btn-primary-solid btn-squared btn-home">
+              Get Started
+            </button>
+          </a>
 
-        <a
-          href="https://github.com/hsnice16/PoshUI-Documentation"
-          target="_blank"
-        >
-          <button
-            class="btn btn-primary-outline btn-squared btn-home btn-home-outline"
+          <a
+            href="https://github.com/hsnice16/PoshUI-Documentation"
+            target="_blank"
           >
-            GitHub
-          </button>
-        </a>
+            <button
+              class="btn btn-primary-outline btn-squared btn-home btn-home-outline"
+            >
+              GitHub
+            </button>
+          </a>
+        </div>
       </main>
+
+      <footer class="footer-home">
+        <div class="text-center">
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Connect with me</div>
+
+          <ul class="flex">
+            <li class="mx-1 translate-y">
+              <a
+                href="https://twitter.com/hsnice16"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://github.com/hsnice16/"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.linkedin.com/in/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.instagram.com/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

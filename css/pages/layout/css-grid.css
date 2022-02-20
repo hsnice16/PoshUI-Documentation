@@ -1,0 +1,22 @@
+/** variables are coming from https://poshui-components.netlify.app/css/main.css **/
+
+.grid {
+  background: var(--COLOR-LIME-200);
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.grid > div {
+  background: var(--COLOR-LIME-500);
+  border-radius: 0.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.grid:is(.grid-cols-2, .grid-cols-3) > div {
+  margin: auto 0.5rem;
+}
+
+.grid:is(.grid-rows-2, .grid-rows-3) > div {
+  margin: 0.5rem 0;
+}

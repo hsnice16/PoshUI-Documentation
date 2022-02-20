@@ -50,14 +50,15 @@
     <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container documentation m-auto p-2">
-      <!-- Header Documentation Starts -->
+    <div class="container docs m-auto p-2">
+      <!-- Header Docs Starts -->
 
-      <header class="header header-documentation">
+      <header class="header header-docs">
         <img
+          loading="lazy"
           class="img-brand-logo"
           src="../../assets/brand-logos/brand-logo.png"
-          alt="brand logo png"
+          alt="brand logo"
         />
         <a class="link-brand mx-1" href="../../index.html">Posh UI</a>
 
@@ -67,94 +68,71 @@
               <a class="link" href="../../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../getting-started/introduction.html"
-                >Docs</a
-              >
+              <a class="link" href="../getting-started/introduction.html">
+                Docs
+              </a>
             </li>
             <li class="inline-block mx-1">
               <a
                 class="link"
                 href="https://github.com/hsnice16/PoshUI-Documentation"
                 target="_blank"
-                >GitHub</a
               >
+                GitHub
+              </a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <!-- Header Documentation Ends -->
+      <!-- Header Docs Ends -->
 
       <!-- Aside Left Starts -->
 
       <aside class="aside-left">
         <nav class="aside-container aside-left-container">
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Getting Started</h3>
-            <li class="aside-link">
-              <a class="link" href="../getting-started/introduction.html"
-                >Introduction</a
-              >
+            <li>
+              <a href="../getting-started/introduction.html"> Introduction </a>
             </li>
-
-            <li class="aside-link">
-              <a class="link" href="../getting-started/typography.html"
-                >Typography</a
-              >
+            <li><a href="../getting-started/color.html">Color</a></li>
+            <li>
+              <a href="../getting-started/typography.html"> Typography </a>
             </li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Layout</h3>
-            <li class="aside-link">
-              <a class="link" href="../layout/css-grid.html">CSS Grid</a>
-            </li>
+            <li><a href="../layout/css-grid.html">CSS Grid</a></li>
           </ul>
 
-          <ul class="aside-left-list mb-3">
+          <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
-            <li class="aside-link">
-              <a class="link" href="alert.html">Alert</a>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="avatar.html">Avatar</a></li>
+            <li><a href="badge.html">Badge</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="card.html">Card</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="list.html">List</a></li>
+            <li>
+              <a class="link-active" href="modal.html">Modal</a>
             </li>
-            <li class="aside-link">
-              <a class="link" href="avatar.html">Avatar</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="badge.html">Badge</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="button.html">Button</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="card.html">Card</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="image.html">Image</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="input.html">Input</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="list.html">List</a>
-            </li>
-            <li class="aside-link">
-              <a class="link link-active" href="modal.html">Modal</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="navigation.html">Navigation</a>
-            </li>
-            <li class="aside-link">
-              <a class="link" href="toast.html">Toast</a>
-            </li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="rating.html">Rating</a></li>
+            <li><a href="toast.html">Toast</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Left Ends -->
 
-      <!-- Main Documentation Starts -->
+      <!-- Main Docs Starts -->
 
-      <main class="main-documentation">
+      <main class="main-docs">
         <h1 class="mb-3">Modal</h1>
         <p class="main-text">
           Modal can be used for creating dialog boxes, to communicate with user.
@@ -165,52 +143,42 @@
         <section class="my-2 section-component" id="modal-component">
           <h2 class="my-2">Modal Component</h2>
 
-          <div class="component-container pt-2">
-            <div class="border-slate-300 border-thin border-solid modal mx-1">
-              <div class="modal-head">Modal Head</div>
+          <div class="component-container">
+            <div>
+              <div class="modal">
+                <div class="modal-head">Modal Head</div>
 
-              <p class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+                <p class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
-              <div class="modal-foot">
-                <button
-                  class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
-                >
-                  Save
-                </button>
-                <button class="border-r-0p2 btn btn-primary-outline px-1p5">
-                  Close
-                </button>
+                <div class="modal-foot">
+                  <button class="btn btn-primary-outline">Close</button>
+                  <button class="btn btn-primary-solid">Save Changes</button>
+                </div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;div class="border-slate-300 border-thin border-solid modal">
-              &lt;div class="modal-head">Modal Head&lt;/div>
+&lt;div class="modal">
+  &lt;div class="modal-head">Modal Head&lt;/div>
 
-              &lt;p class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              &lt;/p>
+  &lt;p class="modal-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.
+  &lt;/p>
 
-              &lt;div class="modal-foot">
-              &lt;button
-                  class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
-                >
-                  Save
-                &lt;/button>
-                &lt;button class="border-r-0p2 btn btn-primary-outline px-1p5">
-                  Close
-                &lt;/button>
-              &lt;/div>
-          &lt;/div>
+  &lt;div class="modal-foot">
+    &lt;button class="btn btn-primary-outline">Close&lt;/button>
+    &lt;button class="btn btn-primary-solid">Save Changes&lt;/button>
+  &lt;/div>
+&lt;/div>
               </code>
             </pre>
           </div>
@@ -223,76 +191,70 @@
         <section class="my-2 section-component" id="modal-demo">
           <h2 class="my-2">Modal Demo</h2>
 
-          <div class="component-container pt-2">
-            <button
-              id="modal-demo-btn"
-              class="btn btn-primary-solid btn-squared"
-            >
-              Modal Demo
-            </button>
+          <div class="component-container">
+            <div>
+              <button
+                id="modal-demo-btn"
+                class="btn btn-primary-solid btn-squared"
+              >
+                Modal Demo
+              </button>
 
-            <div id="modal-container" class="hide modal-container">
-              <div class="mx-auto modal">
-                <div class="modal-head">Modal Head</div>
+              <div id="modal-container" class="hide modal-container">
+                <div class="mx-auto modal">
+                  <div class="modal-head">Modal Head</div>
 
-                <p class="modal-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                  <p class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
 
-                <div class="modal-foot">
-                  <button
-                    class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
-                  >
-                    Save
-                  </button>
-                  <button
-                    id="modal-close-btn"
-                    class="border-r-0p2 btn btn-primary-outline px-1p5"
-                  >
-                    Close
-                  </button>
+                  <div class="modal-foot">
+                    <button
+                      id="modal-close-btn"
+                      class="btn btn-primary-outline"
+                    >
+                      Close
+                    </button>
+                    <button class="btn btn-primary-solid">Save Changes</button>
+                  </div>
                 </div>
               </div>
             </div>
 
             <pre class="pre-code">
               <code class="language-html">      
-          &lt;button
-               id="modal-demo-btn"
-               class="btn btn-primary-solid btn-squared"
-          >
-               Modal Demo
-          &lt;/button>
-      
-          &lt;div id="modal-container" class="hide modal-container">
-              &lt;div class="mx-auto modal">
-                  &lt;div class="modal-head">Modal Head&lt;/div>
-      
-                  &lt;p class="modal-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat.
-                  &lt;/p>
-      
-                  &lt;div class="modal-foot">
-                      &lt;button
-                        class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
-                      >
-                        Save
-                      &lt;/button>
-                      &lt;button
-                        id="modal-close-btn"
-                        class="border-r-0p2 btn btn-primary-outline px-1p5"
-                      >
-                        Close
-                      &lt;/button>
-                  &lt;/div>
-              &lt;/div>
-          &lt;/div>
+&lt;button
+  id="modal-demo-btn"
+  class="btn btn-primary-solid btn-squared"
+>
+  Modal Demo
+&lt;/button>
+
+&lt;div id="modal-container" class="hide modal-container">
+  &lt;div class="mx-auto modal">
+    &lt;div class="modal-head">Modal Head&lt;/div>
+
+    &lt;p class="modal-body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    &lt;/p>
+
+    &lt;div class="modal-foot">
+      &lt;button
+        id="modal-close-btn"
+        class="btn btn-primary-outline"
+      >
+        Close
+      &lt;/button>
+      &lt;button class="btn btn-primary-solid">Save Changes&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>  
               </code>
             </pre>
           </div>
@@ -301,30 +263,25 @@
         <!-- Modal Demo Ends -->
       </main>
 
-      <!-- Main Documentation Ends -->
+      <!-- Main Docs Ends -->
 
       <!-- Aside Rigit Starts -->
 
       <aside class="aside-right">
         <nav class="aside-container aside-right-container">
-          <ul class="aside-right-list mb-2">
+          <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li class="aside-link">
-              <a href="#modal-component">Modal Component</a>
-            </li>
-
-            <li class="aside-link">
-              <a href="#modal-demo">Modal Demo</a>
-            </li>
+            <li><a href="#modal-component">Modal Component</a></li>
+            <li><a href="#modal-demo">Modal Demo</a></li>
           </ul>
         </nav>
       </aside>
 
       <!-- Aside Right Ends -->
 
-      <!-- Footer Starts -->
+      <!-- Footer Docs Starts -->
 
-      <footer>
+      <footer class="footer-docs">
         <div>
           <a class="link" href="list.html">
             <i class="fas fa-hand-point-left"></i> List
@@ -337,7 +294,7 @@
         </div>
       </footer>
 
-      <!-- Footer Ends -->
+      <!-- Footer Docs Ends -->
 
       <a class="link-to-top" href="#">
         <button class="btn-floating"><i class="fas fa-arrow-up"></i></button

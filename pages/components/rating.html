@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Avatar Component</title>
+    <title>Posh UI | Rating Component</title>
 
     <!-- favicon -->
     <link
@@ -110,9 +110,7 @@
           <ul class="mb-3">
             <h3 class="my-1p5">Components</h3>
             <li><a href="alert.html">Alert</a></li>
-            <li>
-              <a class="link-active" href="avatar.html">Avatar</a>
-            </li>
+            <li><a href="avatar.html">Avatar</a></li>
             <li><a href="badge.html">Badge</a></li>
             <li><a href="button.html">Button</a></li>
             <li><a href="card.html">Card</a></li>
@@ -121,7 +119,9 @@
             <li><a href="list.html">List</a></li>
             <li><a href="modal.html">Modal</a></li>
             <li><a href="navigation.html">Navigation</a></li>
-            <li><a href="rating.html">Rating</a></li>
+            <li>
+              <a class="link-active" href="rating.html">Rating</a>
+            </li>
             <li><a href="toast.html">Toast</a></li>
             <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
@@ -133,122 +133,146 @@
       <!-- Main Docs Starts -->
 
       <main class="main-docs">
-        <h1 class="mb-3">Avatar</h1>
-        <p class="main-text">Avatars can be used for user profile picture.</p>
+        <h1 class="mb-3">Rating</h1>
+        <p class="main-text">
+          Rating can be used to show ratings on the product, or it can also be
+          used for taking ratings from the user.
+        </p>
 
-        <!-- Same Sized Avatars Starts -->
+        <!-- Filled Rating Starts -->
 
-        <section class="my-2 section-component" id="same-sized">
-          <h2 class="my-2">Same Sized Avatars</h2>
+        <section class="my-2 section-component" id="filled-rating">
+          <h2 class="my-2">Filled Rating</h2>
 
           <div class="component-container">
             <div>
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="female avatar"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="male avatar"
-              />
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star filled"> &#9733; </span>
+              <span class="rating-star"> &#9733; </span>
+              <span class="rating-star"> &#9733; </span>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />        
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
+              <code class="language-html">
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star"> &amp;#9733; &lt;/span>
+&lt;span class="rating-star"> &amp;#9733; &lt;/span>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Same Sized Avatars Ends -->
+        <!-- Filled Rating Ends -->
 
-        <!-- Different Sized Avatars Starts -->
+        <!-- Live Rating Starts -->
 
-        <section class="my-2 section-component" id="different-sized">
-          <h2 class="my-2">Different Sized Avatars</h2>
+        <section class="my-2 section-component" id="live-rating">
+          <h2 class="my-2">Live Rating</h2>
 
           <div class="component-container">
             <div>
-              <img
-                loading="lazy"
-                class="avatar avatar-xs"
-                src="../../assets/svgs/female-avatar.svg"
-                alt="female avatar"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar avatar-sm mx-1"
-                src="../../assets/jpegs/spider-man.jpg"
-                alt="spider man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar"
-                src="../../assets/jpegs/black-panther.jpg"
-                alt="black panther face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar avatar-md mx-1"
-                src="../../assets/jpegs/iron-man.jpg"
-                alt="iron man face"
-              />
-
-              <img
-                loading="lazy"
-                class="avatar avatar-lg"
-                src="../../assets/svgs/male-avatar.svg"
-                alt="male avatar"
-              />
+              <fieldset class="ratings">
+                <input type="radio" name="rating" id="star-5" /><label
+                  for="star-5"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-4-n-half" /><label
+                  for="star-4-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-4" /><label
+                  for="star-4"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-3-n-half" /><label
+                  for="star-3-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-3" /><label
+                  for="star-3"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-2-n-half" /><label
+                  for="star-2-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-2" /><label
+                  for="star-2"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-1-n-half" /><label
+                  for="star-1-n-half"
+                  class="half-star"
+                >
+                  &#9733;
+                </label>
+                <input type="radio" name="rating" id="star-1" /><label
+                  for="star-1"
+                >
+                  &#9733;
+                </label>
+              </fieldset>
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;img loading="lazy" class="avatar avatar-xs" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-sm" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-md" src="..." alt="..." />
-&lt;img loading="lazy" class="avatar avatar-lg" src="..." alt="..." />
+              <code class="language-html">
+&lt;fieldset class="ratings">
+  &lt;input type="radio" name="rating" id="star-5" />
+  &lt;label for="star-5">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-4-n-half" />
+  &lt;label for="star-4-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-4" />
+  &lt;label for="star-4">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-3-n-half" />
+  &lt;label for="star-3-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-3" />
+  &lt;label for="star-3">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-2-n-half" />
+  &lt;label for="star-2-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-2" />
+  &lt;label for="star-2">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-1-n-half" />
+  &lt;label for="star-1-n-half" class="half-star">
+    &amp;#9733;
+  &lt;/label>
+  &lt;input type="radio" name="rating" id="star-1" />
+  &lt;label for="star-1">
+    &amp;#9733;
+  &lt;/label>
+&lt;/fieldset>
               </code>
             </pre>
           </div>
         </section>
 
-        <!-- Different Sized Avatars Ends -->
+        <!-- Live Rating Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -259,8 +283,8 @@
         <nav class="aside-container aside-right-container">
           <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li><a href="#same-sized">Same Sized Avatars</a></li>
-            <li><a href="#different-sized">Different Sized Avatars</a></li>
+            <li><a href="#filled-rating">Filled Rating</a></li>
+            <li><a href="#live-rating">Live Rating</a></li>
           </ul>
         </nav>
       </aside>
@@ -271,13 +295,13 @@
 
       <footer class="footer-docs">
         <div>
-          <a class="link" href="alert.html">
-            <i class="fas fa-hand-point-left"></i> Alert
+          <a class="link" href="navigation.html">
+            <i class="fas fa-hand-point-left"></i> Navigation
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="badge.html">
-            Badge <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            Toast <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
