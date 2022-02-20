@@ -140,6 +140,8 @@ p > code.hljs {
   z-index: 0;
 }
 
+#desktop-one-container,
+#mobile-one-container,
 #modal-container,
 .stacked-toast,
 .toast {
