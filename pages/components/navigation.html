@@ -147,13 +147,13 @@
           <div class="component-container">
             <div>
               <button
-                id="modal-demo-btn"
+                id="desktop-one-demo-btn"
                 class="btn btn-primary-solid btn-squared"
               >
-                Navigation Demo
+                Desktop Variation One Demo
               </button>
 
-              <div id="modal-container" class="hide modal-container">
+              <div id="desktop-one-container" class="d-none modal-container">
                 <div class="navbar-container">
                   <nav class="navbar-align px-2 py-1">
                     <div class="navbar-align">
@@ -195,6 +195,7 @@
                       </a>
                     </div>
                   </nav>
+
                   <div class="navbar-md-container">
                     <form class="navbar-form">
                       <input type="text" placeholder="search for product" />
@@ -246,6 +247,7 @@
       &lt;/a>
     &lt;/div>
   &lt;/nav>
+
   &lt;div class="navbar-md-container">
     &lt;form class="navbar-form">
       &lt;input type="text" placeholder="search for product" />
@@ -262,6 +264,187 @@
         </section>
 
         <!-- Desktop Variation One Ends -->
+
+        <!-- Mobile Variation One Starts -->
+
+        <section class="my-2 section-component" id="mobile-variation-one">
+          <h2 class="my-2">Mobile Variation One</h2>
+          <p class="my-2 section-text">
+            You can resize the browser width to see the hamburger in action. It
+            will become visible at
+            <code class="language-css hljs">576px</code> width.
+          </p>
+
+          <div class="component-container">
+            <div>
+              <button
+                id="mobile-one-demo-btn"
+                class="btn btn-primary-solid btn-squared"
+              >
+                Mobile Variation One Demo
+              </button>
+
+              <div id="mobile-one-container" class="d-none modal-container">
+                <div class="navbar-container">
+                  <nav class="navbar-align px-2 py-1">
+                    <div class="navbar-align">
+                      <img
+                        loading="lazy"
+                        class="img-brand-logo"
+                        src="../../assets/pngs/logo-bg-stone.png"
+                        alt="inclusive mart brand logo"
+                      />
+
+                      <a
+                        class="brand-name"
+                        href="https://inclusive-mart.netlify.app"
+                        target="_blank"
+                      >
+                        <span>Inclusive</span>
+                        <span class="mart-text">Mart</span>
+                      </a>
+                    </div>
+
+                    <form class="navbar-form">
+                      <input type="text" placeholder="search for product" />
+                      <button type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+
+                    <div class="navbar-align navbar-sm">
+                      <button class="navbar-btn-log translate-y">Log In</button>
+
+                      <a href="#" class="badge-btn mx-2 text-white translate-y">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge-count bg-red-500">0</span>
+                      </a>
+
+                      <a href="#" class="badge-btn mr-1 text-white translate-y">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge-count bg-red-500">0</span>
+                      </a>
+                    </div>
+
+                    <div class="navbar-sm-container relative">
+                      <button class="btn-sm-navbar translate-y">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times d-none"></i>
+                      </button>
+
+                      <ul class="d-none navbar-sm-list">
+                        <li class="my-1">
+                          <a class="translate-y" href="#">
+                            <i class="fas fa-heart mx-0p5"></i> Wishlist
+                          </a>
+                        </li>
+                        <li class="my-1">
+                          <a class="translate-y" href="#">
+                            <i class="fas fa-shopping-cart mx-0p5"></i> Cart
+                          </a>
+                        </li>
+                        <li class="my-1">
+                          <a class="translate-y" href="#">
+                            <i class="fas fa-door-open mx-0p5"></i> Log In
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                  <div class="navbar-md-container">
+                    <form class="navbar-form">
+                      <input type="text" placeholder="search for product" />
+                      <button type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+                    <button class="navbar-btn-log translate-y">Log In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+&lt;div class="navbar-container">
+  &lt;nav class="navbar-align px-2 py-1">
+    &lt;div class="navbar-align">
+      &lt;img loading="lazy" class="img-brand-logo" src="..." alt="..." />
+
+      &lt;a
+        class="brand-name"
+        href="https://inclusive-mart.netlify.app"
+        target="_blank"
+      >
+        &lt;span>Inclusive&lt;/span>
+        &lt;span class="mart-text">Mart&lt;/span>
+      &lt;/a>
+    &lt;/div>
+
+    &lt;form class="navbar-form">
+      &lt;input type="text" placeholder="search for product" />
+      &lt;button type="submit">
+        &lt;i class="fas fa-search">&lt;/i>
+      &lt;/button>
+    &lt;/form>
+
+    &lt;div class="navbar-align navbar-sm">
+      &lt;button class="navbar-btn-log translate-y">Log In&lt;/button>
+
+      &lt;a href="#" class="badge-btn mx-2 text-white translate-y">
+        &lt;i class="fas fa-heart">&lt;/i>
+        &lt;span class="badge-count bg-red-500">0&lt;/span>
+      &lt;/a>
+
+      &lt;a href="#" class="badge-btn mr-1 text-white translate-y">
+        &lt;i class="fas fa-shopping-cart">&lt;/i>
+        &lt;span class="badge-count bg-red-500">0&lt;/span>
+      &lt;/a>
+    &lt;/div>
+
+    &lt;div class="navbar-sm-container relative">
+      &lt;button class="btn-sm-navbar translate-y">
+        &lt;i class="fas fa-bars">&lt;/i>
+        &lt;i class="fas fa-times d-none">&lt;/i>
+      &lt;/button>
+
+      &lt;ul class="d-none navbar-sm-list">
+        &lt;li class="my-1">
+          &lt;a class="translate-y" href="#">
+            &lt;i class="fas fa-heart mx-0p5">&lt;/i> Wishlist
+          &lt;/a>
+        &lt;/li>
+        &lt;li class="my-1">
+          &lt;a class="translate-y" href="#">
+            &lt;i class="fas fa-shopping-cart mx-0p5">&lt;/i> Cart
+          &lt;/a>
+        &lt;/li>
+        &lt;li class="my-1">
+          &lt;a class="translate-y" href="#">
+            &lt;i class="fas fa-door-open mx-0p5">&lt;/i> Log In
+          &lt;/a>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+
+  &lt;div class="navbar-md-container">
+    &lt;form class="navbar-form">
+      &lt;input type="text" placeholder="search for product" />
+      &lt;button type="submit">
+        &lt;i class="fas fa-search">&lt;/i>
+      &lt;/button>
+    &lt;/form>
+    &lt;button class="navbar-btn-log translate-y">Log In&lt;/button>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Mobile Variation One Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -273,6 +456,7 @@
           <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
             <li><a href="#desktop-variation-one">Desktop Variation One</a></li>
+            <li><a href="#mobile-variation-one">Mobile Variation One</a></li>
           </ul>
         </nav>
       </aside>
@@ -306,5 +490,6 @@
       hljs.highlightAll();
     </script>
     <script src="https://poshui-components.netlify.app/js/main.js"></script>
+    <script src="../../js/pages/components/navigation.js"></script>
   </body>
 </html>
