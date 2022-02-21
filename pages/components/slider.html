@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posh UI | Input Component</title>
+    <title>Posh UI | Slider Component</title>
 
     <!-- favicon -->
     <link
@@ -115,14 +115,12 @@
             <li><a href="button.html">Button</a></li>
             <li><a href="card.html">Card</a></li>
             <li><a href="image.html">Image</a></li>
-            <li>
-              <a class="link-active" href="input.html">Input</a>
-            </li>
+            <li><a href="input.html">Input</a></li>
             <li><a href="list.html">List</a></li>
             <li><a href="modal.html">Modal</a></li>
             <li><a href="navigation.html">Navigation</a></li>
             <li><a href="rating.html">Rating</a></li>
-            <li><a href="slider.html">Slider</a></li>
+            <li><a class="link-active" href="slider.html">Slider</a></li>
             <li><a href="toast.html">Toast</a></li>
             <li><a href="tooltip.html">Tooltip</a></li>
           </ul>
@@ -134,161 +132,40 @@
       <!-- Main Docs Starts -->
 
       <main class="main-docs">
-        <h1 class="mb-3">Input</h1>
+        <h1 class="mb-3">Slider</h1>
         <p class="main-text">
-          Input can be used to take input from your user. It can make your site
-          more interactive.
+          Slider can be used to take user input based on some range.
         </p>
 
-        <!-- Text Area Starts -->
-
-        <section class="my-2 section-component" id="text-area">
-          <h2 class="my-2">Text Area</h2>
+        <section class="my-2 section-component" id="input-slider">
+          <h2 class="my-2">Input Slider</h2>
 
           <div class="component-container">
             <div>
-              <div class="textarea-container">
-                <textarea
-                  class="textarea"
-                  placeholder="Enter Your Message"
-                ></textarea>
-
-                <button class="btn btn-primary-solid btn-squared textarea-btn">
-                  <i class="fas fa-paper-plane"></i> Send
-                </button>
-              </div>
+              <input
+                type="range"
+                min="1"
+                max="5"
+                value="2"
+                step="0.1"
+                class="slider"
+              />
             </div>
 
             <pre class="pre-code">
-              <code class="language-html">      
-&lt;div class="textarea-container">
-  &lt;textarea
-    class="textarea"
-    placeholder="Enter Your Message"
-  >&lt;/textarea>
-
-  &lt;button class="btn btn-primary-solid btn-squared textarea-btn">
-    &lt;i class="fas fa-paper-plane">&lt;/i> Send
-  &lt;/button>
-&lt;/div>
+              <code class="language-html"> 
+&lt;input
+  type="range"
+  min="1"
+  max="5"
+  value="2"
+  step="0.1"
+  class="slider"
+/>
               </code>
             </pre>
           </div>
         </section>
-
-        <!-- Text Area Ends -->
-
-        <!-- Form Input Starts -->
-
-        <section class="my-2 section-component" id="form-input">
-          <h2 class="my-2">Form Input</h2>
-
-          <div class="component-container">
-            <div>
-              <form class="form">
-                <input
-                  class="input"
-                  type="email"
-                  name="email-id"
-                  placeholder="Enter Your Email"
-                />
-                <input
-                  class="input"
-                  type="password"
-                  name="password"
-                  placeholder="Enter Your Password"
-                />
-
-                <button class="btn btn-error-solid btn-squared">
-                  <i class="fas fa-door-open"></i> Log In
-                </button>
-              </form>
-            </div>
-
-            <pre class="pre-code">
-              <code class="language-html">      
-&lt;form class="form">
-  &lt;input
-    class="input"
-    type="email"
-    name="email-id"
-    placeholder="Enter Your Email"
-  />
-  &lt;input
-    class="input"
-    type="password"
-    name="password"
-    placeholder="Enter Your Password"
-  />
-
-  &lt;button class="btn btn-error-solid btn-squared">
-    &lt;i class="fas fa-door-open">&lt;/i> Log In
-  &lt;/button>
-&lt;/form>
-              </code>
-            </pre>
-          </div>
-        </section>
-
-        <!-- Form Input Ends -->
-
-        <!-- Error Form Input Starts -->
-
-        <section class="my-2 section-component" id="error-form-input">
-          <h2 class="my-2">Error Form Input</h2>
-
-          <div class="component-container">
-            <div>
-              <form class="form">
-                <span class="msg-error">Enter correct Email and Password</span>
-
-                <input
-                  class="input input-error"
-                  type="email"
-                  name="email-id"
-                  placeholder="Enter Your Email"
-                />
-                <input
-                  class="input input-error"
-                  type="password"
-                  name="password"
-                  placeholder="Enter Your Password"
-                />
-
-                <button class="btn btn-error-solid btn-squared">
-                  <i class="fas fa-door-open"></i> Log In
-                </button>
-              </form>
-            </div>
-
-            <pre class="pre-code">
-                <code class="language-html">      
-&lt;form class="form">
-  &lt;span class="msg-error">Enter correct Email and Password&lt;/span>
-
-  &lt;input
-    class="input input-error"
-    type="email"
-    name="email-id"
-    placeholder="Enter Your Email"
-  />
-  &lt;input
-    class="input input-error"
-    type="password"
-    name="password"
-    placeholder="Enter Your Password"
-  />
-
-  &lt;button class="btn btn-error-solid btn-squared">
-    &lt;i class="fas fa-door-open">&lt;/i> Log In
-  &lt;/button>
-&lt;/form>
-                </code>
-              </pre>
-          </div>
-        </section>
-
-        <!-- Error Form Input Ends -->
       </main>
 
       <!-- Main Docs Ends -->
@@ -299,9 +176,7 @@
         <nav class="aside-container aside-right-container">
           <ul class="mb-2">
             <h3 class="my-1p5">On this Page</h3>
-            <li><a href="#text-area">Text Area</a></li>
-            <li><a href="#form-input">Form Input</a></li>
-            <li><a href="#error-form-input">Error Form Input</a></li>
+            <li><a href="#input-slider">Input Slider</a></li>
           </ul>
         </nav>
       </aside>
@@ -312,13 +187,13 @@
 
       <footer class="footer-docs">
         <div>
-          <a class="link" href="image.html">
-            <i class="fas fa-hand-point-left"></i> Image
+          <a class="link" href="rating.html">
+            <i class="fas fa-hand-point-left"></i> Rating
           </a>
         </div>
         <div class="ml-auto">
-          <a class="link" href="list.html">
-            List <i class="fas fa-hand-point-right"></i>
+          <a class="link" href="toast.html">
+            Toast <i class="fas fa-hand-point-right"></i>
           </a>
         </div>
       </footer>
