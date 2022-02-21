@@ -47,7 +47,9 @@ Many of Posh UI components, like Modal, Toast, and others, require the use of Ja
 - [Modal](#modal)
 - [Navigation](#navigation)
 - [Rating](#rating)
+- [Slider](#slider)
 - [Toast](#toast)
+- [Tooltip](#tooltip)
 - [Typography](#typography)
 
 ---
@@ -206,6 +208,16 @@ You will find the following types of _Rating_ on https://poshui.netlify.app/page
 
 ---
 
+### Slider
+
+Slider can be used to take user input based on some range.
+
+You will find the following type of _Slider_ on https://poshui.netlify.app/pages/components/slider.html
+
+- Input Slider
+
+---
+
 ### Toast
 
 Toast can be used to show notifications to the user.
@@ -215,6 +227,17 @@ You will find the following types of _Toast_ on https://poshui.netlify.app/pages
 - Notification Toast
 - Notification Toast Demo
 - Stacked Notification Toast Demo
+
+---
+
+### Tooltip
+
+Tooltip can be used to show user some information, when user hovers the pointer over an item, without clicking it, and a tooltip may appear—a small "hover box" with information about the item being hovered over.
+
+You will find the following types of _Tooltip_ on https://poshui.netlify.app/pages/components/tooltip.html
+
+- Left Tooltip
+- Right Tooltip
 
 ---
 
