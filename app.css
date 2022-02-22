@@ -71,6 +71,15 @@ body {
   background: var(--COLOR-BRAND);
 }
 
+/** Header **/
+
+.btn-theme {
+  background: unset;
+  border: none;
+  color: var(--COLOR-TEXT);
+  font-size: 2rem;
+}
+
 /** Home **/
 
 .btn-home {
@@ -126,6 +135,44 @@ body {
   font-size: 2.5rem;
   max-width: 55rem;
   text-align: center;
+}
+
+/** Dark Theme **/
+
+[data-theme="dark"] {
+  --COLOR-BACKGROUND: #22272e;
+  --COLOR-CODE-BG: #2d333b;
+  --COLOR-TEXT: #adbac7;
+  --COLOR-TEXT-300: #8d97a0;
+}
+
+[data-theme="dark"] .text-slate-800 {
+  color: var(--COLOR-TEXT);
+}
+
+[data-theme="dark"] .btn-home {
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--COLOR-TEXT-300);
+}
+
+[data-theme="dark"] .component-container {
+  background: var(--COLOR-CODE-BG);
+  border-color: var(--COLOR-CODE-BG);
+}
+
+[data-theme="dark"] :is(.card, .grid, .modal, .stacked-list li) {
+  color: var(--COLOR-BACKGROUND);
+}
+
+[data-theme="dark"] .badge-btn {
+  color: var(--COLOR-TEXT);
+}
+
+[data-theme="dark"] :is(table, tr) {
+  border-color: var(--COLOR-BACKGROUND);
+}
+
+[data-theme="dark"] tbody tr:nth-child(even) {
+  background: var(--COLOR-BACKGROUND);
 }
 
 /** Media Query **/
