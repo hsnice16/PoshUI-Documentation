@@ -124,6 +124,11 @@ p > code.hljs {
 
 /** Main Docs **/
 
+h2[id] {
+  padding-top: 10rem;
+  margin-top: -8rem;
+}
+
 .main-docs {
   grid-area: main;
   padding: 2.5rem 2rem 3rem 4rem;
