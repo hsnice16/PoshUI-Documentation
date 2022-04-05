@@ -54,10 +54,6 @@ Many of Posh UI components, like Modal, Toast, and others, require the use of Ja
 
 ---
 
-### To explore the implementation of its components, you can visit [Posh UI Components](https://github.com/hsnice16/PoshUI-Components)
-
----
-
 ### Alert
 
 Alerts can be used to show a message to the user.
