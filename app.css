@@ -1,8 +1,7 @@
 @import url("css/docs.css");
 
 :root {
-  /** variables are coming from https://poshui-components.netlify.app/css/main.css **/
-
+  /* variables are coming from https://poshui-components.netlify.app/css/main.css */
   --COLOR-BACKGROUND: var(--COLOR-SLATE-50);
 
   --COLOR-BRAND: var(--COLOR-GLOSSY-BLUE-500);
@@ -23,18 +22,15 @@ body {
   font-size: 1.6rem;
 }
 
-/** Container **/
-
+/* Container */
 .container {
   color: var(--COLOR-TEXT);
   min-height: 100vh;
   max-width: 140rem;
 }
 
-/** Link **/
-
+/* Link */
 /* aside-left-container is present in docs.css */
-
 .link,
 .aside-left-container a {
   color: inherit;
@@ -71,8 +67,7 @@ body {
   background: var(--COLOR-BRAND);
 }
 
-/** Header **/
-
+/* Header */
 .btn-theme {
   background: unset;
   border: none;
@@ -80,8 +75,7 @@ body {
   font-size: 2rem;
 }
 
-/** Home **/
-
+/* Home */
 .btn-home {
   box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem var(--COLOR-TEXT-300);
   font-size: 2rem;
@@ -137,8 +131,7 @@ body {
   text-align: center;
 }
 
-/** Dark Theme **/
-
+/* Dark Theme */
 [data-theme="dark"] {
   --COLOR-BACKGROUND: #22272e;
   --COLOR-CODE-BG: #2d333b;
@@ -175,8 +168,7 @@ body {
   background: var(--COLOR-BACKGROUND);
 }
 
-/** Media Query **/
-
+/* Media Query */
 /* 
   .docs, 
   .aside-right, 
@@ -187,7 +179,6 @@ body {
   .main-docs 
     are present in docs.css 
 */
-
 @media only screen and (max-width: 63em) {
   .docs {
     grid-template-areas:
