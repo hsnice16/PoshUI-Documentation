@@ -1,7 +1,6 @@
-/** 
+/* 
   Contains CSS code for the pages user can visit using docs navbar option
-**/
-
+*/
 .docs {
   display: grid;
   grid-template-areas:
@@ -11,8 +10,7 @@
   grid-template-rows: 8rem 1fr;
 }
 
-/** Asides **/
-
+/* Asides */
 .aside-container {
   background: var(--COLOR-BACKGROUND);
   position: fixed;
@@ -27,14 +25,46 @@
 }
 
 .aside-left-container {
+  display: flex;
+  flex-direction: column;
   height: 80vh;
   margin: 1rem 1rem 3rem 6rem;
   padding: 0 2rem 0.5rem 0;
   overflow-y: auto;
 }
 
-.aside-left-container h3 {
-  font-size: 2.1rem;
+.aside-left-container input[type="checkbox"] {
+  display: none;
+}
+
+.aside-left-container label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.aside-left-container ul {
+  display: none;
+}
+
+.aside-left-container li a {
+  font-size: 1.8rem;
+}
+
+.aside-left-container input[type="checkbox"] + label::before {
+  content: url("../assets/svgs/right-arrow.svg");
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.aside-left-container input[type="checkbox"]:checked + label + ul {
+  display: block;
+}
+
+.aside-left-container input[type="checkbox"]:checked + label::before {
+  transform: rotate(90deg);
 }
 
 .aside-right {
@@ -53,8 +83,7 @@
   color: var(--COLOR-BRAND);
 }
 
-/** Component Container **/
-
+/* Component Container */
 .component-container {
   align-items: center;
   background: var(--COLOR-WHITE);
@@ -67,8 +96,7 @@
   padding: 2rem 2rem 0;
 }
 
-/** Footer Docs **/
-
+/* Footer Docs */
 .footer-docs {
   align-items: center;
   background: var(--COLOR-BACKGROUND);
@@ -84,8 +112,7 @@
   z-index: 1;
 }
 
-/** Header Docs **/
-
+/* Header Docs */
 .header-docs {
   background: var(--COLOR-BACKGROUND);
   grid-area: header;
@@ -94,8 +121,7 @@
   z-index: 1;
 }
 
-/** Introduction Page **/
-
+/* Introduction Page */
 .intro-pre {
   margin-top: -2rem;
 }
@@ -111,8 +137,7 @@ p > code.hljs {
   margin: 0.5rem;
 }
 
-/** Link to Top **/
-
+/* Link to Top */
 .link-to-top {
   bottom: 0;
   display: none;
@@ -122,8 +147,7 @@ p > code.hljs {
   right: 0;
 }
 
-/** Main Docs **/
-
+/* Main Docs */
 h2[id] {
   padding-top: 10rem;
   margin-top: -8rem;
@@ -139,8 +163,7 @@ h2[id] {
   line-height: 1.5em;
 }
 
-/** Overidding **/
-
+/* Overidding */
 #modal-component .modal {
   z-index: 0;
 }
@@ -161,8 +184,7 @@ h2[id] {
   z-index: 0;
 }
 
-/** Pre Code **/
-
+/* Pre Code */
 .pre-code {
   margin-bottom: -5rem;
   width: 100%;
@@ -174,8 +196,7 @@ code.hljs {
   line-height: 1.5em;
 }
 
-/** Section **/
-
+/* Section */
 .section-component {
   border-top: thin solid var(--COLOR-BRAND-LIGHT);
 }

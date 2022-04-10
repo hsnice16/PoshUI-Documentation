@@ -1,5 +1,4 @@
-/** variables are coming from https://poshui-components.netlify.app/css/main.css **/
-
+/* variables are coming from https://poshui-components.netlify.app/css/main.css */
 .grid {
   background: var(--COLOR-LIME-200);
   border-radius: 0.2rem;
