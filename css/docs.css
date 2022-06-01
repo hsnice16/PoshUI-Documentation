@@ -17,7 +17,7 @@
 }
 
 .aside-container li {
-  margin: 1.2rem 0.2rem;
+  margin: 1.2rem 0.4rem;
 }
 
 .aside-left {
@@ -52,19 +52,16 @@
   font-size: 1.8rem;
 }
 
-.aside-left-container input[type="checkbox"] + label::before {
-  content: url("../assets/svgs/right-arrow.svg");
-  display: inline-block;
-  margin-right: 0.5rem;
+.aside-left-container input[type="checkbox"] + label svg {
   transition: transform 0.3s;
+}
+
+.aside-left-container input[type="checkbox"]:checked + label svg {
+  transform: rotate(90deg);
 }
 
 .aside-left-container input[type="checkbox"]:checked + label + ul {
   display: block;
-}
-
-.aside-left-container input[type="checkbox"]:checked + label::before {
-  transform: rotate(90deg);
 }
 
 .aside-right {
