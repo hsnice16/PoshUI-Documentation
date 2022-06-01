@@ -33,7 +33,7 @@ body {
 /* aside-left-container is present in docs.css */
 .link,
 .aside-left-container a {
-  color: inherit;
+  color: var(--COLOR-TEXT);
   font-size: 2rem;
   position: relative;
 }
